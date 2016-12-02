@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<title>Further ARIA Enhancements</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<meta http-equiv="Content-Language" content="en-us" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/basic.css" />
+	<link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
+	<script src="js/slides.js" type="text/javascript"></script>
+	<style type="text/css">
+	#invalidzip {
+		color:#000;
+		border:1px dashed #f22;
+		padding:3px;
+		margin-top:10px;
+		outline:0;
+		font-size: 1.25em;
+	}
+	#ziptip {
+		background:#fff;
+		color:#262626;
+		border:1px dashed #f22;
+		padding:.25em;
+		font-size: 1em;
+	}
+	[aria-hidden=true] { display:none;}
+	</style>
+	<script type="text/javascript">
+	function resetAlert(e) {
+		errormessage=document.getElementById("invalidzip");
+		ziptip=document.getElementById("ziptip");
+		// Hide error message and remove alert role, if present. Alert role only reads when it CHANGES, setting to true again does not do the trick.
+		errormessage.setAttribute("aria-hidden", "true");
+		errormessage.setAttribute("role", "");
+		// Display tip
+		ziptip.setAttribute("aria-hidden", "false");
+	}
+	function checkzip(s) 
+	{
+		errormessage=document.getElementById("invalidzip");
+		zipbox=document.getElementById("zip");
+		// Check for correct zip code
+		reZip = new RegExp(/(^\d{5}$)|(^\d{5}-\d{4}$)/);
+		// If not a valid zip
+		if (!reZip.test(s)) {
+			// Display the error message, make it an alert, and set the form field to invalid.
+			errormessage.setAttribute("aria-hidden", "false");
+			errormessage.setAttribute("role", "alert");
+			zipbox.setAttribute("aria-invalid", "true");
+		}
+		// If a valid zip
+		else {
+			// Hide a the error message and unset aria-invalid
+			errormessage.setAttribute("aria-hidden", "true");
+			zipbox.setAttribute("aria-invalid", "false");
+		}
+		// Leaving the textbox, so hide the tip
+		ziptip.setAttribute("aria-hidden", "true");
+	}
+	</script>
+</head>
+<body>
+<div class="skip">
+	<a href="#maincontent" title="Skip navigation and go to main content area">Skip to Main Content</a>
+</div>
+<div id="wrap">
+	<div id="header" role="banner">
+		<div id="hdr">
+			<h1><a href="default.html" title="WAI-ARIA (Accessible Rich Internet Application) - Is your Web Application Accessible?">ARIA</a></h1>
+			<h2>(Accessible Rich Internet Application)</h2>
+		</div>
+	</div>
+	<div id="main_content" role="main">
+		<div id="content">
+			<a name="maincontent"></a>
+			<h3>Further ARIA Enhancements</h3>
+			<div id="invalidzip" aria-hidden="true">I'm sorry, that is not a properly formatted ZIP code. ZIP must be 5 or 9 digits. Please try again.</div>
+			<p>&nbsp;</p>
+			<div><label for="zip">Enter your ZIP code:</label> <input id="zip" onfocus="resetAlert();" onblur="checkzip(this.value);"
+				aria-required="true"
+				aria-describedby="ziptip">
+			<span id="ziptip" role="tooltip" aria-hidden="true">Required. ZIP must be 5 or 9 digits.</span>
+			</div>
+			<p>&nbsp;</p>			
+			<hr />
+			<p>&nbsp;</p>
+			<ol>
+				<li>aria-required and aria-describedby added to text box.</li>
+				<li>Additional instructions assigned tooltip role.</li>
+				<li>aria-hidden toggled and <span class="code">[aria-hidden=true] {display:none;}</span> in CSS used to toggle visual display.</li>
+			</ol>
+			<p>&nbsp;</p>
+			<h4>Example Code</h4>
+			<div id="invalidzip" aria-hidden="true">I'm sorry, that is not a properly formatted ZIP code. ZIP must be 5 or 9 digits. Please try again.</div>
+			<p>
+				&lt;label for="zip"&gt;Enter your ZIP code:&lt;/label&gt;<br />
+				&lt;input id="zip" onfocus="resetAlert();" onblur="checkzip(this.value);"<br />
+				aria-required="true"<br />
+				<b>aria-describedby="ziptip"</b>&gt;<br />
+				&lt;span <b>id="ziptip"</b> role="tooltip" aria-hidden="true"&gt;Required. ZIP must be 5 or 9 digits.&lt;/span&gt;
+			</p>
+		</div>
+	</div>
+	<div id="footer">
+		<div id="navbar_b">
+			<div id="nextprev" role="navigation">
+				<p id="previous"><a id="prevlink" href="keyboard2.html" title="Return to previous slide" accesskey="P">Previous</a></p>
+				<p id="next"><a id="nextlink" href="liveregions.html" title="Proceed to next slide" accesskey="N">Next</a></p>
+			</div>
+			<p role="contentinfo">&copy; 2009 - 2011 <a href="http://www.webaim.org/presentations/2009/aria/index.php">WebAIM</a> (<b>mostly theirs</b>) and <a href="../../default.shtml">jfc iii</a> (small part)</p>
+		</div>
+	</div>
+</div>
+<script src="../../js/google.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<title>Another solution for required for both old and new browsers and screen readers</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<meta http-equiv="Content-Language" content="en-us" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/basic.css" />
+	<link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
+	<script src="js/slides.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="skip">
+	<a href="#maincontent" title="Skip navigation and go to main content area">Skip to Main Content</a>
+</div>
+<div id="wrap">
+	<div id="header" role="banner">
+		<div id="hdr">
+			<h1><a href="default.html" title="WAI-ARIA (Accessible Rich Internet Application) - Is your Web Application Accessible?">ARIA</a></h1>
+			<h2>(Accessible Rich Internet Application)</h2>
+		</div>
+	</div>
+	<div id="main_content" role="main">
+		<div id="content">
+			<a name="maincontent"></a>
+			<h3>Another Solution for Required</h3>
+			<p>Required field solution for old and new browsers and screen readers.</p>
+			<p>&nbsp;</p>
+			<p><label for="name"><em>required </em>First Name</label> <input name="name" id="name" aria-required="true"> <em> *</em></p>
+			<p>&nbsp;</p>
+			<h4>Example Code</h4>
+			<p> 
+				&lt;label for=&quot;first_name&quot;&gt;<b>&lt;em&gt;Required &lt;/em&gt;</b>First Name&lt;/label&gt;<br />
+				&lt;input name=&quot;first_name&quot; id=&quot;first_name&quot; <b>aria-required=&quot;true&quot;</b> size=&quot;25&quot; maxlength=&quot;25&quot; /&gt; &lt;span class=&quot;req&quot;&gt;*&lt;/span&gt;<br />
+			</p>
+			<h4>CSS</h4>
+			<p>
+			  .hide_info a, .hide_info a:hover, .hide_info a:visited, .search label, <b>label em</b> { <br />
+			  position: absolute; <br />
+			  &hellip; <br />
+			  overflow: hidden;<br />
+			  } <br />
+			</p>
+			<p><label for="name">First Name</label> <input name="name" id="name" aria-required="true"> <span class="req">*</span></p>
+			<p>&nbsp;</p>			
+			<p>Now this will cover both new and old screen readers, along with new and old browsers and will now indicate the required status of the form element.</p>
+		</div>
+	</div>
+	<div id="footer">
+		<div id="navbar_b">
+			<div id="nextprev" role="navigation">
+				<p id="previous"><a id="prevlink" href="required2.html" title="Return to previous slide" accesskey="P">Previous</a></p>
+				<p id="next"><a id="nextlink" href="keyboard.html" title="Proceed to next slide" accesskey="N">Next</a></p>
+			</div>
+			<p role="contentinfo">&copy; 2009 - 2011 <a href="http://www.webaim.org/presentations/2009/aria/index.php">WebAIM</a> (<b>mostly theirs</b>) and <a href="../../default.shtml">jfc iii</a> (small part)</p>
+		</div>
+	</div>
+</div>
+<script src="../../js/google.js"></script>
+</body>
+</html>

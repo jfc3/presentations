@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<title>ARIA Live regions</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<meta http-equiv="Content-Language" content="en-us" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/basic.css" />
+	<link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
+	<script src="js/slides.js" type="text/javascript"></script>
+	<script language="javascript" src="js/jquery.js" type="text/javascript"></script>
+	<script language="javascript" src="js/jquery.tweet.js" type="text/javascript"></script> 
+	<link href="css/tweet.css" rel="stylesheet" type="text/css" />
+	<script type='text/javascript'>
+	$(document).ready(function(){
+		getTweets();
+	});
+	current_tweet_id = 0
+	function getTweets() {
+		$(".tweet").tweet({
+	            username: "",
+	            join_text: "",
+	            avatar_size: 48,
+	            count: 5,
+	            loading_text: "Loading tweets...",
+				query: "accessu OR accessibility OR disability OR accesscampdc OR accessibilitydc OR a11y OR jfc3",
+				max_id: current_tweet_id
+	        });
+		window.setTimeout(getTweets,10000);
+	}
+	function getTweetid() {
+		alert(current_tweet_id);
+	}
+	</script>
+</head>
+<body>
+<div class="skip">
+	<a href="#maincontent" title="Skip navigation and go to main content area">Skip to Main Content</a>
+</div>
+<div id="wrap">
+	<div id="header" role="banner">
+		<div id="hdr">
+			<h1><a href="default.html" title="WAI-ARIA (Accessible Rich Internet Application) - Is your Web Application Accessible?">ARIA</a></h1>
+			<h2>(Accessible Rich Internet Application)</h2>
+		</div>
+	</div>
+	<div id="main_content" role="main">
+		<div id="content">
+			<a name="maincontent"></a>
+			<h3>Real-time Twitter Postings About Accessibility</h3>
+			<h4>Javascript</h4>
+			<p>
+				&lt;script src="js/slides.js" type="text/javascript"&gt;&lt;/script&gt;<br />
+				&lt;script language="javascript" src="js/jquery.js" type="text/javascript"&gt;&lt;/script&gt;<br />
+				&lt;script language="javascript" src="js/jquery.tweet.js" type="text/javascript"&gt;&lt;/script&gt;
+			</p>
+			<p>
+				$(document).ready(function(){<br />
+					getTweets();
+				});
+			</p>
+			<p>
+				current_tweet_id = 0
+			</p>
+			<p>
+				function getTweets() {<br />
+					$(".tweet").tweet({<br />
+				            username: "",<br />
+				            join_text: "",<br />
+				            avatar_size: 48,<br />
+				            count: 5,<br />
+				            loading_text: "Loading tweets...",<br />
+							query: "accessu OR accessibility OR disability OR accesscampdc OR accessibilitydc OR a11y OR jfc3",<br />
+							max_id: current_tweet_id<br />
+				        });<br />
+					window.setTimeout(getTweets,10000);
+				}
+			</p>
+			<p>
+				function getTweetid() {<br />
+					alert(current_tweet_id);<br />
+				}
+			</p>
+		</div>
+	</div>
+	<div id="footer">
+		<div id="navbar_b">
+			<div id="nextprev" role="navigation">
+				<p id="previous"><a id="prevlink" href="liveregions2.html" title="Return to previous slide" accesskey="P">Previous</a></p>
+				<p id="next"><a id="nextlink" href="liveregions4.html" title="Proceed to next slide" accesskey="N">Next</a></p>
+			</div>
+			<p role="contentinfo">&copy; 2009 - 2011 <a href="http://www.webaim.org/presentations/2009/aria/index.php">WebAIM</a> (<b>mostly theirs</b>) and <a href="../../default.shtml">jfc iii</a> (small part)</p>
+		</div>
+	</div>
+</div>
+<script src="../../js/google.js"></script>
+</body>
+</html>

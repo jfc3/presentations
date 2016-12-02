@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<title>Tabindex Example for ARIA</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<meta http-equiv="Content-Language" content="en-us" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/basic.css" />
+	<link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
+	<script src="js/slides.js" type="text/javascript"></script>
+	<style type="text/css">
+	#invalidzip {
+		color:#f22;
+		border:1px dashed #f22;
+		padding:3px;
+		margin-top:10px;
+		outline:0;
+		font-size:70%;
+		display:none;
+		font-size: 1.25em;
+	}
+	</style>
+	<script type="text/javascript">
+	function checkzip(s) 
+	{
+		errormessage=document.getElementById("invalidzip");
+		// Check for correct zip code
+		reZip = new RegExp(/(^\d{5}$)|(^\d{5}-\d{4}$)/);
+		if (!reZip.test(s)) {
+			errormessage.style.display="block";
+			errormessage.tabIndex="-1";
+			setfocus('invalidzip')
+		}
+		else {
+			errormessage.style.display="none";
+		}
+	}
+	function setfocus(e) {
+		el=document.getElementById(e);
+		el.focus();
+	}
+	</script>
+</head>
+<body>
+<div class="skip">
+	<a href="#maincontent" title="Skip navigation and go to main content area">Skip to Main Content</a>
+</div>
+<div id="wrap">
+	<div id="header" role="banner">
+		<div id="hdr">
+			<h1><a href="default.html" title="WAI-ARIA (Accessible Rich Internet Application) - Is your Web Application Accessible?">ARIA</a></h1>
+			<h2>(Accessible Rich Internet Application)</h2>
+		</div>
+	</div>
+	<div id="main_content" role="main">
+		<div id="content">
+			<a name="maincontent"></a>
+			<h3>Tabindex Example</h3>
+			<div id="invalidzip">I'm sorry, that is not a properly formatted ZIP code. ZIP must be 5 or 9 digits. Please <a href="#" onclick="setfocus('zip'); return false">try again</a>.</div>
+			<p>&nbsp;</p>
+			<p><label for="zip">Enter your ZIP code</label> <input id="zip" onblur="checkzip(this.value);"></p>
+			<p>&nbsp;</p>
+			<hr />
+			<p>&nbsp;</p>
+			<h4>JavaScript Code</h4>
+			<p>
+				function checkzip(s)<br />
+				{<br />
+					errormessage=document.getElementById("invalidzip");<br />
+					// Check for correct zip code<br />
+					reZip = new RegExp(/(^\d{5}$)|(^\d{5}-\d{4}$)/);<br />
+					if (!reZip.test(s)) {<br />
+						errormessage.style.display="block";<br />
+						errormessage.tabIndex="-1";<br />
+						setfocus('invalidzip')<br />
+					}<br />
+					else {<br />
+						errormessage.style.display="none";<br />
+					}<br />
+				}<br />
+			</p>
+			<p>	
+				function setfocus(e) {<br />
+					el=document.getElementById(e);<br />
+					el.focus();<br />
+				}
+			</p>
+		</div>
+	</div>
+	<div id="footer">
+		<div id="navbar_b">
+			<div id="nextprev" role="navigation">
+				<p id="previous"><a id="prevlink" href="keyboard.html" title="Return to previous slide" accesskey="P">Previous</a></p>
+				<p id="next"><a id="nextlink" href="keyboard-b.html" title="Proceed to next slide" accesskey="N">Next</a></p>
+			</div>
+			<p role="contentinfo">&copy; 2009 <a href="http://www.webaim.org/presentations/2009/aria/index.php">WebAIM</a> (<b>mostly theirs</b>) and <a href="../../default.shtml">jfc iii</a> (small part)</p>
+		</div>
+	</div>
+</div>
+<script src="../../js/google.js"></script>
+</body>
+</html>

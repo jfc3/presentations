@@ -1,0 +1,32 @@
+body { 
+margin:0; 
+padding: 0;
+text-align: left;
+color: #000;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 100%;
+} 
+
+#hdr, .hide, #sidebar, #footer { display: none !important; } 
+
+#main, #wrap { border: 0;}
+
+#content {
+float: left; 
+list-style: none;
+margin: 0;
+padding: 5px;
+width: 85%;
+} 
+
+#content a { color: #000;}
+
+#content ul a { 
+margin: 0;
+padding: 0;
+line-height: 20px;
+letter-spacing: 1.2px;
+text-decoration: underline;
+}
+
+img { display: block;}

@@ -1,0 +1,31 @@
+.tweet {
+	font-family: Georgia, serif;
+	font-size: .75em;
+}
+.tweet .tweet_list {
+	-webkit-border-radius: .5em;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #ddd;
+}
+.tweet .tweet_list li {
+	overflow: auto;
+	padding: .5em;
+}
+.tweet .tweet_list li a {
+	
+}
+.tweet .tweet_list .tweet_even { 
+	background-color: #fff;
+}
+.tweet .tweet_list .tweet_avatar {
+
+}
+.tweet .tweet_list .tweet_date {
+	font-style:oblique;
+}
+
+.tweet .tweet_list .tweet_avatar img {
+	float:left; margin:3px;
+}

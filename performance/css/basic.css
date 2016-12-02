@@ -1,0 +1,66 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, em, font, img, strong, ol, ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+:focus { outline: 0;}
+body { text-align: left; color: #000; line-height: 1; background: #fff; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 100%;}
+#hdr h1 { text-align: center;}
+#hdr h1 { color: #000; font-size: 1.75em; line-height: 1.75em;}
+#hdr h1 a { text-decoration: none;}
+h2 { font-size: 1.75em; line-height: 2em; margin-bottom: 1em;}
+h3 { font-size: 1.5em; line-height: 1.75em;}
+h4 { font-size: 1.333em; line-height: 1.5em;}
+h5 { font-size: 1.25em; line-height: 1.3333em;}
+h6 { font-size: 1.1em; line-height: 1.25em;}
+h1, h2, h3, h4, h5, h6 { letter-spacing: 1.5px;}
+p, ul, ol, li, h1, h2, h3, h4, h5, h6 { line-height: 1.5em;}
+p, ul, ol, h3, h4, h5, h6 { margin-bottom: 1em;}
+ul ul, ol ol, ul ol, ol ul { margin-bottom: 0;}
+p { font-size: 1.25em;}
+a, a:visited, li { color: #000; font-size: 1em;}
+li { font-size: 1.25em; padding: .5em 0;}
+strong { font-weight: bold; color:#333;}
+#wrap { max-width:100%;} 
+#main, #main_content, #navbar_b { width: 75em; min-width: 75em;}
+#main, #main_content { background: #fff; margin: 0 auto; height: 30em; min-height: 30em;}
+#header { background-color: #ACC7FF; border-bottom: 1px solid #000;}
+#content { width: 67em; margin: 1.25em 0 1em 1em; padding: 1.5em 3em; float: left; vertical-align: top; border: 1px solid #ccc; border-radius: 1em; min-height: 35em; -moz-border-radius: 1em; -webkit-border-radius: 1em;}
+ol, ul { list-style: disc; margin-left: 1.25em;}
+ol li li, ul li li { margin-left: 1em; font-size: 1em;}
+ol li, ul a, ol li, ol a { line-height: 1.5em; letter-spacing: 1.2px; font-size: 1em;}
+ul a, ol a { text-decoration: underline;}
+a:visited, ul a:visited { color: #000; text-decoration: underline;}
+a:focus, ul a:focus { color: #000; text-decoration: none;}
+#footer { padding: 8px 0; clear: both; background: #BEFF9E; border-top: 1px solid #000; border-bottom: 1px solid #000;}
+img { display: block;}
+
+/*	skip navigation and other display content off screen items */
+.skip a, label em { display: block; position: absolute; left: -10000px; top: auto; width: 100%; height: 3em; font-weight: bold; text-align: center; border-bottom: 1px solid #000;} 
+.skip a:active, .skip a:focus { background: #BEFF9E; position: static; width: auto; height: auto; padding: 1em; margin: auto;}
+
+/* bottom navigation bar and previous/next navigation */
+#navbar_b { margin: 0 auto; }
+#navbar_b p { text-align: center; font-size: 1em;}
+#navbar_b a:hover, #navbar_b a:focus { text-decoration: none;}
+#nextprev { clear: both;}
+#next, #previous { margin:4px 5px;}
+#next { float:right;}
+#previous { float:left;}
+
+/* print CSS */
+@media print {
+	body { margin:0; padding: 0; text-align: left; color: #000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 100%;} 
+	.hide, #sidebar, #footer, #navbar_b, .skip, .skip a { display: none !important;} 
+	#main, #wrap { border: 0;}
+	#content { float: left; list-style: none; margin: 0; padding: .5em; width: 95%; border: 0;} 
+	#content a { color: #000;}
+	#content ul a { margin: 0; padding: 0; line-height: 20px; letter-spacing: 1.2px; text-decoration: underline;}
+	img { display: block;}
+}
