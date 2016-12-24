@@ -1,14 +1,4 @@
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, em, font, img, strong, ol, ul, li {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-weight: inherit;
-	font-style: inherit;
-	font-size: 100%;
-	font-family: inherit;
-	vertical-align: baseline;
-}
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, em, font, img, strong, ol, ul, li { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline;}
 :focus { outline: 0;}
 body { text-align: left; color: #000; line-height: 1; background: #fff; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 100%;}
 #hdr h1 { text-align: center;}
