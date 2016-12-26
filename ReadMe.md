@@ -23,8 +23,8 @@ Features:
 
 Enhancements:
 
-* Make sure all the accessibility inforamtion is up-to-date and accessible.
-* Make sure all presentations/sldies examples are accessible.
+* Make sure all the accessibility inforamtion in the slides is up-to-date and accessible.
+* Make sure all presentations/slides examples are accessible.
 * 
 ## Installation
 Please have the following installed before running:
