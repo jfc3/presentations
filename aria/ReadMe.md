@@ -16,9 +16,10 @@ Features:
 
 Enhancements:
 
+* Changed the slides to use HTML5.
 * Make sure all the sldies are up-to-date and accessible.
 * Make my slides examples are accessible.
-* 
+
 ## Installation
 Please have the following installed before running:
 * You will need to copy slide decks along with the CSS and JavaScript files.
