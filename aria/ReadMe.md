@@ -5,7 +5,7 @@
 * Release Date: 12-26-2016
 
 ## Overview
-The following contains [John F Croston III's](http://jfciii.com) - ([@jfc3](https://twitter.com/jfc3)) slides for his ARAI slide presentation. Which over the last few of years, I have been updating, so anyone going back to them will get the most up-to-date information.
+The following contains [John F Croston III's](http://jfciii.com) - ([@jfc3](https://twitter.com/jfc3)) slides for his "**ARIA**" slide presentation. Which over the last few of years, I have been updating, so anyone going back to them will get the most up-to-date information.
 
 I have recently added more ARIA examples since someof the old ones are no longer on the internet.
 
