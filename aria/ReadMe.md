@@ -1,4 +1,4 @@
-# Accesibility Slides by John F Croston III
+# ARIA Slides by John F Croston III
 
 * John F Croston III
 * Release Number:  v.1.1.0
