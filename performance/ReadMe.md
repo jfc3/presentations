@@ -7,8 +7,6 @@
 ## Overview
 The following contains [John F Croston III's](http://jfciii.com) - ([@jfc3](https://twitter.com/jfc3)) slides for his "**Performance**" slide presentation. Which over the last few of years, I have been updating, so anyone going back to them will get the most up-to-date information.
 
-I have recently added more ARIA examples since someof the old ones are no longer on the internet.
-
 ## New Features and Enhancements
 Features:
 
