@@ -17,7 +17,7 @@ Features:
 Enhancements:
 
 * Changed the slides to use HTML5.
-* Make sure all the sldies are up-to-date and accessible.
+* Make sure all the slides are up-to-date and accessible.
 * Make my slides examples are accessible.
 
 ## Installation
