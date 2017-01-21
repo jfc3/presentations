@@ -54,7 +54,7 @@ legend { padding: .5em; margin: .25em; border: 0; font-size:1.25em;}
 span.req { color: #f00; font-weight: bold;}
 
 /* display directions/explainations of fields  right of input */ 
-label strong.msg1, label strong.msg2 { color: #888; font-size: .8em; font-style: normal; line-height: 2.5; position: absolute; top: 0;}
+label strong.msg1, label strong.msg2 { color: #888; font-size: .8em; font-style: normal; line-height: 2.5; position: absolute; top: -.25em;}
 label strong.msg1 { right: -17.25em;}
 label strong.msg2 { right: -33em;}
 
