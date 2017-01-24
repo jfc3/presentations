@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>A Transit Table with Microformats</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+	<link rel="stylesheet" media="screen" href="css/basic.css" />
+	<style>
+		.vcard { 
+			color: #000;
+			text-align: center;
+			background: #ACC7FF; 
+			font-weight: bold;
+			text-align: left;
+		} 
+		.vcard em { 
+			font-weight: normal; 
+			font-style: normal;
+		}
+		td { text-align: center;}
+		abbr { 
+			color: #000;
+			border-bottom: 0 solid #000;
+		} 
+	</style>
+</head>
+<body>
+	<div class="hide">
+		<a href="#maincontent">Skip to Main Content</a>
+	</div>
+	<div id="wrap">
+		<div id="header">
+			<!--#include file="inc/header.html"-->
+		</div>
+		</div>
+		<div id="main_content">
+			<div id="content_t" role="main">
+				<h3 id="maincontent" tabindex="-1">Interesting MicroFormat Challenge</h3>
+				<p>Here is how I marked up the DC Metro's Yellow Line schedule in a table with MicroFormats and still made it accessible.</p>
+				<p>This is an example of the schedule if you were to take the train from Huntington Metro Station to the Mt Vernon Sq 7th St-Convention Center Metro Station during early morning rush hour (7:00 AM - 7:45 AM). This schedule might not be that correct.</p>
+				<table summary="This is the list tranisit stops with geo locations and the times the train stops for March 3rd, 2008. Station name and address will be listed, then the next ten times the train will stop at the station.">
+					<caption>Example Yellow Line Schedule for Washington, DC Metro System</caption>
+					<tr class="hCalendar">
+						<th scope="col">Station Name and Address</th>
+						<th scope="col" colspan="9">Train Stop Times</th>
+					</tr>
+					<tr class="hCalendar">
+						<th scope="row" class="vcard" id="stp0"><div class="fn org summary"><a class="url" href="http://www.wmata.com/metrorail/Stations/station.cfm?station=50/">Huntington</a><span class="hide"> Metro Station</span></div><abbr class="geo adr location" title="38.797903;-77.078616"><em><span class="street-address">2701 Huntington Ave.</span> <div><span class="locality">Alexandria</span>, <span class="region">VA</span> <span class="postal-code">22303</span></div></em></abbr></th>
+						<td headers="stp0" class="vevent"><abbr class="dtstart" title="2008-03-23T07:00:00-0400">07:00</abbr></td>
+						<td headers="stp0" class="vevent"><abbr class="dtstart" title="2008-03-23T07:06:00-0400">07:06</abbr></td>
+						<td headers="stp0" class="vevent"><abbr class="dtstart" title="2008-03-23T07:12:00-0400">07:12</abbr></td>
+						<td headers="stp0" class="vevent"><abbr class="dtstart" title="2008-03-23T07:18:00-0400">07:18</abbr></td>
+						<td headers="stp0" class="vevent"><abbr class="dtstart" title="2008-03-23T07:24:00-0400">07:24</abbr></td>
+						<td headers="stp0" class="vevent"><abbr class="dtstart" title="2008-03-23T07:30:00-0400">07:30</abbr></td>
+						<td headers="stp0" class="vevent"><abbr class="dtstart" title="2008-03-23T07:36:00-0400">07:36</abbr></td>
+						<td headers="stp0" class="vevent"><abbr class="dtstart" title="2008-03-23T07:42:00-0400">07:42</abbr></td>
+						<td headers="stp0" class="vevent"><abbr class="dtstart" title="2008-03-23T07:48:00-0400">07:48</abbr></td>
+					</tr>
+					<tr class="hCalendar">
+						<th scope="row" class="vcard" id="stp1"><div class="fn org summary"><a class="url" href="http://www.wmata.com/metrorail/Stations/station.cfm?station=49">Eisenhower Ave.</a><span class="hide"> Metro Station</span></div><abbr class="geo adr location" title="38.801339;-77.072043"><em><span class="street-address">2400 Eisenhower Ave.</span> <div><span class="locality">Alexandria</span>, <span class="region">VA</span> <span class="postal-code">22314</span></div></em></abbr></th>
+						<td headers="stp1" class="vevent"><abbr class="dtstart" title="2008-03-23T07:01:00-0400">07:01</abbr></td>
+						<td headers="stp1" class="vevent"><abbr class="dtstart" title="2008-03-23T07:07:00-0400">07:07</abbr></td>
+						<td headers="stp1" class="vevent"><abbr class="dtstart" title="2008-03-23T07:13:00-0400">07:13</abbr></td>
+						<td headers="stp1" class="vevent"><abbr class="dtstart" title="2008-03-23T07:19:00-0400">07:19</abbr></td>
+						<td headers="stp1" class="vevent"><abbr class="dtstart" title="2008-03-23T07:25:00-0400">07:25</abbr></td>
+						<td headers="stp1" class="vevent"><abbr class="dtstart" title="2008-03-23T07:31:00-0400">07:31</abbr></td>
+						<td headers="stp1" class="vevent"><abbr class="dtstart" title="2008-03-23T07:37:00-0400">07:37</abbr></td>
+						<td headers="stp1" class="vevent"><abbr class="dtstart" title="2008-03-23T07:43:00-0400">07:43</abbr></td>
+						<td headers="stp1" class="vevent"><abbr class="dtstart" title="2008-03-23T07:49:00-0400">07:49</abbr></td>
+					</tr>
+					<tr class="hCalendar">
+						<th scope="row" class="vcard" id="stp2"><div class="fn org summary"><a class="url" href="http://www.wmata.com/metrorail/Stations/station.cfm?station=48">King St.</a><span class="hide"> Metro Station</span></div><abbr class="geo adr location" title="38.80681;-77.060271"><em><span class="street-address">1900 King St.</span> <div><span class="locality">Alexandria</span>, <span class="region">VA</span> <span class="postal-code">22301</span></div></em></abbr></th>
+						<td headers="stp2" class="vevent"><abbr class="dtstart" title="2008-03-23T07:03:00-0400">07:03</abbr></td>
+						<td headers="stp2" class="vevent"><abbr class="dtstart" title="2008-03-23T07:09:00-0400">07:09</abbr></td>
+						<td headers="stp2" class="vevent"><abbr class="dtstart" title="2008-03-23T07:15:00-0400">07:15</abbr></td>
+						<td headers="stp2" class="vevent"><abbr class="dtstart" title="2008-03-23T07:21:00-0400">07:21</abbr></td>
+						<td headers="stp2" class="vevent"><abbr class="dtstart" title="2008-03-23T07:27:00-0400">07:27</abbr></td>
+						<td headers="stp2" class="vevent"><abbr class="dtstart" title="2008-03-23T07:33:00-0400">07:33</abbr></td>
+						<td headers="stp2" class="vevent"><abbr class="dtstart" title="2008-03-23T07:39:00-0400">07:39</abbr></td>
+						<td headers="stp2" class="vevent"><abbr class="dtstart" title="2008-03-23T07:45:00-0400">07:45</abbr></td>
+						<td headers="stp2" class="vevent"><abbr class="dtstart" title="2008-03-23T07:51:00-0400">07:51</abbr></td>
+					</tr>
+					<tr class="hCalendar">
+						<th scope="row" class="vcard" id="stp3"><div class="fn org summary"><a class="url" href="http://www.wmata.com/metrorail/Stations/station.cfm?station=47">Braddock Road</a><span class="hide"> Metro Station</span></div><abbr class="geo adr location" title="38.81286;-77.053139"><em><span class="street-address">700 N. West St.</span> <div><span class="locality">Alexandria</span>, <span class="region">VA</span> <span class="postal-code">22301</span></div></em></abbr></th>
+						<td headers="stp3" class="vevent"><abbr class="dtstart" title="2008-03-23T07:05:00-0400">07:05</abbr></td>
+						<td headers="stp3" class="vevent"><abbr class="dtstart" title="2008-03-23T07:11:00-0400">07:11</abbr></td>
+						<td headers="stp3" class="vevent"><abbr class="dtstart" title="2008-03-23T07:17:00-0400">07:17</abbr></td>
+						<td headers="stp3" class="vevent"><abbr class="dtstart" title="2008-03-23T07:23:00-0400">07:23</abbr></td>
+						<td headers="stp3" class="vevent"><abbr class="dtstart" title="2008-03-23T07:29:00-0400">07:29</abbr></td>
+						<td headers="stp3" class="vevent"><abbr class="dtstart" title="2008-03-23T07:35:00-0400">07:35</abbr></td>
+						<td headers="stp3" class="vevent"><abbr class="dtstart" title="2008-03-23T07:41:00-0400">07:41</abbr></td>
+						<td headers="stp3" class="vevent"><abbr class="dtstart" title="2008-03-23T07:47:00-0400">07:47</abbr></td>
+						<td headers="stp3" class="vevent"><abbr class="dtstart" title="2008-03-23T07:53:00-0400">07:53</abbr></td>
+					</tr>
+					<tr class="hCalendar">
+						<th scope="row" class="vcard" id="stp4"><div class="fn org summary"><a class="url" href="http://www.wmata.com/metrorail/Stations/station.cfm?station=93">Ronald Reagan Washington National Airport</a><span class="hide"> Metro Station</span></div><abbr class="geo adr location" title="38.852035;-77.053447"><em><span class="street-address">2400 S. Smith Blvd.</span> <div><span class="locality">Arlington</span>, <span class="region">VA</span> <span class="postal-code">22202</span></div></em></abbr></th>
+						<td headers="stp4" class="vevent"><abbr class="dtstart" title="2008-03-23T07:10:00-0400">07:10</abbr></td>
+						<td headers="stp4" class="vevent"><abbr class="dtstart" title="2008-03-23T07:16:00-0400">07:16</abbr></td>
+						<td headers="stp4" class="vevent"><abbr class="dtstart" title="2008-03-23T07:22:00-0400">07:22</abbr></td>
+						<td headers="stp4" class="vevent"><abbr class="dtstart" title="2008-03-23T07:28:00-0400">07:28</abbr></td>
+						<td headers="stp4" class="vevent"><abbr class="dtstart" title="2008-03-23T07:34:00-0400">07:34</abbr></td>
+						<td headers="stp4" class="vevent"><abbr class="dtstart" title="2008-03-23T07:40:00-0400">07:40</abbr></td>
+						<td headers="stp4" class="vevent"><abbr class="dtstart" title="2008-03-23T07:46:00-0400">07:46</abbr></td>
+						<td headers="stp4" class="vevent"><abbr class="dtstart" title="2008-03-23T07:52:00-0400">07:52</abbr></td>
+						<td headers="stp4" class="vevent"><abbr class="dtstart" title="2008-03-23T07:58:00-0400">07:58</abbr></td>
+					</tr>
+					<tr class="hCalendar">
+						<th scope="row" class="vcard" id="stp5"><div class="fn org summary"><a class="url" href="http://www.wmata.com/metrorail/Stations/station.cfm?station=45">Crystal City</a><span class="hide"> Metro Station</span></div><abbr class="geo adr location" title="38.8556723;-77.051896"><em><span class="street-address">1750 South Clark St.</span> <div><span class="locality">Arlington</span>, <span class="region">VA</span> <span class="postal-code">22202</span></div></em></abbr></th>
+						<td headers="stp5" class="vevent"><abbr class="dtstart" title="2008-03-23T07:11:00-0400">07:11</abbr></td>
+						<td headers="stp5" class="vevent"><abbr class="dtstart" title="2008-03-23T07:17:00-0400">07:17</abbr></td>
+						<td headers="stp5" class="vevent"><abbr class="dtstart" title="2008-03-23T07:23:00-0400">07:23</abbr></td>
+						<td headers="stp5" class="vevent"><abbr class="dtstart" title="2008-03-23T07:29:00-0400">07:29</abbr></td>
+						<td headers="stp5" class="vevent"><abbr class="dtstart" title="2008-03-23T07:35:00-0400">07:35</abbr></td>
+						<td headers="stp5" class="vevent"><abbr class="dtstart" title="2008-03-23T07:41:00-0400">07:41</abbr></td>
+						<td headers="stp5" class="vevent"><abbr class="dtstart" title="2008-03-23T07:47:00-0400">07:47</abbr></td>
+						<td headers="stp5" class="vevent"><abbr class="dtstart" title="2008-03-23T07:53:00-0400">07:53</abbr></td>
+						<td headers="stp5" class="vevent"><abbr class="dtstart" title="2008-03-23T07:59:00-0400">07:59</abbr></td>
+					</tr>
+					<tr class="hCalendar">
+						<th scope="row" class="vcard" id="stp6"><div class="fn org summary"><a class="url" href="http://www.wmata.com/metrorail/Stations/station.cfm?station=44">Pentagon City</a><span class="hide"> Metro Station</span></div><abbr class="geo adr location" title="38.862332;-77.059728"><em><span class="street-address">1250 South Hayes St.</span> <div><span class="locality">Arlington</span>, <span class="region">VA</span> <span class="postal-code">22202</span></div></em></abbr></th>
+						<td headers="stp6" class="vevent"><abbr class="dtstart" title="2008-03-23T07:13:00-0400">07:13</abbr></td>
+						<td headers="stp6" class="vevent"><abbr class="dtstart" title="2008-03-23T07:19:00-0400">07:19</abbr></td>
+						<td headers="stp6" class="vevent"><abbr class="dtstart" title="2008-03-23T07:25:00-0400">07:25</abbr></td>
+						<td headers="stp6" class="vevent"><abbr class="dtstart" title="2008-03-23T07:31:00-0400">07:31</abbr></td>
+						<td headers="stp6" class="vevent"><abbr class="dtstart" title="2008-03-23T07:37:00-0400">07:37</abbr></td>
+						<td headers="stp6" class="vevent"><abbr class="dtstart" title="2008-03-23T07:43:00-0400">07:43</abbr></td>
+						<td headers="stp6" class="vevent"><abbr class="dtstart" title="2008-03-23T07:49:00-0400">07:49</abbr></td>
+						<td headers="stp6" class="vevent"><abbr class="dtstart" title="2008-03-23T07:55:00-0400">07:55</abbr></td>
+						<td headers="stp6" class="vevent"><abbr class="dtstart" title="2008-03-23T08:01:00-0400">08:01</abbr></td>
+					</tr>
+					<tr class="hCalendar">
+						<th scope="row" class="vcard" id="stp7"><div class="fn org summary"><a class="url" href="http://www.wmata.com/metrorail/Stations/station.cfm?station=43">Pentagon</a><span class="hide"> Metro Station</span></div><abbr class="geo adr location" title="38.852035;-77.053447"><em><span class="street-address">2 South Rotary Road</span> <div><span class="locality">Arlington</span>, <span class="region">VA</span> <span class="postal-code">22202</span></div></em></abbr></th>
+						<td headers="stp7" class="vevent"><abbr class="dtstart" title="2008-03-23T07:15:00-0400">07:15</abbr></td>
+						<td headers="stp7" class="vevent"><abbr class="dtstart" title="2008-03-23T07:21:00-0400">07:21</abbr></td>
+						<td headers="stp7" class="vevent"><abbr class="dtstart" title="2008-03-23T07:27:00-0400">07:27</abbr></td>
+						<td headers="stp7" class="vevent"><abbr class="dtstart" title="2008-03-23T07:33:00-0400">07:33</abbr></td>
+						<td headers="stp7" class="vevent"><abbr class="dtstart" title="2008-03-23T07:39:00-0400">07:39</abbr></td>
+						<td headers="stp7" class="vevent"><abbr class="dtstart" title="2008-03-23T07:45:00-0400">07:45</abbr></td>
+						<td headers="stp7" class="vevent"><abbr class="dtstart" title="2008-03-23T07:51:00-0400">07:51</abbr></td>
+						<td headers="stp7" class="vevent"><abbr class="dtstart" title="2008-03-23T07:57:00-0400">07:57</abbr></td>
+						<td headers="stp7" class="vevent"><abbr class="dtstart" title="2008-03-23T08:03:00-0400">08:03</abbr></td>
+					</tr>
+					<tr class="hCalendar">
+						<th scope="row" class="vcard" id="stp8"><div class="fn org summary"><a class="url" href="http://www.wmata.com/metrorail/Stations/station.cfm?station=82">L'Enfant Plaza</a><span class="hide"> Metro Station</span></div><abbr class="geo adr location" title="38.886593;-77.020923"><em><span class="street-address">600 Maryland Ave., SW</span> <div><span class="locality">Washington</span>, <span class="region">DC</span> <span class="postal-code">20024</span></div></em></abbr></th>
+						<td headers="stp8" class="vevent"><abbr class="dtstart" title="2008-03-23T07:20:00-0400">07:20</abbr></td>
+						<td headers="stp8" class="vevent"><abbr class="dtstart" title="2008-03-23T07:26:00-0400">07:26</abbr></td>
+						<td headers="stp8" class="vevent"><abbr class="dtstart" title="2008-03-23T07:32:00-0400">07:32</abbr></td>
+						<td headers="stp8" class="vevent"><abbr class="dtstart" title="2008-03-23T07:39:00-0400">07:39</abbr></td>
+						<td headers="stp8" class="vevent"><abbr class="dtstart" title="2008-03-23T07:44:00-0400">07:44</abbr></td>
+						<td headers="stp8" class="vevent"><abbr class="dtstart" title="2008-03-23T07:50:00-0400">07:50</abbr></td>
+						<td headers="stp8" class="vevent"><abbr class="dtstart" title="2008-03-23T07:56:00-0400">07:56</abbr></td>
+						<td headers="stp8" class="vevent"><abbr class="dtstart" title="2008-03-23T08:02:00-0400">08:02</abbr></td>
+						<td headers="stp8" class="vevent"><abbr class="dtstart" title="2008-03-23T08:08:00-0400">08:08</abbr></td>
+					</tr>
+					<tr class="hCalendar">
+						<th scope="row" class="vcard" id="stp9"><div class="fn org summary"><a class="url" href="http://www.wmata.com/metrorail/Stations/station.cfm?station=81">Archives - Navy Memorial - Penn Quarter</a><span class="hide"> Metro Station</span></div><abbr class="geo adr location" title="38.893646;-77.02284"><em><span class="street-address">701 Pennsylvania Ave., NW</span> <div><span class="locality">Washington</span>, <span class="region">DC</span> <span class="postal-code">20004</span></div></em></abbr></th>
+						<td headers="stp9" class="vevent"><abbr class="dtstart" title="2008-03-23T07:23:00-0400">07:23</abbr></td>
+						<td headers="stp9" class="vevent"><abbr class="dtstart" title="2008-03-23T07:29:00-0400">07:29</abbr></td>
+						<td headers="stp9" class="vevent"><abbr class="dtstart" title="2008-03-23T07:35:00-0400">07:35</abbr></td>
+						<td headers="stp9" class="vevent"><abbr class="dtstart" title="2008-03-23T07:42:00-0400">07:42</abbr></td>
+						<td headers="stp9" class="vevent"><abbr class="dtstart" title="2008-03-23T07:47:00-0400">07:47</abbr></td>
+						<td headers="stp9" class="vevent"><abbr class="dtstart" title="2008-03-23T07:50:00-0400">07:53</abbr></td>
+						<td headers="stp9" class="vevent"><abbr class="dtstart" title="2008-03-23T07:59:00-0400">07:59</abbr></td>
+						<td headers="stp9" class="vevent"><abbr class="dtstart" title="2008-03-23T08:05:00-0400">08:05</abbr></td>
+						<td headers="stp9" class="vevent"><abbr class="dtstart" title="2008-03-23T08:11:00-0400">08:11</abbr></td>
+					</tr>
+					<tr class="hCalendar">
+						<th scope="row" class="vcard" id="stp10"><div class="fn org summary"><a class="url" href="http://www.wmata.com/metrorail/Stations/station.cfm?station=21">Gallery Place - Chinatown</a><span class="hide"> Metro Station</span></div><abbr class="geo adr location" title="38.899799;-77.0205"><em><span class="street-address">630 H St., NW</span> <div><span class="locality">Washington</span>, <span class="region">DC</span> <span class="postal-code">20001</span></div></em></abbr></th>
+						<td headers="stp10" class="vevent"><abbr class="dtstart" title="2008-03-23T07:25:00-0400">07:25</abbr></td>
+						<td headers="stp10" class="vevent"><abbr class="dtstart" title="2008-03-23T07:31:00-0400">07:31</abbr></td>
+						<td headers="stp10" class="vevent"><abbr class="dtstart" title="2008-03-23T07:37:00-0400">07:37</abbr></td>
+						<td headers="stp10" class="vevent"><abbr class="dtstart" title="2008-03-23T07:44:00-0400">07:44</abbr></td>
+						<td headers="stp10" class="vevent"><abbr class="dtstart" title="2008-03-23T07:49:00-0400">07:49</abbr></td>
+						<td headers="stp10" class="vevent"><abbr class="dtstart" title="2008-03-23T07:55:00-0400">07:55</abbr></td>
+						<td headers="stp10" class="vevent"><abbr class="dtstart" title="2008-03-23T08:01:00-0400">08:01</abbr></td>
+						<td headers="stp10" class="vevent"><abbr class="dtstart" title="2008-03-23T08:07:00-0400">08:07</abbr></td>
+						<td headers="stp10" class="vevent"><abbr class="dtstart" title="2008-03-23T08:13:00-0400">08:13</abbr></td>
+					</tr>
+					<tr class="hCalendar">
+						<th scope="row" class="vcard" id="stp11"><div class="fn org summary"><a class="url" href="http://www.wmata.com/metrorail/Stations/station.cfm?station=70">Mt Vernon Sq 7th St - Convention Center</a><span class="hide"> Metro Station</span></div><abbr class="geo adr location" title="38.905799;-77.013442"><em><span class="street-address">700 M St., NW</span> <div><span class="locality">Washington</span>, <span class="region">DC</span> <span class="postal-code">20001</span></div></em></abbr></th>
+						<td headers="stp11" class="vevent"><abbr class="dtstart" title="2008-03-23T07:27:00-0400">07:27</abbr></td>
+						<td headers="stp11" class="vevent"><abbr class="dtstart" title="2008-03-23T07:33:00-0400">07:33</abbr></td>
+						<td headers="stp11" class="vevent"><abbr class="dtstart" title="2008-03-23T07:39:00-0400">07:39</abbr></td>
+						<td headers="stp11" class="vevent"><abbr class="dtstart" title="2008-03-23T07:46:00-0400">07:46</abbr></td>
+						<td headers="stp11" class="vevent"><abbr class="dtstart" title="2008-03-23T07:51:00-0400">07:51</abbr></td>
+						<td headers="stp11" class="vevent"><abbr class="dtstart" title="2008-03-23T07:57:00-0400">07:57</abbr></td>
+						<td headers="stp11" class="vevent"><abbr class="dtstart" title="2008-03-23T08:03:00-0400">08:03</abbr></td>
+						<td headers="stp11" class="vevent"><abbr class="dtstart" title="2008-03-23T08:09:00-0400">08:09</abbr></td>
+						<td headers="stp11" class="vevent"><abbr class="dtstart" title="2008-03-23T08:15:00-0400">08:15</abbr></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="footer">
+			<!--#include file="inc/footer.html"-->
+		</div>
+	</div>
+<script src="js/google.js"></script>
+</body>
+</html>
