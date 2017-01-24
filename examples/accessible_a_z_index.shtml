@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>List of Washington, DC. Libraries</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+	<link rel="stylesheet" href="css/basic.css" />
+	<style type="text/css">
+		#learn a { 
+			border: 1px solid #ccc;
+			border-radius: 1em;
+			-moz-border-radius: 1em;
+			-webkit-border-radius: 1em;
+			padding-left: .75em;
+			margin-left: -.75em;
+		}
+	</style>
+</head>
+<body>
+	<div class="hide">
+		<a href="#maincontent">Skip to Main Content</a>
+	</div>
+	<div id="wrap">
+		<div id="header">
+			<!--#include file="inc/header.html"-->
+		</div>
+		<div id="main_content">
+			<div id="sidebar" role="navigation">
+				<!--#include file="inc/nav.html"-->
+			</div>
+			<div id="content" role="main">
+				<h3 id="maincontent" tabindex="-1">Accessible Header Example</h3>
+				<h4>List of Washington, DC. Libraries</h4>
+				<p>The following &ldquo;<span class="bold">A - Z Index</span>&rdquo; list contains all the current libraries in the Washington, DC system, with links to their information pages and they are in alphabetical order.</p>
+				<p class="hide">The following single lettered links are used to skip down the page to section that has items you might be looking for.</p>
+				<div class="alpha" role="navigation">
+					<a href="#A">A</a>
+					<a href="#B">B</a>
+					<a href="#C">C</a>
+					<a href="#D">D</a>
+					<a href="#G">G</a>
+					<a href="#F">F</a>
+					<a href="#J">J</a>
+					<a href="#L">L</a>
+					<a href="#M">M</a>
+					<a href="#N">N</a>
+					<a href="#P">P</a>
+					<a href="#R">R</a>
+					<a href="#S">S</a>
+					<a href="#T">T</a>
+					<a href="#W">W</a>
+				</div>
+				<h4 id="A" tabindex="-1" class="title">A<span class="hide"> - Lettered Items</span> - <a href="#maincontent"><span class="hide">Return to </span>top<span class="hide"> of main content</span></a></h4>
+				<ul>
+					<li><a href="http://dclibrary.org/dcpl/cwp/view.asp?a=1266&amp;q=563657">Anacostia Interim Library</a></li>
+				</ul>
+				<h4 id="B" tabindex="-1" class="title">B<span class="hide"> - Lettered Items</span> - <a href="#maincontent"><span class="hide">Return to </span>top<span class="hide"> of main content</span></a></h4>
+				<ul>
+					<li><a href="http://dclibrary.org/dcpl/cwp/view.asp?a=1266&amp;q=565743">Benning Interim Library</a></li>
+				</ul>
+				<h4 id="C" tabindex="-1" class="title">C<span class="hide"> - Lettered Items</span> - <a href="#maincontent"><span class="hide">Return to </span>top<span class="hide"> of main content</span></a></h4>
+				<ul>
+					<li><a href="http://dclibrary.org/dcpl/cwp/view.asp?a=1266&amp;q=564217">Capitol View</a></li>
+					<li><a href="http://dclibrary.org/dcpl/cwp/view.asp?a=1266&amp;q=563881">Chevy Chase</a></li>
+					<li><a href="http://dclibrary.org/dcpl/cwp/view.asp?a=1266&amp;q=563888">Cleveland Park</a></li>
+				</ul>
+				<h4 id="D" tabindex="-1" class="title">D<span class="hide"> - Lettered Items</span> - <a href="#maincontent"><span class="hide">Return to </span>top<span class="hide"> of main content</span></a></h4>
+				<ul>
+					<li><a href="http://dclibrary.org/dcpl/cwp/view.asp?a=1266&amp;q=563916">Deanwood</a></li>
+				</ul>
+				<h4 id="F" tabindex="-1" class="title">F<span class="hide"> - Lettered Items</span> - <a href="#maincontent"><span class="hide">Return to </span>top<span class="hide"> of main content</span></a></h4>
+				<ul>
+					<li><a href="http://dclibrary.org/dcpl/cwp/view.asp?a=1266&amp;q=563944">Francis A. Gregory</a></li>
+				</ul>
+				<h4 id="G" tabindex="-1" class="title">G<span class="hide"> - Lettered Items</span> - <a href="#maincontent"><span class="hide">Return to </span>top<span class="hide"> of main content</span></a></h4>
+				<ul>
+					<li><a href="http://dclibrary.org/dcpl/cwp/view.asp?a=1266&amp;q=563972">Georgetown Hi-Tech Bookmobile</a></li>
+				</ul>
+				<h4 id="J" tabindex="-1" class="title">J<span class="hide"> - Lettered Items</span> - <a href="#maincontent"><span class="hide">Return to </span>top<span class="hide"> of main content</span></a></h4>
+				<ul>
+					<li><a href="http://dclibrary.org/dcpl/cwp/view.asp?a=1266&amp;q=565778">Juanita E. Thornton/Shepherd Park</a></li>
+				</ul>
+				<h4 id="L" tabindex="-1" class="title">L<span class="hide"> - Lettered Items</span> - <a href="#maincontent"><span class="hide">Return to </span>top<span class="hide"> of main content</span></a></h4>
+				<ul>
+					<li><a href="http://dclibrary.org/dcpl/cwp/view.asp?a=1266&amp;q=565785">Lamond-Riggs</a></li>
+					<li><a href="http://dclibrary.org/dcpl/cwp/view.asp?a=1266&amp;q=565792">Langston</a></li>
+				</ul>
+				<h4 id="M" tabindex="-1" class="title">M<span class="hide"> - Lettered Items</span> - <a href="#maincontent"><span class="hide">Return to </span>top<span class="hide"> of main content</span></a></h4>
+				<ul>
+					<li><a href="http://dclibrary.org/dcpl/cwp/view.asp?a=1266&amp;q=565330">Martin Luther King, Jr. Memorial Library</a></li>
+					<li><a href="http://dclibrary.org/dcpl/cwp/view.asp?a=1266&amp;q=565806">Mt. Pleasant</a></li>
+				</ul>
+				<h4 id="N" tabindex="-1" class="title">N<span class="hide"> - Lettered Items</span> - <a href="#maincontent"><span class="hide">Return to </span>top<span class="hide"> of main content</span></a></h4>
+				<ul>
+					<li><a href="http://dclibrary.org/dcpl/cwp/view.asp?a=1266&amp;q=565799">Northeast</a></li>
+				</ul>
+				<h4 id="P" tabindex="-1" class="title">P<span class="hide"> - Lettered Items</span> - <a href="#maincontent"><span class="hide">Return to </span>top<span class="hide"> of main content</span></a></h4>
+				<ul>
+					<li><a href="http://dclibrary.org/dcpl/cwp/view.asp?a=1266&amp;q=566002">Palisades</a></li>
+					<li><a href="http://dclibrary.org/dcpl/cwp/view.asp?a=1266&amp;q=566009">Parklands-Turner</a></li>
+					<li><a href="http://dclibrary.org/dcpl/cwp/view.asp?a=1266&amp;q=566023">Petworth</a></li>
+				</ul>
+				<h4 id="R" tabindex="-1" class="title">R<span class="hide"> - Lettered Items</span> - <a href="#maincontent"><span class="hide">Return to </span>top<span class="hide"> of main content</span></a></h4>
+				<ul>
+					<li><a href="http://dclibrary.org/dcpl/cwp/view.asp?a=1266&amp;q=566030">R. L. Christian</a></li>
+				</ul>
+				<h4 id="S" tabindex="-1" class="title">S<span class="hide"> - Lettered Items</span> - <a href="#maincontent"><span class="hide">Return to </span>top<span class="hide"> of main content</span></a></h4>
+				<ul>
+					<li><a href="http://dclibrary.org/dcpl/cwp/view.asp?a=1266&amp;q=566037">Southeast</a></li>
+					<li><a href="http://dclibrary.org/dcpl/cwp/view.asp?a=1266&amp;q=566051">Southwest</a></li>
+					<li><a href="http://dclibrary.org/dcpl/cwp/view.asp?a=1266&amp;q=563797">Sursum Corda</a></li>
+				</ul>
+				<h4 id="T" tabindex="-1" class="title">T<span class="hide"> - Lettered Items</span> - <a href="#maincontent"><span class="hide">Return to </span>top<span class="hide"> of main content</span></a></h4>
+				<ul>
+					<li><a href="http://dclibrary.org/dcpl/cwp/view.asp?a=1266&amp;q=563839">Takoma Park</a></li>
+					<li><a href="http://dclibrary.org/dcpl/cwp/view.asp?a=1266&amp;q=563874">Tenley-Friendship Interim Library</a></li>
+				</ul>
+				<h4 id="W" tabindex="-1" class="title">W<span class="hide"> - Lettered Items</span> - <a href="#maincontent"><span class="hide">Return to </span>top<span class="hide"> of main content</span></a></h4>
+				<ul>
+					<li><a href="http://dclibrary.org/dcpl/cwp/view.asp?a=1266&amp;q=565834">Washington Highlands</a></li>
+					<li><a href="http://dclibrary.org/dcpl/cwp/view.asp?a=1266&amp;q=564042">Watha T. Daniel-Shaw Interim Library</a></li>
+					<li><a href="http://dclibrary.org/dcpl/cwp/view.asp?a=1266&amp;q=565827">West End</a></li>
+					<li><a href="http://dclibrary.org/dcpl/cwp/view.asp?a=1266&amp;q=565820">Woodridge</a></li>
+				</ul>
+				<div class="alpha" role="navigation">
+					<a href="#A">A</a>
+					<a href="#B">B</a>
+					<a href="#C">C</a>
+					<a href="#D">D</a>
+					<a href="#G">G</a>
+					<a href="#F">F</a>
+					<a href="#J">J</a>
+					<a href="#L">L</a>
+					<a href="#M">M</a>
+					<a href="#N">N</a>
+					<a href="#P">P</a>
+					<a href="#R">R</a>
+					<a href="#S">S</a>
+					<a href="#T">T</a>
+					<a href="#W">W</a>
+					 - <a href="#maincontent"><em>Return to </em>Top<em> of Main Content</em></a>
+				</div>
+				<p><a href="accessible_test_pages.shtml">Return to main page<a/></p>
+			</div> 
+		</div>
+		<div id="footer">
+			<!--#include file="inc/footer.html"-->
+		</div>
+	</div>
+<script src="js/google.js"></script>
+</body>
+</html>
