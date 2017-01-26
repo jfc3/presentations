@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Testing Different Pages for Accessibility</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+	<link rel="stylesheet" href="css/basic.css" />
+	<style type="text/css">
+		#learn a {
+			border: 1px solid #ccc;
+			border-radius: 1em;
+			-moz-border-radius: 1em;
+			-webkit-border-radius: 1em;
+			padding-left: .75em;
+			margin-left: -.75em;
+		}
+	</style>
+</head>
+<body>
+	<div class="hide">
+		<a href="#maincontent">Skip to Main Content</a>
+	</div>
+	<div id="wrap">
+		<div id="header">
+			<!--#include file="inc/header.html"-->
+		</div>
+		<div id="main_content">
+			<div id="sidebar">
+				<!--#include file="inc/nav.html"-->
+			</div>
+			<div id="content" role="main">
+				<h3 id="maincontent" tabindex="-1">Accessibility Test Pages</h3>
+				<h4>A - Z Index Examples</h4>
+				<ul>
+					<li><a href="non_accessible_a_z_index.shtml">A - Z Index Example (Less Accessible)</a></li>
+					<li><a href="accessible_a_z_index.shtml">A - Z Index Example (Accessible)</a></li>
+				</ul>
+
+				<h4>Photo Example</h4>
+				<ul>
+					<li><a href="photo_example.shtml">Photo Example (Less Accessible and Accessible)</a></li>
+				</ul>
+							
+				<h4>Form Examples</h4>
+				<ul>
+					<li><a href="non_accessible_form_example.shtml">Form Example (Less Accessible)</a></li>
+					<li><a href="accessible_form_example.shtml">Form Example (Accessible)</a></li>
+				</ul>
+
+				<h4>Search Examples</h4>
+				<ul>
+					<li><a href="non_accessible_search_example.html">Search Example (Less Accessible)</a></li>
+					<li><a href="accessible_search_example.html">Search Example (Accessible)</a></li>
+					<li><a href="https://www.google.com/">Google Search</a></li>				
+					<li><a href="https://www.google.com/accessibility/">Accessible Google Search</a></li>	
+				</ul>
+
+				<h4>Video Player Examples</h4>
+				<ul>
+					<li><a href="https://www.army.mil/">First Video Example</a></li>
+					<li><a href="https://www.youtube.com/user/usarmynews">Second Video Example</a></li>
+				</ul>		
+			</div>
+		</div>
+		<div id="footer">
+			<!--#include file="inc/footer.html"-->
+		</div>
+	</div>
+<script src="js/google.js"></script>
+</body>
+</html>
