@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Testing an Ordered List (OL) in a Form - John F Croston III has worked on - jfc iii</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+	<link rel="stylesheet" href="css/basic.css" />
+	<style>
+		#learn a {
+			border: 1px solid #ccc;
+			border-radius: 1em;
+			-moz-border-radius: 1em;
+			-webkit-border-radius: 1em;
+			padding-left: .75em;
+			margin-left: -.75em;
+		}
+		.highlight p { background: #eee; padding: 1.5em 2.5em;}
+		fieldset { width:50%; margin: 1em 0;}
+		label { display: block; text-align: left;}
+		input { margin-left: .25em;}
+	</style>
+</head>
+<body>
+	<div class="hide">
+		<a href="#maincontent">Skip to Main Content</a>
+	</div>
+	<div id="wrap">
+		<div id="header">
+			<!--#include file="inc/header.html"-->
+		</div>
+		<div id="main_content">
+			<div id="sidebar">
+				<!--#include file="inc/nav.html"-->
+			</div>
+			<div id="content" role="main">
+				<h3 id="maincontent" tabindex="-1">Ordered List (OL) in a Form</h3>
+				<p>The reason for this page is used to show that if you place form elements in an un-ordered list or an ordered list screen readers will tell you how many items are in the list.</p>
+				<p>There is no &ldquo;Submit&rdquo; button for this form, since it&lsquo;s an example of an un-order list in a fieldset.</p>
+				<form>
+					<fieldset>
+						<legend>Personal Information</legend>
+						<ol>
+							<li>
+								<label for="first_name">First Name</label>
+								<input name="first_name" id="first_name" />
+							</li>
+							<li>
+								<label for="last_name">Last Name</label>
+								<input name="last_name" id="last_name" />
+							</li>
+							<li>
+								<label for="company">Company</label>
+								<input name="company" id="company" />
+							</li>
+							<li>
+								<label for="title">Title</label>
+								<input name="title" id="title" />
+							</li>
+						</ol>
+					</fieldset>
+				</form>
+				<p>Below is the code that was used to create this form.</p>
+				<div class="highlight">
+					<p>
+						&lt;form&gt;<br />
+						&lt;fieldset&gt;<br />
+						&lt;legend&gt;Personal Information&lt;/legend&gt;<br />
+						&lt;ol&gt;<br />
+						&lt;li&gt;<br />
+						&lt;label for=&quot;first_name&quot;&gt;First Name&lt;/label&gt;<br />
+						&lt;input type=&quot;text&quot; name=&quot;first_name&quot; id=&quot;first_name&quot; /&gt;<br />
+						&lt;/li&gt;<br />
+						&lt;li&gt;<br />
+						&lt;label for=&quot;last_name&quot;&gt;Last Name&lt;/label&gt;<br />
+						&lt;input type=&quot;text&quot; name=&quot;last_name&quot; id=&quot;last_name&quot; /&gt;<br />
+						&lt;/li&gt;<br />
+						&lt;li&gt;<br />
+						&lt;label for=&quot;company&quot;&gt;Company&lt;/label&gt;<br />
+						&lt;input type=&quot;text&quot; name=&quot;company&quot; id=&quot;company&quot; /&gt;<br />
+						&lt;/li&gt;<br />
+						&lt;li&gt;<br />
+						&lt;label for=&quot;title&quot;&gt;Title&lt;/label&gt;<br />
+						&lt;input type=&quot;text&quot; name=&quot;title&quot; id=&quot;title&quot; /&gt;<br />
+						&lt;/li&gt;<br />
+						&lt;/ol&gt;<br />
+						&lt;/fieldset&gt;<br />
+						&lt;/form&gt;<br />
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<!--#include file="inc/footer.html"-->
+		</div>
+	</div>
+	<script src="js/google.js"></script>
+</body>
+</html>
