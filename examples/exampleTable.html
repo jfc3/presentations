@@ -1,339 +1,338 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Emploee List Table Example</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link rel="stylesheet" type="text/css" media="screen" href="css/basic.css" />
-	<script src="js/sorttable.js" type="text/javascript"></script>
+	<title>Employee List Table Example</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+	<link rel="stylesheet" href="css/basic.css" />
 	<style type="text/css">
-	<!--
-	#learn a {
-	color: #000;
-	background: #BEFF9E; /*	#ffc0cb; 	*/
-	}
-	-->
+		#learn a { color: #000; background: #BEFF9E;}
+		table { margin: 0 auto;}
+		.fn { background: #fff;}
+		.ltr1, .nbr1 { text-align: left;}
+		.ltr2, .nbr2 { text-align: center;}
+		.ltr3, .nbr3 { text-align: right;}
 	</style>
 </head>
 <body>
-<div class="hide">
-	<a href="#maincontent">Skip to Main Content</a>
-</div>
-<div id="wrap">
-	<div id="header">
-		<!--#include file="inc/header.html"-->
+	<div class="hide">
+		<a href="#maincontent">Skip to Main Content</a>
 	</div>
-	<div id="main_content" role="main">
-		<div id="content_t">
-			<h3 id="maincontent" tabindex="-1">Washington, DC. Public Libraries</h3>
-			<p>If you click on the table heading they will be sorted in either ascending or descending order.</p>
-			<table class="sortable" id="library_table" width="725px" align="center" summary="List of Washington, DC, libraries Fiscal record information, whcih contains library name, fiscal year, an indicator of whether the total of all the books, magizines, CDs, DVDs, etc. are greater than zero, and last updated date.">
-				<caption>List of Libraries Fiscal Record Information</caption>
-				<tr>
-					<th id="library_name" width="300px">Library Name</th>
-					<th id="fiscal_year" width="100px">Fiscal Year</th>
-					<th id="quarter" width="75px">Quarter</th>
-					<th id="zero" width="125px">Total > Zero</th>
-					<th id="last_updated" width="125px">Last Updated</th>
-				</tr>
+	<div id="wrap">
+		<div id="header">
+			<!--#include file="inc/header.html"-->
+		</div>
+		<div id="main_content" role="main">
+			<div id="content_t">
+				<h3 id="maincontent" tabindex="-1">Washington, DC. Public Libraries</h3>
+				<p>If you click on the table heading they will be sorted in either ascending or descending order.</p>
+				<table class="sortable" id="library_table" width="725px"summary="List of Washington, DC, libraries Fiscal record information, whcih contains library name, fiscal year, an indicator of whether the total of all the books, magizines, CDs, DVDs, etc. are greater than zero, and last updated date.">
+					<caption>List of Libraries Fiscal Record Information</caption>
+					<tr>
+						<th id="library_name" width="300px">Library Name</th>
+						<th id="fiscal_year" width="100px">Fiscal Year</th>
+						<th id="quarter" width="75px">Quarter</th>
+						<th id="zero" width="125px">Total > Zero</th>
+						<th id="last_updated" width="125px">Last Updated</th>
+					</tr>
 			
-				<tr>
-					<td headers="library_name">Anacostia Interim Library</td>
-					<td headers="fiscal_year" align="center">2007</td>
-					<td headers="quarter" align="center">4</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">12/4/2007</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Benning Interim Library</td>
-					<td headers="fiscal_year" class="stripe" align="center">2005</td>
-					<td headers="quarter" class="stripe" align="center">1</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">5/25/2004</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Benning Interim Library</td>
-					<td headers="fiscal_year" class="stripe" align="center">2005</td>
-					<td headers="quarter" class="stripe" align="center">2</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">5/25/2004</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Benning Interim Library</td>
-					<td headers="fiscal_year" class="stripe" align="center">2005</td>
-					<td headers="quarter" class="stripe" align="center">3</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">1/13/2005</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Benning Interim Library</td>
-					<td headers="fiscal_year" class="stripe" align="center">2005</td>
-					<td headers="quarter" class="stripe" align="center">4</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">1/13/2005</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Benning Interim Library</td>
-					<td headers="fiscal_year" align="center">2006</td>
-					<td headers="quarter" align="center">1</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">1/22/2007</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Benning Interim Library</td>
-					<td headers="fiscal_year" align="center">2006</td>
-					<td headers="quarter" align="center">2</td>
-					<td headers="zero" align="center" class="stripe bold">No</td>
-					<td headers="last_updated" align="right">7/18/2006</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Benning Interim Library</td>
-					<td headers="fiscal_year" align="center">2006</td>
-					<td headers="quarter" align="center">3</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">12/20/2006</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Benning Interim Library</td>
-					<td headers="fiscal_year" align="center">2006</td>
-					<td headers="quarter" align="center">4</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">12/20/2006</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Chevy Chase</td>
-					<td headers="fiscal_year" class="stripe" align="center">2004</td>
-					<td headers="quarter" class="stripe" align="center">4</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">10/27/2004</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Chevy Chase</td>
-					<td headers="fiscal_year" align="center">2007</td>
-					<td headers="quarter" align="center">1</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">9/26/2007</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Chevy Chase</td>
-					<td headers="fiscal_year" align="center">2007</td>
-					<td headers="quarter" align="center">4</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">9/26/2007</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Cleveland Park</td>
-					<td headers="fiscal_year" class="stripe" align="center">2003</td>
-					<td headers="quarter" class="stripe" align="center">1</td>
-					<td headers="zero" align="center" class="stripe bold">No</td>
-					<td headers="last_updated" align="right">5/12/2004</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Cleveland Park</td>
-					<td headers="fiscal_year" align="center">2004</td>
-					<td headers="quarter" align="center">4</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">12/15/2004</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Cleveland Park</td>
-					<td headers="fiscal_year" class="stripe" align="center">2005</td>
-					<td headers="quarter" class="stripe" align="center">4</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">6/21/2006</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Cleveland Park</td>
-					<td headers="fiscal_year" align="center">2006</td>
-					<td headers="quarter" align="center">4</td>
-					<td headers="zero" align="center" class="stripe bold">No</td>
-					<td headers="last_updated" align="right">6/21/2006</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Cleveland Park</td>
-					<td headers="fiscal_year" class="stripe" align="center">2007</td>
-					<td headers="quarter" class="stripe" align="center">4</td>
-					<td headers="zero" align="center" class="stripe bold">No</td>
-					<td headers="last_updated" align="right">9/28/2007</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Georgetown Hi-Tech Bookmobile</td>
-					<td headers="fiscal_year" align="center">2007</td>
-					<td headers="quarter" align="center">1</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">12/26/2007</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Georgetown Hi-Tech Bookmobile</td>
-					<td headers="fiscal_year" align="center">2007</td>
-					<td headers="quarter" align="center">2</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">12/29/2005</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Georgetown Hi-Tech Bookmobile</td>
-					<td headers="fiscal_year" align="center">2007</td>
-					<td headers="quarter" align="center">3</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">12/29/2005</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Georgetown Hi-Tech Bookmobile</td>
-					<td headers="fiscal_year" align="center">2007</td>
-					<td headers="quarter" align="center">4</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">12/29/2005</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Georgetown Hi-Tech Bookmobile</td>
-					<td headers="fiscal_year" class="stripe" align="center">2008</td>
-					<td headers="quarter" class="stripe" align="center">1</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">2/5/2008</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Georgetown Hi-Tech Bookmobile</td>
-					<td headers="fiscal_year" class="stripe" align="center">2008</td>
-					<td headers="quarter" class="stripe" align="center">2</td>
-					<td headers="zero" align="center" class="stripe bold">No</td>
-					<td headers="last_updated" align="right">2/15/2008</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Georgetown Hi-Tech Bookmobile</td>
-					<td headers="fiscal_year" class="stripe" align="center">2008</td>
-					<td headers="quarter" class="stripe" align="center">3</td>
-					<td headers="zero" align="center" class="stripe bold">No</td>
-					<td headers="last_updated" align="right">2/15/2008</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Juanita E. Thornton/Shepherd Park</td>
-					<td headers="fiscal_year" class="stripe" align="center">2006</td>
-					<td headers="quarter" class="stripe" align="center">4</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">2/4/2008</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Juanita E. Thornton/Shepherd Park</td>
-					<td headers="fiscal_year" align="center">2007</td>
-					<td headers="quarter" align="center">1</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">4/17/2007</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Juanita E. Thornton/Shepherd Park</td>
-					<td headers="fiscal_year" align="center">2007</td>
-					<td headers="quarter" align="center">2</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">4/17/2007</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Juanita E. Thornton/Shepherd Park</td>
-					<td headers="fiscal_year" align="center">2007</td>
-					<td headers="quarter" align="center">4</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">1/5/2008</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Martin Luther King, Jr. Memorial Library</td>
-					<td headers="fiscal_year" align="center">2004</td>
-					<td headers="quarter" align="center">4</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">5/30/2007</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Martin Luther King, Jr. Memorial Library</td>
-					<td headers="fiscal_year" class="stripe" align="center">2005</td>
-					<td headers="quarter" class="stripe" align="center">4</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">5/31/2007</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Martin Luther King, Jr. Memorial Library</td>
-					<td headers="fiscal_year" align="center">2006</td>
-					<td headers="quarter" align="center">4</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">1/23/2008</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Martin Luther King, Jr. Memorial Library</td>
-					<td headers="fiscal_year" class="stripe" align="center">2007</td>
-					<td headers="quarter" class="stripe" align="center">4</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">1/23/2008</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Mt. Pleasant</td>
-					<td headers="fiscal_year" align="center">2004</td>
-					<td headers="quarter" align="center">4</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">6/14/2006</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Mt. Pleasant</td>
-					<td headers="fiscal_year" class="stripe" align="center">2005</td>
-					<td headers="quarter" class="stripe" align="center">4</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">5/19/2006</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Mt. Pleasant</td>
-					<td headers="fiscal_year" align="center">2006</td>
-					<td headers="quarter" align="center">4</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">5/30/2007</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Mt. Pleasant</td>
-					<td headers="fiscal_year" class="stripe" align="center">2007</td>
-					<td headers="quarter" class="stripe" align="center">4</td>
-					<td headers="zero" align="center">Yes</td>
-					<td headers="last_updated" align="right">12/21/2007</td>
-				</tr>
-				<tr>
-					<td headers="library_name">Tenley-Friendship Interim Library</td>
-					<td headers="fiscal_year" align="center">2004</td>
-					<td headers="quarter" align="center">1</td>
-					<td headers="zero" align="center" class="stripe bold">No</td>
-					<td headers="last_updated" align="right">9/20/2004</td>
-				</tr>
-			</table>	
-			<h3>Table with Microformats</h3>
-			<p>This is an example from my "<a href="presentations/refresh dc/accessibility.html" title="Is Your Website Accessible by John F Crsoton III">Is Your Website Accessible</a>" presetnation. Shows how you should build a tabl and make it accessible along with having hCard Microformats in here too.</p>
-			<p>If you click on the table heading they will be sorted in either ascending or descending order.</p>
-			<table class="sortable" id="user_table" width="725px" summary="The number of employees and the foundation year of some imaginary companies."> 
-				<caption>Table 1: Employee List</caption> 
-				<tr> 
-					<th id="employee">Employee Name</th> 
-					<th id="email">E-mail</th> 
-					<th id="phone">Phone Number</th> 
-					<th id="url">Website</th> 
-				</tr> 
-				<tr class="vcard" valign="top"> 
-					<td headers="employee" class="fn n"><span class="given-name">John</span> <span class="additionl-name">F</span> <span class="family-name">Croston</span> <span class="honorific-suffixes">III</span></td> 
-					<td headers="email" class="email">jfciii@jfciii.com</td> 
-					<td headers="phone" class="tel"><span class="type"><em>work</em></span><span class="value">703-555-1212</span></td> 
-					<td headers="url" class="org url"><a class="org" href="http://jfciii.com">jfciii.com</a></td> 
-				</tr> 
-				<tr class="vcard" valign="top"> 
-					<td headers="employee" class="fn n"><span class="given-name">Mickey</span> <span class="family-name">Mouse</span></td> 
-					<td headers="email" class="email">mickey@disney.com</td> 
-					<td headers="phone" class="tel"><span class="type"><em>work</em></span><span class="value">407-555-1212</span></td> 
-					<td headers="url" class="org url"><a class="org" href="http://disney.com" title="Walt Disney World">Walt Disney World</a></td> 
-				</tr> 
-				<tr class="vcard" valign="top"> 
-					<td headers="employee" class="fn n"><span class="given-name">Dude</span>  - <span class="family-name">The Big Lebowski</span></td> 
-					<td headers="email" class="email">dude@dude.com</td> 
-					<td headers="phone" class="tel"><span class="type"><em>work</em></span><span class="value">407-555-1212</span></td> 
-					<td headers="url" class="org url"><a class="org" href="http://amf.com" title="AMF Bowling">AMF Bowling</a></td> 
-				</tr> 
-			</table> 
-		</div> 
+					<tr>
+						<td headers="library_name">Anacostia Interim Library</td>
+						<td headers="fiscal_year" class="nbr2">2007</td>
+						<td headers="quarter" class="nbr2">4</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">12/4/2007</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Benning Interim Library</td>
+						<td headers="fiscal_year" class="stripe nbr2">2005</td>
+						<td headers="quarter" class="stripe nbr2">1</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">5/25/2004</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Benning Interim Library</td>
+						<td headers="fiscal_year" class="stripe nbr2">2005</td>
+						<td headers="quarter" class="stripe nbr2">2</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">5/25/2004</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Benning Interim Library</td>
+						<td headers="fiscal_year" class="stripe nbr2">2005</td>
+						<td headers="quarter" class="stripe nbr2">3</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">1/13/2005</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Benning Interim Library</td>
+						<td headers="fiscal_year" class="stripe nbr2">2005</td>
+						<td headers="quarter" class="stripe nbr2">4</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">1/13/2005</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Benning Interim Library</td>
+						<td headers="fiscal_year" class="nbr2">2006</td>
+						<td headers="quarter" class="nbr2">1</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">1/22/2007</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Benning Interim Library</td>
+						<td headers="fiscal_year" class="nbr2">2006</td>
+						<td headers="quarter" class="nbr2">2</td>
+						<td headers="zero" class="ltr2 stripe bold">No</td>
+						<td headers="last_updated" class="ltr3">7/18/2006</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Benning Interim Library</td>
+						<td headers="fiscal_year" class="nbr2">2006</td>
+						<td headers="quarter" class="nbr2">3</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">12/20/2006</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Benning Interim Library</td>
+						<td headers="fiscal_year" class="nbr2">2006</td>
+						<td headers="quarter" class="nbr2">4</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">12/20/2006</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Chevy Chase</td>
+						<td headers="fiscal_year" class="stripe nbr2">2004</td>
+						<td headers="quarter" class="stripe nbr2">4</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">10/27/2004</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Chevy Chase</td>
+						<td headers="fiscal_year" class="nbr2">2007</td>
+						<td headers="quarter" class="nbr2">1</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">9/26/2007</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Chevy Chase</td>
+						<td headers="fiscal_year" class="nbr2">2007</td>
+						<td headers="quarter" class="nbr2">4</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">9/26/2007</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Cleveland Park</td>
+						<td headers="fiscal_year" class="stripe nbr2">2003</td>
+						<td headers="quarter" class="stripe nbr2">1</td>
+						<td headers="zero" class="ltr2 stripe bold">No</td>
+						<td headers="last_updated" class="ltr3">5/12/2004</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Cleveland Park</td>
+						<td headers="fiscal_year" class="nbr2">2004</td>
+						<td headers="quarter" class="nbr2">4</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">12/15/2004</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Cleveland Park</td>
+						<td headers="fiscal_year" class="stripe nbr2">2005</td>
+						<td headers="quarter" class="stripe nbr2">4</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">6/21/2006</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Cleveland Park</td>
+						<td headers="fiscal_year" class="nbr2">2006</td>
+						<td headers="quarter" class="nbr2">4</td>
+						<td headers="zero" class="ltr2 stripe bold">No</td>
+						<td headers="last_updated" class="ltr3">6/21/2006</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Cleveland Park</td>
+						<td headers="fiscal_year" class="stripe nbr2">2007</td>
+						<td headers="quarter" class="stripe nbr2">4</td>
+						<td headers="zero" class="ltr2 stripe bold">No</td>
+						<td headers="last_updated" class="ltr3">9/28/2007</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Georgetown Hi-Tech Bookmobile</td>
+						<td headers="fiscal_year" class="nbr2">2007</td>
+						<td headers="quarter" class="nbr2">1</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">12/26/2007</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Georgetown Hi-Tech Bookmobile</td>
+						<td headers="fiscal_year" class="nbr2">2007</td>
+						<td headers="quarter" class="nbr2">2</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">12/29/2005</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Georgetown Hi-Tech Bookmobile</td>
+						<td headers="fiscal_year" class="nbr2">2007</td>
+						<td headers="quarter" class="nbr2">3</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">12/29/2005</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Georgetown Hi-Tech Bookmobile</td>
+						<td headers="fiscal_year" class="nbr2"2007</td>
+						<td headers="quarter" class="nbr2">4</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">12/29/2005</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Georgetown Hi-Tech Bookmobile</td>
+						<td headers="fiscal_year" class="stripe nbr2">2008</td>
+						<td headers="quarter" class="stripe nbr2">1</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">2/5/2008</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Georgetown Hi-Tech Bookmobile</td>
+						<td headers="fiscal_year" class="stripe nbr2">2008</td>
+						<td headers="quarter" class="stripe nbr2">2</td>
+						<td headers="zero" class="ltr2 stripe bold">No</td>
+						<td headers="last_updated" class="ltr3">2/15/2008</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Georgetown Hi-Tech Bookmobile</td>
+						<td headers="fiscal_year" class="stripe nbr2">2008</td>
+						<td headers="quarter" class="stripe nbr2">3</td>
+						<td headers="zero" class="ltr2 stripe bold">No</td>
+						<td headers="last_updated" class="ltr3">2/15/2008</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Juanita E. Thornton/Shepherd Park</td>
+						<td headers="fiscal_year" class="stripe nbr2">2006</td>
+						<td headers="quarter" class="stripe nbr2">4</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">2/4/2008</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Juanita E. Thornton/Shepherd Park</td>
+						<td headers="fiscal_year" class="nbr2">2007</td>
+						<td headers="quarter" class="nbr2">1</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">4/17/2007</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Juanita E. Thornton/Shepherd Park</td>
+						<td headers="fiscal_year" class="nbr2">2007</td>
+						<td headers="quarter" class="nbr2">2</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">4/17/2007</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Juanita E. Thornton/Shepherd Park</td>
+						<td headers="fiscal_year" class="nbr2">2007</td>
+						<td headers="quarter" class="nbr2">4</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">1/5/2008</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Martin Luther King, Jr. Memorial Library</td>
+						<td headers="fiscal_year" class="nbr2">2004</td>
+						<td headers="quarter" class="nbr2">4</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">5/30/2007</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Martin Luther King, Jr. Memorial Library</td>
+						<td headers="fiscal_year" class="stripe nbr2">2005</td>
+						<td headers="quarter" class="stripe nbr2">4</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">5/31/2007</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Martin Luther King, Jr. Memorial Library</td>
+						<td headers="fiscal_year" class="nbr2">2006</td>
+						<td headers="quarter" class="nbr2">4</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">1/23/2008</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Martin Luther King, Jr. Memorial Library</td>
+						<td headers="fiscal_year" class="stripe nbr2">2007</td>
+						<td headers="quarter" class="stripe nbr2">4</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">1/23/2008</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Mt. Pleasant</td>
+						<td headers="fiscal_year" class="nbr2">2004</td>
+						<td headers="quarter" class="nbr2">4</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">6/14/2006</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Mt. Pleasant</td>
+						<td headers="fiscal_year" class="stripe nbr2">2005</td>
+						<td headers="quarter" class="stripe nbr2">4</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">5/19/2006</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Mt. Pleasant</td>
+						<td headers="fiscal_year" class="nbr2">2006</td>
+						<td headers="quarter" class="nbr2">4</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">5/30/2007</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Mt. Pleasant</td>
+						<td headers="fiscal_year" class="stripe nbr2">2007</td>
+						<td headers="quarter" class="stripe nbr2">4</td>
+						<td headers="zero" class="ltr2">Yes</td>
+						<td headers="last_updated" class="ltr3">12/21/2007</td>
+					</tr>
+					<tr>
+						<td headers="library_name">Tenley-Friendship Interim Library</td>
+						<td headers="fiscal_year" class="nbr2">2004</td>
+						<td headers="quarter" class="nbr2">1</td>
+						<td headers="zero" class="ltr2 stripe bold">No</td>
+						<td headers="last_updated" class="ltr3">9/20/2004</td>
+					</tr>
+				</table>	
+				<h3>Table with Microformats</h3>
+				<p>This is an example from my "<a href="presentations/refresh dc/accessibility.html" title="Is Your Website Accessible by John F Crsoton III">Is Your Website Accessible</a>" presetnation. Shows how you should build a tabl and make it accessible along with having hCard Microformats in here too.</p>
+				<p>If you click on the table heading they will be sorted in either ascending or descending order.</p>
+				<table class="sortable" id="user_table" width="725px" summary="The number of employees and the foundation year of some imaginary companies."> 
+					<caption>Table 1: Employee List</caption> 
+					<tr> 
+						<th scope="col">Employee Name</th> 
+						<th scope="col">E-mail</th> 
+						<th scope="col">Phone Number</th> 
+						<th scope="col">Website</th> 
+					</tr> 
+					<tr class="vcard"> 
+						<th scope="row" class="fn n"><span class="given-name">John</span> <span class="additionl-name">F</span> <span class="family-name">Croston</span> <span class="honorific-suffixes">III</span></th> 
+						<td class="email">jfciii@jfciii.com</td> 
+						<td class="tel"><span class="type"><em>work</em></span><span class="value">703-555-1212</span></td> 
+						<td class="org url"><a class="org" href="http://jfciii.com">jfciii.com</a></td> 
+					</tr> 
+					<tr class="vcard"> 
+						<th scope="row" class="fn n"><span class="given-name">Mickey</span> <span class="family-name">Mouse</span></th>
+						<td class="email">mickey@disney.com</td> 
+						<td class="tel"><span class="type"><em>work</em></span><span class="value">407-555-1212</span></td> 
+						<td class="org url"><a class="org" href="http://disney.com" title="Walt Disney World">Walt Disney World</a></td> 
+					</tr> 
+					<tr class="vcard"> 
+						<th scope="row" class="fn n"><span class="given-name">Dude</span>  - <span class="family-name">The Big Lebowski</span></th> 
+						<td class="email">dude@dude.com</td> 
+						<td  class="tel"><span class="type"><em>work</em></span><span class="value">407-555-1212</span></td> 
+						<td class="org url"><a class="org" href="http://amf.com" title="AMF Bowling">AMF Bowling</a></td> 
+					</tr> 
+				</table> 
+			</div> 
+		</div>
+		<div id="footer">
+			<!--#include file="inc/footer.html"-->
+		</div>
 	</div>
-	<div id="footer">
-		<!--#include file="inc/footer.html"-->
-	</div>
-</div>
-<script src="js/google.js"></script>
+	<script src="js/google.js"></script>
+	<script src="js/sorttable.js"></script>
 </body>
 </html>
