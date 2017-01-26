@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Accessibility Form Example</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+	<link rel="stylesheet" href="css/basic.css" />
+	<style>
+		fieldset.form_choices { border:0; margin-left: 6.75em; font-size:.9em;}
+		.form_choices label { width: 10em; font-size:1.15em;}
+		.form_choices legend{ font-size: 1.25em;}
+		.form_choices input{ width: 1.5em;}
+		form li { margin: 1em;}
+		input select { width: 20em;}
+		textarea { border: 1px solid #000; width: 11.25em; margin-left: 1em;}
+	</style>
+</head>
+<body>
+	<div class="hide">
+		<a href="#maincontent">Skip to Main Content</a>
+	</div>
+	<div id="wrap">
+		<div id="header">
+			<!--#include file="inc/header.html"-->
+		</div>
+	<div id="main_content">
+		<a name="maincontent"></a>
+			<h3 id="maincontent" tabindex="-1">Test Form</h3>
+			<form name="RequestForm" method="post" onsubmit="return checkContactsForm(this);" action="add_attendee.asp">
+				<fieldset>
+					<legend>Personal Information</legend>
+					<ol>
+						<li>
+							<p>Do you want your personal information visible to others, which would include address, phone numbers, e-mail address, and website information.</p>
+							<p>You can change this at a later time.</p>
+						</li>
+						<li>
+							<label for="first_name"><em aria-hidden="true">Required </em>First Name <em class="msg">You must enter a first name</em></label>
+							<input name="first_name" id="first_name" aria-required="true" /><span class="req"> *</span>
+						</li>
+						<li>
+							<label for="last_name"><em aria-hidden="true">Required </em>Last Name <em class="msg">You must enter a last name</em></label>
+							<input name="last_name" id="last_name" aria-required="true" /><span class="req"> *</span>
+						</li>
+						<li>
+							<label for="company">Company</label>
+							<input name="company" id="company" />
+						</li>
+						<li>
+							<label for="title">Title</label>
+							<input name="title" id="title" />
+						</li>
+						</li>
+							<label for="test">Notes</label>
+							<textarea rows="4" name="test" id="test"></textarea>
+						</li>
+						<li>
+							<label for="state">States</label>
+							<select name="state" id="state">
+								<option value="AZ">AZ</option>
+								<option value="CA">CA</option>
+								<option value="DC" selected="selected">DC</option>
+								<option value="WY">WY</option>
+							</select>
+						</li>
+					</ol>	
+				<fieldset class="form_choices">
+					<legend>Hide my information.</legend>
+					<ol>
+						<li>
+							<label for="visible_1">Yes</label>
+							<input type="radio" name="visible" id="visible_1" value="Yes" checked="checked" />
+						</li>
+						<li>
+							<label for="visible_2">No</label>
+							<input type="radio" name="visible" id="visible_2" value="No" />
+						</li>
+					</ol>
+				</fieldset>
+				<fieldset class="form_choices">
+					<legend>Pick all that apply.</legend>
+					<ol>
+						<li>
+							<label for="pick_all_1">Yes</label>
+							<input type="checkbox" name="pick_all_1" id="pick_all_1" value="Yes" checked="checked" />
+						</li>
+						<li>
+							<label for="pick_all_2">No</label>
+							<input type="checkbox" name="pick_all_2" id="pick_all_2" value="No" />
+						</li>
+					</ol>
+				</fieldset>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<div id="footer">
+		<!--#include file="inc/footer.html"-->
+	</div>
+</div>
+<script src="js/google.js"></script>
+</body>
+</html>
