@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>INPUT Field with No Focus</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+	<link rel="stylesheet" href="css/basic_no_focus.css" />
+	<style type="text/css">
+		#reg a { background: #BEFF9E;}
+		#content { width: 625px;}
+		fieldset { width: 525px; margin: 0 0 -1em -1.75em; border: 0;}
+		.inner { margin-left: -.75em;}
+		.inner p { padding-left: 1em;}
+		.content1, .content2, .content3 { margin-left: -.25em;}
+	</style>
+</head>
+<body>
+	<div class="hide">
+		<a href="#main_content">Skip to Main Content</a>
+	</div>
+	<div id="wrap"> 
+		<div id="header" role="banner">
+			<div id="hdr">
+				<h1><a href="default.asp">DC Tech Skills</a></h1>
+				<h2>The Place to Find Individuals with Skills You Need</h2>
+			</div>
+			<div id="navbar_h">
+				<div class="search" role="search">
+					<form name="Skills_Search" method="get" action="searchResults.asp#maincontent">
+						<label for="search2">Search</label>
+						<input name="search2" id="search2" size="40" maxlength="255"/>
+						<input type="submit" value="Search" />
+					</form>
+				</div>
+				<ul id="nav_h" role="navigation">
+					<li id="reg"><a href="#">Register</a></li>
+					<li id="edit"><a href="#">Edit</a></li>
+					<li id="delete"><a href="#">Delete</a></li>
+					<li id="default"><a href="#">Home</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="main_content">
+			<div id="content">
+				<div id="maincontent" tabindex="-1" role="main">
+					<form name="RequestForm" method="post" onsubmit="return checkContactsForm(this);" action="addUser.html">
+						<div id="forms">
+							<h3>Registration</h3>
+							<p>Please fill in as many fields as possible to make it easier for people to find your skills.</p>
+							<p>Required fields will have an asterisk (<span class="red_bold required">*</span>) after them.</p>
+							<fieldset>
+								<legend>Registration Information</legend>
+								<fieldset class="inner">
+									<legend>Personal Information</legend>
+									<ul>
+										<li>
+											<label for="first_name"><em aria-hidden="true">Required </em>First Name</label>
+											<input name="first_name" id="first_name" aria-required="true" size="25" maxlength="25" /><span class="req"> *</span>
+										</li>
+										<li>
+											<label for="last_name"><em aria-hidden="true">Required </em>Last Name</label>
+											<input name="last_name" id="last_name" aria-required="true" size="25" maxlength="25" /><span class="req"> *</span>
+										</li>
+										<li>
+											<label for="mobile_phone">Mobile Phone</label>
+											<input type="tel" name="mobile_phone" id="mobile_phone" size="20" maxlength="20" />
+										</li>
+										<li>
+											<label for="work_email">E-mail</label>
+											<input type="email" name="work_email" id="work_email" size="20" maxlength="50" />
+										</li>
+										<li>
+											<p>Do you want your personal information visible to others, which would include address, phone numbers, e-mail address, and website information. You can change this at a later time, if necessary.</p>
+										</li>
+										<li>
+											<label for="visible_1">YES</label>
+											<input type="radio" name="visible" id="visible_1" value="Yes" checked="checked" /> 
+										</li>
+										<li>
+											<label for="visible_2">NO</label>
+											<input type="radio" name="visible" id="visible_2" value="No" />
+										</li>
+									</ul>
+								</fieldset>
+	
+								<fieldset class="inner">
+									<legend>Address</legend>
+									<ul>
+										<li>
+											<label for="address1">Address Line 1</label>
+											<input name="address1" id="address1" size="25" maxlength="50" />
+										</li>
+										<li>
+											<label for="address2">Address Line 2<strong class="msg1"> (optional)</strong></label>
+											<input name="address2" id="address2" size="25" maxlength="50" />
+										</li>
+										<li>
+											<label for="city">City</label>
+											<input name="city" id="city" size="25" maxlength="50" />
+										</li>
+										<li>
+											<label for="state">State</label>
+											<select name="state" id="state">
+												<option value="">Please select one</option>
+												<option value='Alaska'>Alaska</option>
+												<option value='Alabama'>Alabama</option>
+												<option value='Arkansas'>Arkansas</option>
+												<option value='Arizona'>Arizona</option>
+												<option value='California'>California</option>
+												<option value='Colorado'>Colorado</option>
+												<option value='Connecticut'>Connecticut</option>
+												<option value='District of Columbia'>District of Columbia</option>
+												<option value='Delaware'>Delaware</option>
+												<option value='Florida'>Florida</option>
+												<option value='Georgia'>Georgia</option>
+												<option value='Hawaii'>Hawaii</option>
+												<option value='Iowa'>Iowa</option>
+												<option value='Idaho'>Idaho</option>
+												<option value='Illinois'>Illinois</option>
+												<option value='Indiana'>Indiana</option>
+												<option value='Kansas'>Kansas</option>
+												<option value='Kentucky'>Kentucky</option>
+												<option value='Louisiana'>Louisiana</option>
+												<option value='Massachusetts'>Massachusetts</option>
+												<option value='Maryland'>Maryland</option>
+												<option value='Maine'>Maine</option>
+												<option value='Michigan'>Michigan</option>
+												<option value='Minnesota'>Minnesota</option>
+												<option value='Missouri'>Missouri</option>
+												<option value='Mississippi'>Mississippi</option>
+												<option value='Montana'>Montana</option>
+												<option value='North Carolina'>North Carolina</option>
+												<option value='North Dakota'>North Dakota</option>
+												<option value='Nebraska'>Nebraska</option>
+												<option value='New Hampshire'>New Hampshire</option>
+												<option value='New Jersey'>New Jersey</option>
+												<option value='New Mexico'>New Mexico</option>
+												<option value='Nevada'>Nevada</option>
+												<option value='New York'>New York</option>
+												<option value='Ohio'>Ohio</option>
+												<option value='Oklahoma'>Oklahoma</option>
+												<option value='Oregon'>Oregon</option>
+												<option value='Pennsylvania'>Pennsylvania</option>
+												<option value='Rhode Island'>Rhode Island</option>
+												<option value='South Carolina'>South Carolina</option>
+												<option value='South Dakota'>South Dakota</option>
+												<option value='Tennessee'>Tennessee</option>
+												<option value='Texas'>Texas</option>
+												<option value='Utah'>Utah</option>
+												<option value='Virginia'>Virginia</option>
+												<option value='Vermont'>Vermont</option>
+												<option value='Washington'>Washington</option>
+												<option value='Wisconsin'>Wisconsin</option>
+												<option value='West Virginia'>West Virginia</option>
+												<option value='Wyoming'>Wyoming</option>
+											</select>
+										</li>
+										<li>
+											<label for="postal_code">Postal Code</label>
+											<input name="postal_code" id="postal_code" size="10" maxlength="10" />
+										</li>
+									</ul>
+								</fieldset>
+
+								<fieldset class="inner" id="checkbox">
+									<legend>Skills, Processes, Knowledge Areas, etc.</legend>
+									<p>Please check all items that you have a good working knowledge and use on a regular basis.</p>
+									<div class="content1">
+										<ul>
+											<li>
+												<label for="five_oh_eight">508 Compliance</label>
+												<input type="checkbox" name="five_oh_eight" id="five_oh_eight" value="Yes" />
+											</li>
+											<li>
+												<label for="access">Access</label>
+												<input type="checkbox" name="access" id="access" value="Yes" />
+											</li>
+											<li>
+												<label for="Accessibility">Accessibility</label>
+												<input type="checkbox" name="Accessibility" id="Accessibility" value="Yes" />
+											</li>
+											<li>
+												<label for="actionscript">ActionScript</label>
+												<input type="checkbox" name="actionscript" id="actionscript" value="Yes" />
+											</li>
+											<li>
+												<label for="applescript">AppleScript</label>
+												<input type="checkbox" name="applescript" id="applescript" value="Yes" />
+											</li>
+											<li>
+												<label for="asp">ASP</label>
+												<input type="checkbox" name="asp" id="asp" value="Yes" />
+											</li>
+											<li>
+												<label for="aspdotnet">ASP .NET</label>
+												<input type="checkbox" name="aspdotnet" id="aspdotnet" value="Yes" />
+											</li>
+											<li>
+												<label for="see">C</label>
+												<input type="checkbox" name="see" id="see" value="Yes" />
+											</li>
+											<li>
+												<label for="c_plusplus">C++</label>
+												<input type="checkbox" name="c_plusplus" id="c_plusplus" value="Yes" />
+											</li>
+											<li>
+												<label for="c_sharpdotnet">C# .NET</label>
+												<input type="checkbox" name="c_sharpdotnet" id="c_sharpdotnet" value="Yes" />
+											</li>
+											<li>
+												<label for="cgi">CGI</label>
+												<input type="checkbox" name="cgi" id="cgi" value="Yes" />
+											</li>
+											<li>
+												<label for="cold_fusion">Cold Fusion</label>
+												<input type="checkbox" name="cold_fusion" id="cold_fusion" value="Yes" />
+											</li>
+											<li>
+												<label for="cobol">COBOL</label>
+												<input type="checkbox" name="cobol" id="cobol" value="Yes" />
+											</li>
+											<li>
+												<label for="css">CSS</label>
+												<input type="checkbox" name="css" id="css" value="Yes" />
+											</li>
+											<li>
+												<label for="dom">DOM Scripting</label>
+												<input type="checkbox" name="dom" id="dom" value="Yes" />
+											</li>
+											<li>
+												<label for="flash">FLASH</label>
+												<input type="checkbox" name="flash" id="flash" value="Yes" />
+											</li>
+											<li>
+												<label for="html">HTML</label>
+												<input type="checkbox" name="html" id="html" value="Yes" />
+											</li>
+											<li>
+												<label for="illustrator">Illustrator</label>
+												<input type="checkbox" name="illustrator" id="illustrator" value="Yes" />
+											</li>
+										</ul>
+									</div>	
+									<div class="content2">
+										<ul>
+											<li>
+												<label for="j2ee">J2EE</label>
+												<input type="checkbox" name="j2ee" id="j2ee" value="Yes" />
+											</li>
+											<li>
+												<label for="java">Java</label>
+												<input type="checkbox" name="java" id="java" value="Yes" />
+											</li>
+											<li>
+												<label for="javascript">JavaScript</label>
+												<input type="checkbox" name="javascript" id="javascript" value="Yes" />
+											</li>
+											<li>
+												<label for="jcl">JCL</label>
+												<input type="checkbox" name="jcl" id="jcl" value="Yes" />
+											</li>
+											<li>
+												<label for="jsp">JSP</label>
+												<input type="checkbox" name="jsp" id="jsp" value="Yes" />
+											</li>
+											<li>
+												<label for="lingo">Lingo</label>
+												<input type="checkbox" name="lingo" id="lingo" value="Yes" />
+											</li>
+											<li>
+												<label for="linux">Linux</label>
+												<input type="checkbox" name="linux" id="linux" value="Yes" />
+											</li>
+											<li>
+												<label for="lisp">LISP</label>
+												<input type="checkbox" name="lisp" id="lisp" value="Yes" />
+											</li>
+											<li>
+												<label for="mysql">MySQL</label>
+												<input type="checkbox" name="mysql" id="mysql" value="Yes" />
+											</li>
+											<li>
+												<label for="dot_net">.NET</label>
+												<input type="checkbox" name="dot_net" id="dot_net" value="Yes" />
+											</li>
+											<li>
+												<label for="oracle">ORACLE</label>
+												<input type="checkbox" name="oracle" id="oracle" value="Yes" />
+											</li>
+											<li>
+												<label for="pascal">Pascal</label>
+												<input type="checkbox" name="pascal" id="pascal" value="Yes" />
+											</li>
+											<li>
+												<label for="perl">Perl</label>
+												<input type="checkbox" name="perl" id="perl" value="Yes" />
+											</li>
+											<li>
+												<label for="photoshop">Photoshop</label>
+												<input type="checkbox" name="photoshop" id="photoshop" value="Yes" />
+											</li>
+											<li>
+												<label for="php">PHP</label>
+												<input type="checkbox" name="php" id="php" value="Yes" />
+											</li>
+											<li>
+												<label for="postgresql">PostgreSQL</label>
+												<input type="checkbox" name="postgresql" id="postgresql" value="Yes" />
+											</li>
+											<li>
+												<label for="powerpoint">PowerPoint</label>
+												<input type="checkbox" name="powerpoint" id="powerpoint" value="Yes" />
+											</li>
+											<li>
+												<label for="python">Python</label>
+												<input type="checkbox" name="python" id="python" value="Yes" />
+											</li>
+										</ul>
+									</div>
+									<div class="content3">
+										<ul>
+											<li>
+												<label for="rup">RUP</label>
+												<input type="checkbox" name="rup" id="rup" value="Yes" />
+											</li>
+											<li>
+												<label for="scheme">SCHEME</label>
+												<input type="checkbox" name="scheme" id="scheme" value="Yes" />
+											</li>
+											<li>
+												<label for="scorm" >SCORM</label>
+												<input type="checkbox" name="scorm" id="scorm" value="Yes" />
+											</li>
+											<li>
+												<label for="sharepoint">SharePoint</label>
+												<input type="checkbox" name="sharepoint" id="sharepoint" value="Yes" />
+											</li>
+											<li>
+												<label for="soap">SOAP</label>
+												<input type="checkbox" name="soap" id="soap" value="Yes" />
+											</li>
+											<li>
+												<label for="sql">SQL</label>
+												<input type="checkbox" name="sql" id="sql" value="Yes" />
+											</li>
+											<li>
+												<label for="rexx">REXX</label>
+												<input type="checkbox" name="rexx" id="rexx" value="Yes" />
+											</li>
+											<li>
+												<label for="rss">RSS</label>
+												<input type="checkbox" name="rss" id="rss" value="Yes" />
+											</li>
+											<li>
+												<label for="ruby">Ruby</label>
+												<input type="checkbox" name="ruby" id="ruby" value="Yes" />
+											</li>
+											<li>
+												<label for="unix">UNIX</label>
+												<input type="checkbox" name="unix" id="unix" value="Yes" />
+											</li>
+											<li>
+												<label for="vbdotnet">VB .NET</label>
+												<input type="checkbox" name="vbdotnet" id="vbdotnet" value="Yes" />
+											</li>
+											<li>
+												<label for="vbscript">VBScript</label>
+												<input type="checkbox" name="vbscript" id="vbscript" value="Yes" />
+											</li>
+											<li>
+												<label for="visual_basic">Visual Basic</label>
+												<input type="checkbox" name="visual_basic" id="visual_basic" value="Yes" />
+											</li>
+											<li>
+												<label for="web_standards">Web Standards</label>
+												<input type="checkbox" name="web_standards" id="web_standards" value="Yes" />
+											</li>
+											<li>
+												<label for="xhtml">XHTML</label>
+												<input type="checkbox" name="xhtml" id="xhtml" value="Yes" />
+											</li>
+											<li>
+												<label for="xml">XML</label>
+												<input type="checkbox" name="xml" id="xml" value="Yes" />
+											</li>
+											<li>
+												<label for="xslt">XSLT</label>
+												<input type="checkbox" name="xslt" id="xslt" value="Yes" />
+											</li>
+										</ul>
+									</div>
+								</fieldset>
+								<fieldset class="inner">
+									<legend>Other Information</legend>
+									<ul>
+										<li>
+											<label for="notes">Notes</label>
+											<textarea rows="10" cols="40" name="notes" id="notes" ></textarea>
+										</li>
+									</ul>
+								</fieldset>
+								<ul>
+									<li><input type="submit" value="Submit" /> <input type="reset" /></li>
+								</ul>
+							</fieldset>
+						</div>
+					</form>
+					<p>&nbsp;</p>
+				</div> 
+			</div>
+		</div>
+		<div id="footer">
+			<div id="navbar_b">
+				<ul id="nav_b">
+					<li><p role="contentinfo">&#169; 2007 - 2017 <a href="http://www.jfciii.com">jfciii.com</a></p></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="js/check_form.js"></script>
+	<script src="js/google.js"></script>
+</body>
+</html>
