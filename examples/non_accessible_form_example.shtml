@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Non Accessible Form Example</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+	<link rel="stylesheet" href="css/basic.css" />
+	<style type="text/css">
+		#maincontent { width: 650px; margin: 0 auto;}
+		#hdr .h1 { color: #000; font-size: 3em; line-height: 2em; text-align: center; margin-bottom: 0;}
+		#hdr .h1 a { text-decoration: none;}
+		#hdr .h2 { border-top: 1px solid #000; border-bottom: 1px solid #000; text-align: center; background: #BEFF9E; font-size: 1.5em; line-height: 2em; margin-bottom: .5em;}
+		.h2 { font-size: 20px;}
+		.h3 { font-size: 15px; font-weight:bold; padding: 5px;}
+		ol, ul, form ul { list-style: none;}
+	/*		Used to display directions/explainations of fields to right of input field.	*/ 
+		form { width:75%; margin: 20px auto;}
+		textarea { width: 22.5em; margin-left: .1em;}
+		.form_choices input{ width:12px;}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<div id="hdr">
+				<p class="h1"><a href="accessible_test_page.shtml">DC Tech Skills</a></p>
+				<p class="h2">The Place to Find Individuals with Skills You Need</p>
+			</div>
+		</div>
+		<div id="maincontent">
+			<div class="content">
+				<div class="h2">Test Form</div>
+				<form name="RequestForm" method="post" onsubmit="return checkContactsForm(this);" action="add_attendee.asp">
+					<div class="h3">Personal Information</div>
+					<p>Do you want your personal information visible to others, which would include address, phone numbers, e-mail address, and website information.</p>
+					<p>You can change this at a later time.</p>
+					<p>All required fields have an *.</p>
+					<p>
+						First Name<br/>
+						<input name="first_name" id="first_name" /><span class="req"> *</span>
+					</p>
+					<p>
+						Last Name<br/>
+						<input name="last_name" id="last_name" /><span class="req"> *</span>
+					</p>
+					<p>
+						Company<br/>
+						<input name="company" id="company" />
+					</p>
+					<p>
+						Title<br/>
+						<input name="title" id="title" />
+					</p>
+					<p>
+						Notes<br/>
+						<textarea rows="4" name="test" id="test"></textarea>
+					</p>
+					<p>
+						States<br/>
+						<select name="state" id="state">
+							<option value="AZ">AZ</option>
+							<option value="CA">CA</option>
+							<option value="DC" selected="selected">DC</option>
+							<option value="WY">WY</option>
+						</select>
+					</p>
+					<div class="h3">Hide my information.</div>
+					<p class="form_choices">
+						Yes
+						<input type="radio" name="visible" id="visible_1" value="Yes" checked="checked" />
+					</p>
+					<p class="form_choices">
+						No
+						<input type="radio" name="visible" id="visible_2" value="No" />
+					</p>
+					<div class="h3">Pick your favorite color(s).</div>
+					<p class="form_choices">
+						Red
+						<input type="checkbox" name="test" id="test" value="Red" />
+					</p>
+					<p class="form_choices">
+						Orange
+						<input type="checkbox" name="test" id="test" value="Orange" />
+					</p>
+					<p class="form_choices">
+						Plaid
+						<input type="checkbox" name="test" id="test" value="Plaid" checked="checked" />
+					</p>
+					<p class="form_choices">
+						Yellow
+						<input type="checkbox" name="test" id="test" value="Yellow" />
+					</p>
+					<p class="form_choices">
+						Green
+						<input type="checkbox" name="test" id="test" value="Green" />
+					</p>
+					<p class="form_choices">
+						Blue
+						<input type="checkbox" name="test" id="test" value="Blue" />
+					</p>
+					<p class="form_choices">
+						Indigo
+						<input type="checkbox" name="test" id="test" value="Indigo" />
+					</p>
+					<p class="form_choices">
+						Violet
+						<input type="checkbox" name="test" id="test" value="Violet" />
+					</p>				
+				</form>
+			</div>
+		</div>
+		<div id="footer">
+			<!--#include file="inc/footer_non.html"-->
+		</div>
+	</div>
+	<script src="js/google.js"></script>
+</body>
+</html>
