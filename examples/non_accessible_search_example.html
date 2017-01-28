@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Add Registration Record for BarCampDC</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+	<link rel="stylesheet" href="css/basic.css" />
+	<style>
+		#maincontent { width: 650px; margin: 0 auto;}
+		#add a { color: #000; background: #BEFF9E;}
+		#hdr .h1 { color: #000; font-size: 3em; line-height: 2em; text-align: center;}
+		#hdr .h1 a { text-decoration: none;}
+		#hdr .h2 { border-top: 1px solid #000; border-bottom: 1px solid #000; text-align: center; background: #BEFF9E; font-size: 1.5em; line-height: 2em; margin-bottom: .5em;}
+		.h3 { font-size: 1.75em; font-weight: bold;}
+		.h4 { font-size: 1.5em;}
+	</style>
+</head>
+<body>
+	<div id="wrap"> 
+		<div id="header">
+			<div id="hdr">
+				<p class="h1"><a href="accessible_test_page.shtml">DC Tech Skills</a></p>
+				<p class="h2">The Place to Find Individuals with Skills You Need</p>
+			</div>
+			<div id="navbar_h">
+				<a name="search"></a>
+				<div class="search">
+					<form name="Skills_Search" method="get" action="non_accessible_search_results.html">
+						<input name="search2"  id="search2" size="40" maxlength="255" />
+						<input type="submit" value="Search" />
+					</form>
+				</div>
+				<ul id="nav_h">
+					<li id="add"><a href="add.asp">Register</a></li>
+					<li id="edit"><a href="edit.asp">Edit</a></li>
+					<li id="delete"><a href="delete.asp">Delete</a></li>
+					<li id="default"><a href="default.asp">Home</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="maincontent" tabindex="-1">
+			<form name="RequestForm" method="post" onsubmit="return checkContactsForm(this);" action="addUser.html">
+				<div id="forms">
+					<p class="h3">Registration</p>
+					<p>Please fill in as many fields as possible to make it easier for people to find your skills.</p>
+					<p>Required fields will have an asterisk (<span class="red_bold required">*</span>) after them.</p>
+					<fieldset>
+						<legend>Registartion Information</legend>
+						<fieldset class="inner">
+							<legend>Personal Information</legend>
+							<ul>
+								<li>
+									<label for="first_name"><em aria-hidden="true">Required </em>First Name</label>
+									<input name="first_name" id="first_name" size="25" maxlength="25" tabindex="1000" /><span class="req"> *</span>
+								</li>
+								<li>
+									<label for="last_name"><em aria-hidden="true">Required </em>Last Name</label>
+									<input name="last_name" id="last_name" size="25" maxlength="25" tabindex="1010" /><span class="req"> *</span>
+								</li>
+								<li>
+									<label for="company_name">Company Name</label>
+									<input name="company_name" id="company_name" size="25" maxlength="50" tabindex="1020" />
+								</li>
+								<li>
+									<label for="title">Title</label>
+									<input name="title" id="title" size="25" maxlength="50" tabindex="1030" />
+								</li>
+								<li>
+									<p>Do you want your personal information visible to others, which would include address, phone numbers, e-mail address, and website information.</p>
+									<p>You can change this at a later time, if necessary.</p>
+								</li>
+								<li>
+									<label for="visible_1">YES</label>
+									<input type="radio" name="visible" id="visible_1" value="Yes" checked="checked" tabindex="1040" /> 
+								</li>
+								<li>
+									<label for="visible_2">NO</label>
+									<input type="radio" name="visible" id="visible_2" value="No" tabindex="1050" />
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="inner">
+							<legend>Address</legend>
+							<ul>
+								<li>
+									<label for="address1">Address Line 1</label>
+									<input name="address1" id="address1" size="25" maxlength="50" tabindex="2000" />
+								</li>
+								<li>
+									<label for="address2">Address Line 2<strong class="msg1"> (optional)</strong></label>
+									<input name="address2" id="address2" size="25" maxlength="50" tabindex="2010" />
+								</li>
+								<li>
+									<label for="city">City</label>
+									<input name="city" id="city" size="25" maxlength="50" tabindex="2020" />
+								</li>
+								<li>
+									<label for="state">State</label>
+									<select name="state" id="state" tabindex="2030">
+										<option value="">Please select one</option>
+										<option value='Alaska'>Alaska</option>
+										<option value='Alabama'>Alabama</option>
+										<option value='Arkansas'>Arkansas</option>
+										<option value='Arizona'>Arizona</option>
+										<option value='California'>California</option>
+										<option value='Colorado'>Colorado</option>
+										<option value='Connecticut'>Connecticut</option>
+										<option value='District of Columbia'>District of Columbia</option>
+										<option value='Delaware'>Delaware</option>
+										<option value='Florida'>Florida</option>
+										<option value='Georgia'>Georgia</option>
+										<option value='Hawaii'>Hawaii</option>
+										<option value='Iowa'>Iowa</option>
+										<option value='Idaho'>Idaho</option>
+										<option value='Illinois'>Illinois</option>
+										<option value='Indiana'>Indiana</option>
+										<option value='Kansas'>Kansas</option>
+										<option value='Kentucky'>Kentucky</option>
+										<option value='Louisiana'>Louisiana</option>
+										<option value='Massachusetts'>Massachusetts</option>
+										<option value='Maryland'>Maryland</option>
+										<option value='Maine'>Maine</option>
+										<option value='Michigan'>Michigan</option>
+										<option value='Minnesota'>Minnesota</option>
+										<option value='Missouri'>Missouri</option>
+										<option value='Mississippi'>Mississippi</option>
+										<option value='Montana'>Montana</option>
+										<option value='North Carolina'>North Carolina</option>
+										<option value='North Dakota'>North Dakota</option>
+										<option value='Nebraska'>Nebraska</option>
+										<option value='New Hampshire'>New Hampshire</option>
+										<option value='New Jersey'>New Jersey</option>
+										<option value='New Mexico'>New Mexico</option>
+										<option value='Nevada'>Nevada</option>
+										<option value='New York'>New York</option>
+										<option value='Ohio'>Ohio</option>
+										<option value='Oklahoma'>Oklahoma</option>
+										<option value='Oregon'>Oregon</option>
+										<option value='Pennsylvania'>Pennsylvania</option>
+										<option value='Rhode Island'>Rhode Island</option>
+										<option value='South Carolina'>South Carolina</option>
+										<option value='South Dakota'>South Dakota</option>
+										<option value='Tennessee'>Tennessee</option>
+										<option value='Texas'>Texas</option>
+										<option value='Utah'>Utah</option>
+										<option value='Virginia'>Virginia</option>
+										<option value='Vermont'>Vermont</option>
+										<option value='Washington'>Washington</option>
+										<option value='Wisconsin'>Wisconsin</option>
+										<option value='West Virginia'>West Virginia</option>
+										<option value='Wyoming'>Wyoming</option>
+									</select>
+								</li>
+								<li>
+									<label for="postal_code">Postal Code</label>
+									<input name="postal_code" id="postal_code" size="10" maxlength="10" tabindex="2040" />
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="inner">
+							<legend>Contact Phone Numbers</legend>
+							<ul>
+								<li>
+									<label for="work_phone">Work Phone</label>
+									<input type="tel" name="work_phone" id="work_phone" size="20" maxlength="20" tabindex="3000" />
+								</li>
+								<li>
+									<label for="fax_number">Fax Number</label>
+									<input type="tel" name="fax_number" id="fax_number" size="20" maxlength="20" tabindex="3010" />
+								</li>
+								<li>
+									<label for="mobile_phone">Mobile Phone</label>
+									<input type="tel" name="mobile_phone" id="mobile_phone" size="20" maxlength="20" tabindex="3020" />
+								</li>
+								<li>
+									<label for="work_email">E-mail</label>
+									<input type="email" name="work_email" id="work_email" size="20" maxlength="50" tabindex="3030" />
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="inner">
+							<legend>Website Information</legend>
+							<p>Please list up to three website addresses you have something to do with and would like others to see.</p>
+							<ul>
+								<li>
+									<label for="first_url"><em>First</em> URL<strong class="msg2"> must start with HTTP://</strong></label>
+									<input type="url" name="first_url" id="first_url" size="50" maxlength="100" tabindex="4000" />
+								</li>
+								<li>
+									<label for="first_url_title"><em>First</em> URL Title</label>
+									<input name="first_url_title" id="first_url_title" size="50" maxlength="100" tabindex="4010" />
+								</li>
+								<li>
+									<label for="first_url_description"><em>First</em> URL Description</label>
+									<input name="first_url_description" id="first_url_description" size="50" maxlength="100" tabindex="4020" />
+								</li>
+								<li>
+									<label for="second_url"><em>Secondary</em> URL<strong class="msg2"> must start with HTTP://</strong></label>
+									<input type="url" name="second_url" id="second_url" size="50" maxlength="100" tabindex="4030" />
+								</li>
+								<li>
+									<label for="second_url_title"><em>Secondary</em> URL Title</label>
+									<input name="second_url_title" id="second_url_title" size="50" maxlength="100" tabindex="4040" />
+								</li>
+								<li>
+									<label for="second_url_description"><em>Secondary</em> URL Description</label>
+									<input name="second_url_description" id="second_url_description" size="50" maxlength="100" tabindex="4050" />
+								</li>
+								<li>
+									<label for="third_url"><em>Third</em> URL<strong class="msg2"> must start with HTTP://</strong></label>
+									<input type="url" name="third_url" id="third_url" size="50" maxlength="100" tabindex="4060" />
+								</li>
+								<li>
+									<label for="third_url_title"><em>Third</em> URL Title</label>
+									<input name="third_url_title" id="third_url_title" size="50" maxlength="100" tabindex="4070" />
+								</li>
+								<li>
+									<label for="third_url_description"><em>Third</em> URL Description</label>
+									<input name="third_url_description" id="third_url_description" size="50" maxlength="100" tabindex="4080" />
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="inner">
+							<legend>Skills, Processes, Knowledge Areas, etc.</legend>
+							<p>Please check all items that you have a good working knowledge and use on a regular basis.</p>
+							<div class="content1">
+								<ul>
+									<li>
+										<label for="five_oh_eight">508 Compliance</label>
+
+										<input type="checkbox" name="five_oh_eight" id="five_oh_eight" value="Yes" tabindex="5000" />
+									</li>
+									<li>
+										<label for="access">Access</label>
+										<input type="checkbox" name="access" id="access" value="Yes" tabindex="5010" />
+									</li>
+									<li>
+										<label for="Accessibility">Accessibility</label>
+										<input type="checkbox" name="Accessibility" id="Accessibility" value="Yes" tabindex="5020" />
+									</li>
+									<li>
+										<label for="actionscript">ActionScript</label>
+										<input type="checkbox" name="actionscript" id="actionscript" value="Yes" tabindex="5030" />
+									</li>
+									<li>
+										<label for="applescript">AppleScript</label>
+										<input type="checkbox" name="applescript" id="applescript" value="Yes" tabindex="5040" />
+									</li>
+									<li>
+										<label for="asp">ASP</label>
+										<input type="checkbox" name="asp" id="asp" value="Yes" tabindex="5050" />
+									</li>
+									<li>
+										<label for="aspdotnet">ASP .NET</label>
+										<input type="checkbox" name="aspdotnet" id="aspdotnet" value="Yes" tabindex="5060" />
+									</li>
+									<li>
+										<label for="see">C</label>
+										<input type="checkbox" name="see" id="see" value="Yes" tabindex="5070" />
+									</li>
+									<li>
+										<label for="c_plusplus">C++</label>
+										<input type="checkbox" name="c_plusplus" id="c_plusplus" value="Yes" tabindex="5080" />
+									</li>
+									<li>
+										<label for="c_sharpdotnet">C# .NET</label>
+										<input type="checkbox" name="c_sharpdotnet" id="c_sharpdotnet" value="Yes" tabindex="5090" />
+									</li>
+									<li>
+										<label for="cgi">CGI</label>
+										<input type="checkbox" name="cgi" id="cgi" value="Yes" tabindex="5100" />
+									</li>
+									<li>
+										<label for="cold_fusion">Cold Fusion</label>
+										<input type="checkbox" name="cold_fusion" id="cold_fusion" value="Yes" tabindex="5110" />
+									</li>
+									<li>
+										<label for="cobol">COBOL</label>
+										<input type="checkbox" name="cobol" id="cobol" value="Yes" tabindex="5120" />
+									</li>
+									<li>
+										<label for="css">CSS</label>
+										<input type="checkbox" name="css" id="css" value="Yes" tabindex="5130" />
+									</li>
+									<li>
+										<label for="dom">DOM Scripting</label>
+										<input type="checkbox" name="dom" id="dom" value="Yes" tabindex="5140" />
+									</li>
+									<li>
+										<label for="flash">FLASH</label>
+										<input type="checkbox" name="flash" id="flash" value="Yes" tabindex="5150" />
+									</li>
+									<li>
+										<label for="html">HTML</label>
+										<input type="checkbox" name="html" id="html" value="Yes" tabindex="5160" />
+									</li>
+									<li>
+										<label for="illustrator">Illustrator</label>
+										<input type="checkbox" name="illustrator" id="illustrator" value="Yes" tabindex="5170" />
+									</li>
+								</ul>
+							</div>	
+							<div class="content2">
+								<ul>
+									<li>
+										<label for="j2ee">J2EE</label>
+										<input type="checkbox" name="j2ee" id="j2ee" value="Yes" tabindex="5180" />
+									</li>
+									<li>
+										<label for="java">Java</label>
+										<input type="checkbox" name="java" id="java" value="Yes" tabindex="5190" />
+									</li>
+									<li>
+										<label for="javascript">JavaScript</label>
+										<input type="checkbox" name="javascript" id="javascript" value="Yes" tabindex="5200" />
+									</li>
+									<li>
+										<label for="jcl">JCL</label>
+										<input type="checkbox" name="jcl" id="jcl" value="Yes" tabindex="5210" />
+									</li>
+									<li>
+										<label for="jsp">JSP</label>
+										<input type="checkbox" name="jsp" id="jsp" value="Yes" tabindex="5220" />
+									</li>
+									<li>
+										<label for="lingo">Lingo</label>
+										<input type="checkbox" name="lingo" id="lingo" value="Yes" tabindex="5230" />
+									</li>
+									<li>
+										<label for="linux">Linux</label>
+										<input type="checkbox" name="linux" id="linux" value="Yes" tabindex="5240" />
+									</li>
+									<li>
+										<label for="lisp">LISP</label>
+										<input type="checkbox" name="lisp" id="lisp" value="Yes" tabindex="5250" />
+									</li>
+									<li>
+										<label for="mysql">MySQL</label>
+										<input type="checkbox" name="mysql" id="mysql" value="Yes" tabindex="5260" />
+									</li>
+									<li>
+										<label for="dot_net">.NET</label>
+										<input type="checkbox" name="dot_net" id="dot_net" value="Yes" tabindex="5270" />
+									</li>
+									<li>
+										<label for="oracle">ORACLE</label>
+										<input type="checkbox" name="oracle" id="oracle" value="Yes" tabindex="5280" />
+									</li>
+									<li>
+										<label for="pascal">Pascal</label>
+										<input type="checkbox" name="pascal" id="pascal" value="Yes" tabindex="5290" />
+									</li>
+									<li>
+										<label for="perl">Perl</label>
+										<input type="checkbox" name="perl" id="perl" value="Yes" tabindex="5300" />
+									</li>
+									<li>
+										<label for="photoshop">Photoshop</label>
+										<input type="checkbox" name="photoshop" id="photoshop" value="Yes" tabindex="5310" />
+									</li>
+									<li>
+										<label for="php">PHP</label>
+										<input type="checkbox" name="php" id="php" value="Yes" tabindex="5320" />
+									</li>
+									<li>
+										<label for="postgresql">PostgreSQL</label>
+										<input type="checkbox" name="postgresql" id="postgresql" value="Yes" tabindex="5330" />
+									</li>
+									<li>
+										<label for="powerpoint">PowerPoint</label>
+										<input type="checkbox" name="powerpoint" id="powerpoint" value="Yes" tabindex="5340" />
+									</li>
+									<li>
+										<label for="python">Python</label>
+										<input type="checkbox" name="python" id="python" value="Yes" tabindex="5350" />
+									</li>
+								</ul>
+							</div>
+							<div class="content3">
+								<ul>
+									<li>
+										<label for="rup">RUP</label>
+										<input type="checkbox" name="rup" id="rup" value="Yes" tabindex="5360" />
+									</li>
+									<li>
+										<label for="scheme">SCHEME</label>
+										<input type="checkbox" name="scheme" id="scheme" value="Yes" tabindex="5370" />
+									</li>
+									<li>
+										<label for="scorm" >SCORM</label>
+										<input type="checkbox" name="scorm" id="scorm" value="Yes" tabindex="5380" />
+									</li>
+									<li>
+										<label for="sharepoint">SharePoint</label>
+										<input type="checkbox" name="sharepoint" id="sharepoint" value="Yes" tabindex="5390" />
+									</li>
+									<li>
+										<label for="soap">SOAP</label>
+										<input type="checkbox" name="soap" id="soap" value="Yes" tabindex="5400" />
+									</li>
+									<li>
+										<label for="sql">SQL</label>
+										<input type="checkbox" name="sql" id="sql" value="Yes" tabindex="5410" />
+									</li>
+									<li>
+										<label for="rexx">REXX</label>
+										<input type="checkbox" name="rexx" id="rexx" value="Yes" tabindex="5420" />
+									</li>
+									<li>
+										<label for="rss">RSS</label>
+										<input type="checkbox" name="rss" id="rss" value="Yes" tabindex="5430" />
+									</li>
+									<li>
+										<label for="ruby">Ruby</label>
+										<input type="checkbox" name="ruby" id="ruby" value="Yes" tabindex="5440" />
+									</li>
+									<li>
+										<label for="unix">UNIX</label>
+										<input type="checkbox" name="unix" id="unix" value="Yes" tabindex="5450" />
+									</li>
+									<li>
+										<label for="vbdotnet">VB .NET</label>
+										<input type="checkbox" name="vbdotnet" id="vbdotnet" value="Yes" tabindex="5470" />
+									</li>
+									<li>
+										<label for="vbscript">VBScript</label>
+										<input type="checkbox" name="vbscript" id="vbscript" value="Yes" tabindex="5480" />
+									</li>
+									<li>
+										<label for="visual_basic">Visual Basic</label>
+										<input type="checkbox" name="visual_basic" id="visual_basic" value="Yes" tabindex="5460" />
+									</li>
+									<li>
+										<label for="web_standards">Web Standards</label>
+										<input type="checkbox" name="web_standards" id="web_standards" value="Yes" tabindex="5490" />
+									</li>
+									<li>
+										<label for="xhtml">XHTML</label>
+										<input type="checkbox" name="xhtml" id="xhtml" value="Yes" tabindex="5500" />
+									</li>
+									<li>
+										<label for="xml">XML</label>
+										<input type="checkbox" name="xml" id="xml" value="Yes" tabindex="5510" />
+									</li>
+									<li>
+										<label for="xslt">XSLT</label>
+										<input type="checkbox" name="xslt" id="xslt" value="Yes" tabindex="5520" />
+									</li>
+								</ul>
+							</div>
+						</fieldset>
+						<fieldset class="inner">
+							<legend>Other Information</legend>
+							<ul>
+								<li>
+									<label for="notes">Notes</label>
+									<textarea rows="10" cols="40" name="notes" id="notes" tabindex="10000"></textarea>
+								</li>
+							</ul>
+						</fieldset>
+						<p align="center" class="submit"><input type="submit" value="Submit" tabindex="11000" /> <input type="reset" tabindex="11050" /></p>
+					</fieldset>
+				</div>
+			</form>
+			<p>&nbsp;</p>
+		</div> 
+		<div id="footer">
+			<div id="navbar_b">
+				<ul id="nav_b">
+					<li><p>&#169; 2007 - 2017 <a href="http://www.jfciii.com" tabindex="20000">jfciii.com</a></p></li>
+				</ul>
+			</div>
+		</div>
+	</div>	
+	<script src="js/google.js"></script>
+	<script src="js/check_form.js"></script>
+</body>
+</html>
