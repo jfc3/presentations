@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Two Text Based Organizational Chart Examples</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/basic.css" />
+	<style>
+		#maincontent { width: 650px; margin: 0 auto;}
+		#current a { color: #000; background: #BEFF9E;}
+		dl { text-align: left; margin-top: .75em;}
+		dt, dd { line-height: 1.5;}
+		dt { font-weight: bold; font-size: 1.5em;}
+		dl, dd { margin-bottom: .75em;} 
+		dl dt { margin-left: 1.5em;}
+		dl dd { margin-left: 2.25em;}
+		.lvl1 { margin-left: -2.25em; margin-top: 1em;}
+		hr { margin-top: 2.5em;}
+		#maincontent h1 { font-size: 2.75em; margin: 1.5em 0 .5em;}
+		#maincontent h2 { font-size: 2.25em; margin-top: .725em;}
+		h1, h2, h3, h4, h5, h6 { font-weight: bold; margin-bottom: 0;}
+		h3 { margin-top: 1em;}
+		h3, .org3 { font-size: 1.75em;}
+		h4, .org4 { font-size: 1.5em; margin-left: 2em;}
+		h5, h6 { margin-left: .75em;}
+		h5 { font-size: 1.33em; margin-left: 4em;}
+		h6 { font-size: 1.25em; margin-left: 6em;}
+		.org5 { margin-left: 4.25em;}
+		.org6 { margin-left: 6em;}
+		p { font-size: 1.25em;}
+	</style>
+</head>
+<body>
+	<div class="hide">
+		<a href="#maincontent">Skip to main content</a>
+	</div>
+	<div id="wrap"> 
+		<div id="header" role="banner">
+			<div id="hdr">
+				<h1>Geeks Love Wine</h1>
+				<h2>Two Text Based Organizational Chart Examples</h2>
+			</div>
+			<div id="navbar_h">
+				<a name="search"></a>
+				<div class="search" role="search">
+					<form name="Skills_Search" method="get" action="searchResults.html#maincontent">
+						<label for="search2">Search</label>
+						<input name="search2" id="search2" size="40" maxlength="255"/>
+						<input type="submit" value="Search" />
+					</form>
+				</div>
+				<ul id="nav_h" role="navigation">
+					<li id="current"><a href="#">Team</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Mission Statement</a></li>
+					<li><a href="#">Home</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="maincontent" tabindex="-1" role="main">
+			<h1>Test Organizational Charts</h1>
+			<p>This page was created to see if  text based organizational charts make sense for someone using assistive technologies like screen readers. The first one is built using a few nested definition lists, which are styled, so they visually show which groups fall under others groups. The second example organizational chart were built using structured headings, which are indented by adding CSS classes to make them easier to understand.</p>
+			<p>I'm hoping creating organizational charts this way may work  and can be added after the visually designed chart. Making charts this way might not work out well if you have a large organization.</p>
+			<hr />
+			<h2>Organizational Chart Using a Definition List (DL)</h2>
+			<dl class="lvl1">
+				<dt>Head Wine Geek</dt>
+				<dd>John F Croston III
+					<dl>
+						<dt>Chief Chef</dt>
+						<dd>Evan Carlson</dd>
+						<dt>Apprentice Taster</dt>
+						<dd>Liam Black
+							<dl>
+								<dt>Assistant Apprentice Taster</dt>
+								<dd>Dave Williams</dd>
+							</dl>
+						</dd>
+						<dt>Pig and Party Master</dt>
+						<dd>Tony Guida
+							<dl>
+								<dt>Director of the Grounds Crew</dt>
+								<dd>Jeff "the Task Master" Bryant</dd>
+								<dt>Assistant Director of the Grounds Crew</dt>
+								<dd>Sarah Melinda
+									<dl>
+										<dt>Director of Yard Work</dt>
+										<dd>Hannah "the Scot"</dd>
+									</dl>
+								</dd>
+								<dt>Director of Field Tastings</dt>
+								<dd>Buzz Cerino
+									<dl>
+										<dt>Austin</dt>
+										<dd>Glenda "the Good Witch" Simms</dd>
+										<dt>Boston</dt>
+										<dd>Dale Cruse</dd>
+										<dt>Chicago</dt>
+										<dd>Beverly Smith</dd>
+										<dt>St. Louis</dt>
+										<dd>Justin "Thorpus" Thorp</dd>
+										<dt>Seattle</dt>
+										<dd>Marcy Sutton</dd>
+										<dt>Portland</dt>
+										<dd>Matthew "Matto" Oliphant</dd>
+									</dl>
+								</dd>
+							<dl>
+						</dd>
+					</dl>
+				</dd>
+			</dl>  
+			<hr />
+			<h2>Organizational Chart Using Proper Heading Structure</h2>
+			<h3>Head Wine Geek</h3>
+			<p class="org3">John F Croston III</p>
+				<h4>Chief Chef</h4>
+				<p class="org4">Evan Carlson</p>
+				<h4>Apprentice Taster</h4>
+				<p class="org4">Liam Black</p>
+					<h5>Assistant Apprentice Taster</h5>
+					<p class="org5">Dave Williams</p>
+				<h4>Pig and Party Master</h4>
+				<p class="org4">Tony Guida</p>
+					<h5>Director of the Grounds Crew</h5>
+					<p class="org5">Jeff "the Task Master" Bryant</p>
+					<h5>Assistant Director of the Grounds Crew</h5>
+					<p class="org5">Sarah Melinda</p>
+						<h6>Director of Yard Work</h6>
+						<p class="org6">Hannah "the Scot"</p>
+					<h5>Director of Field Tastings</h5>
+					<p class="org5">Buzz Cerino</p>
+						<h6>Austin</h6>
+						<p class="org6">Glenda "the Good Witch" Simms</p>
+						<h6>Boston</h6>
+						<p class="org6">Dale Cruse</p>
+						<h6>Chicago</h6>
+						<p class="org6">Beverly Smith</p>
+						<h6>St. Louis</h6>
+						<p class="org6">Justin "Thorpus" Thorp</p>
+						<h6>Seattle, WA</h6>
+						<p class="org6">Marcy Sutton</p>
+						<h6>Portland, OR</h6>
+						<p class="org6">Matthew "Matto" Oliphant</p>
+	</div> 
+	<div id="footer">
+		<div id="navbar_b">
+			<ul id="nav_b">
+				<li><p role="contentinfo">&#169; 2007 - 2017<a href="http://www.jfciii.com">jfciii.com</a></p></li>
+			</ul>
+		</div>
+	</div>
+</div>	
+<script src="js/google.js"></script>
+</body>
+</html>
