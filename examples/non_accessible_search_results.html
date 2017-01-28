@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Add Registration Record for BarCamp DC</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+	<link rel="stylesheet" href="css/basic.css" />
+	<style>
+		#maincontent { width: 650px; margin: 0 auto;}
+		#hdr .h1 { color: #000; font-size: 3em; line-height: 2em; text-align: center;}
+		#hdr .h1 a { text-decoration: none;}
+		#hdr .h2 { border-top: 1px solid #000; border-bottom: 1px solid #000; text-align: center; background: #BEFF9E; font-size: 1.5em; line-height: 2em; margin-bottom: .5em;}
+		.h3 { font-size: 1.75em; font-weight: bold;}
+		.h4 { font-size: 1.5em;}
+	</style>
+</head>
+<body>
+	<div id="wrap"> 
+		<div id="header">
+			<div id="hdr">
+				<p class="h1"><a href="accessible_test_page.shtml">DC Tech Skills</a></p>
+				<p class="h2">The Place to Find Individuals with Skills You Need</p>
+			</div>
+			<div id="navbar_h">
+				<a name="search"></a>
+				<div class="search">
+					<form name="Skills_Search" method="get" action="non_accessibile_search_results.html">
+						<input name="search2"  id="search2" size="40" maxlength="255" />
+						<input type="submit" value="Search" />
+					</form>
+				</div>
+				<ul id="nav_h">
+					<li id="add"><a href="add.asp">Register</a></li>
+					<li id="edit"><a href="edit.asp">Edit</a></li>
+					<li id="delete"><a href="delete.asp">Delete</a></li>
+					<li id="default"><a href="default.asp">Home</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="main">
+			<div id="maincontent">
+			<p class="h3">Search Results</p>
+			<p class="h4">Number of individuals with skill requested: <span class='red_bold'>29</span></p>
+			<p>Below you will find the list of people that fit the skill you searched for.</p>
+			<p>The results are just made up for this presentation now of the data is valid.</p>
+			<p>Currently the below information is sorted by <span class="bold">Last Name</span>, and <span class="bold">First Name</span>.</p>
+			<p>To re-sort the below information in a different order, &ldquo;<span class="bold">click</span>&rdquo; on the table headings (<span class="bold">Last Name</span>, <span class="bold">First Name</span>, <span class="bold">Company Name</span>, <span class="bold">Title</span>, or <span class="bold">E-mail Address</span>). By &ldquo;<span class="bold">cilcking</span>&rdquo; on the same heading will change the order from <span class="bold">Ascending</span> to <span class="bold">Descending</span> and back.</p>
+			<table class="sortable" id="user_table" width="600px">
+				<tr align="center">
+					<td style="background-color:#BEFF9E; text-align: center; font-weight:bold;" width="50px" class="none"></td>
+					<td style="background-color:#BEFF9E; text-align: center; font-weight:bold;" width="120px">Last Name</td>
+					<td style="background-color:#BEFF9E; text-align: center; font-weight:bold;" width="120px">First Name</td>
+					<td style="background-color:#BEFF9E; text-align: center; font-weight:bold;" width="180px">Company</td>
+					<td style="background-color:#BEFF9E; text-align: center; font-weight:bold;" width="130px">Title</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>Adams</td>
+					<td>Ansel</td>
+					<td>Ansel Adams Inc.</td>
+					<td>Photographer</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>Bonds</td>
+					<td>Barry</td>
+					<td>SF Giants</td>
+					<td>Outfielder</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>Bush</td>
+					<td>George W</td>
+					<td>US Government</td>
+					<td>Future Ex-President</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>Caesar</td>
+					<td>Augustus</td>
+					<td>Roman Printing</td>
+					<td>Printer</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>Cline</td>
+					<td>Matt</td>
+					<td>Not Cline Vineyards</td>
+					<td>Wine Maker</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>Corperal</td>
+					<td>Lance</td>
+					<td>US Army</td>
+					<td>Soldier</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>Croston III</td>
+					<td>John F</td>
+					<td>jfciii.com</td>
+					<td>Web Developer</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>Donaldson</td>
+					<td>Don</td>
+					<td></td>
+					<td>Artist</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>Draheim</td>
+					<td>Blonde</td>
+					<td>Two Blones and a Brunette</td>
+					<td>Wine Buyer</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>Evans</td>
+					<td>Carlson</td>
+					<td>XYZ Corp.</td>
+					<td>Gopher Number 1</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>Guido</td>
+					<td>Anthony</td>
+					<td>Pig and Swine</td>
+					<td>Head Cook</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>Hogan</td>
+					<td>Ben</td>
+					<td>Hogan Inc.</td>
+					<td>Golfer</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>Jeffries</td>
+					<td>Bryant</td>
+					<td>Survey inc.</td>
+					<td>Survetor</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>King</td>
+					<td>B. B.</td>
+					<td>B. B. King Inc.</td>
+					<td>Bluesman</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>Lewis</td>
+					<td>Levy</td>
+					<td>Linderberger</td>
+					<td>Cheese Maker</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>Mantel</td>
+					<td>Mickey</td>
+					<td>Dodgers</td>
+					<td>Third Baseman</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>Marley</td>
+					<td>Bob</td>
+					<td>Marley Man</td>
+					<td>Musician</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>Melinda</td>
+					<td>Sarah</td>
+					<td>Shakespeare Co.</td>
+					<td>Actress</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>Mouse</td>
+					<td>Mickey</td>
+					<td>Disney Inc.</td>
+					<td>Cartoon Mouse</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>Mouse</td>
+					<td>Minney</td>
+					<td>Disney Inc.</td>
+					<td>Mickey Girlfriend</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>Nixon</td>
+					<td>Richard</td>
+					<td>US Government</td>
+					<td>President</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>Rah</td>
+					<td>Hoo</td>
+					<td>US Army</td>
+					<td>Soldier</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>Sayers</td>
+					<td>Gale</td>
+					<td>Da Bears</td>
+					<td>Halfback</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>Simpson</td>
+					<td>OJ</td>
+					<td></td>
+					<td>Golfer</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>Test</td>
+					<td>Record</td>
+					<td>QATesting</td>
+					<td>Tester</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>Trump</td>
+					<td>Donald</td>
+					<td>Trump Limited</td>
+					<td>Rug Salesman</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>Vajdi</td>
+					<td>Mehrdad</td>
+					<td>Smiley Teeth</td>
+					<td>Dentist</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>Woman</td>
+					<td>Brunette</td>
+					<td>Two Blones and a Brunette</td>
+					<td>Wine Buyer</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><a href="#">View</a></td>
+					<td>Woods</td>
+					<td>Tiger</td>
+					<td>TW Intl.</td>
+					<td>Golfer</td>
+				</tr>
+			</table>
+			<p>Return to top of page to <a href="non_accessible_search_example.html#search">search again.</a></p>
+		</div>	
+		</div> 
+		<div id="footer">
+			<div id="navbar_b">
+				<ul id="nav_b">
+					<li><p>&#169; 2007 - 2017 <a href="http://www.jfciii.com">jfciii.com</a></p></li>
+				</ul>
+			</div>
+		</div>
+	</div>	
+	<script src="js/google.js"></script>
+	<script src="js/sorttable.js"></script>
+</body>
+</html>
