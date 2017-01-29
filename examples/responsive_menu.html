@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Responsive Table Example - John F Croston III</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0" /> 
+	<link rel="stylesheet" href="css/basic_table.css" />
+	<style>
+		h3 { margin-bottom:0;}
+		#content { margin: 1em; border: 0;width: 90%;}
+		#maincontent h1, #main_content h2, #main_content h3 { margin-top: .5em;}
+		#maincontent h1 { font-size: 2.25em; margin: 1em 0 .5em 0;}
+		#maincontent h2 { font-size: 1.75em; margin: .5em 0;}
+		#maincontent h3 { font-size: 1.5em; margin: .5em 0;}
+		#maincontent h1, #main_content h2, th { font-weight: bold;}
+		#maincontent p { font-size: 1.125em;}
+		table { margin-bottom: 2em; margin-left: -.5em; border: 0;}
+		th, td { font-size: 1em; padding: .5em;}
+		th { background: #BEFF9E;}
+		.handheld { margin-top: 3.5em;}
+		.handheld p { margin: 0;}
+		.handheld h3 { margin-top: 1em;}
+		.handheld h4 { font-weight: bold;}
+		#footer { font-size: 1.125em;}
+	
+		@media screen and (max-width: 725px) { 
+			table { display: none;}
+			.handheld { display: block;}
+		}	
+		@media screen and (min-width: 715px) { 
+			table { display: block; width:95%;}
+			.handheld { display: none;}
+		}
+
+		.main-navigation { clear: both; display: block; width: 100%;}
+		.main-navigation ul { list-style: none; margin: 0; padding-left: 2em;}
+		.main-navigation li { position: relative;}
+		.main-navigation a { display: block; text-decoration: none; padding: 0 0.75em 0 0;}
+		.menu-toggle, .main-navigation.toggled .nav-menu { display: block; position: absolute; top: 1em; left: 2.5em;}
+		.main-navigation ul { display: none;}
+		.main-navigation li { float: none;}
+		button { padding: 1.5em; font-size: 1em; font-weight: bold; position: absolute; top: 1em; right: 2.5em;}
+	</style>
+</head>
+<body>
+	<div class="skip">
+		<a href="#maincontent">Skip to Main Content</a>
+	</div>
+	<div id="wrap">
+		<div id="header">
+			<div id="hdr" role="banner">
+				<h1 class="site-title"><a href="default.shtml" rel="home">john f croston iii</a></h1>
+				<h2 class="site-description">&ldquo;It&rsquo;s only words and photos on the internet&rdquo;</h2>
+			</div>
+		</div>
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button id="menu-toggle" class="menu-toggle">Menu</button>
+			<ul id="menu" class="menu">
+				<li class="menu-item"><a href="#">Create</a></li>
+				<li class="menu-item"><a href="#">Edit</a></li>
+				<li class="menu-item"><a href="#">Delete</a></li>
+				<li class="menu-item"><a href="#">Home</a></li>
+			</ul>
+		</nav><!-- #site-navigation -->
+		<div id="maincontent" tabindex="-1">
+			<div id="content" role="main">
+				<h1>Customer Dataset</h1>
+				<h2>List of Tables</h2>
+				<h3>Description:</h3>
+				<p>This dataset contains information on all accidents, injuries and illnesses reported by mine operators and contractors beginning with 1983. The data in the table is obtained from the Mine Accident, Injury and Illness Report form (MSHA Form 7000-1). Document number is the unique key for this data. It provides information about the accident/injury/illness such as type, mine location, lost days and the degree of injury.</p>
+				<p>This complete dataset can be found at <a href="#">Customer List Dataset</a></p>
+				<h3>Dataset Location</h3>
+				<p>http://api.xyz.com/v1/customer/list/</p>
+				<h3>Dataset Metadata</h3>
+				<p><a href="#">Customer List</a></p>
+				<h3>Dataset Sample</h3>
+				<p><a href="#">Sample the Customer List Dataset</a></p>
+				<h2>Dataset Tables:&nbsp;</h2>
+				<p>CustomerList</p>
+				<table summary="List of all customer data, which contains the following fields - customer ID, First Name,LAst Name, E-mail Address, and Phone Number">
+					<caption>Customer List Dataset - Fields, Description, and Data Type</caption>
+					<tr>
+						<th scope="col">Name</th>
+						<th scope="col">Description</th>
+						<th scope="col">Data Type</th>
+					</tr>
+					<tr>
+						<td>id</td>
+						<td>Customer ID - Primary Key</td>
+						<td>bigint</td>
+					</tr>
+					<tr>
+						<td>FName</td>
+						<td>First Name</td>
+						<td>varchar (50)</td>
+					</tr>
+					<tr>
+						<td>LName</td>
+						<td>Last Name</td>
+						<td>varchar (50)</td>
+					</tr>
+					<tr>
+						<td>EmailAdress</td>
+						<td>E-Mail Address</td>
+						<td>varchar (100)</td>
+					</tr>
+					<tr>
+						<td>PhoneNumber</td>
+						<td>Phone Number</td>
+						<td>varchar (10)</td>
+					</tr>
+				</table>
+				<div class="handheld">
+					<h2>Customer Information List - Example 1</h2>
+					<h3>Field 1</h3>
+					<hr />
+					<p><b>Name</b> - id</p>
+					<p><b>Description</b> - Customer ID - Primary key</p>
+					<p><b>Data Type</b> - bigint</p>
+					<h3>Field 2</h3>
+					<hr />
+					<p><b>Name</b> - FName</p>
+					<p><b>Description</b> - First Name</p>
+					<p><b>Data Type</b> - varchar(50)</p>
+					<h3>Field 3</h3>
+					<hr />
+					<p><b>Name</b> - LName</p>
+					<p><b>Description</b> - Last Name</p>
+					<p><b>Data Type</b> - varchar(50)</p>
+					<h3>Field 4</h3>
+					<hr />
+					<p><b>Name</b> - EmailAddress</p>
+					<p><b>Description</b> - E-mail Address</p>
+					<p><b>Data Type</b> - varchar(100)</p>
+					<h3>Field 5</h3>
+					<hr />
+					<p><b>Name</b> - PhoneNumber</p>
+					<p><b>Description</b> - Phone Number</p>
+					<p><b>Data Type</b> - varchar(10)</p>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="navbar_b">
+				<ul id="nav_b" role="navigation">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Accessibility</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Books</a></li>
+					<li><a href="#">Links</a></li>
+					<li><a href="#">Presentations</a></li>
+					<li><a href="#">Resume</a></li>
+				</ul>
+				<p role="contentinfo">&copy; 2007 - 2017 <a href="http://www.jfciii.com">jfciii.com</a></p>		
+			</div>
+		</div>
+	</div>
+	<script>
+		/**
+		 * navigation.js
+		 *
+		 * Handles toggling the navigation menu for small screens.
+		 */
+		( function() {
+			var container, button, menu;
+
+			container = document.getElementById( 'site-navigation' );
+			if ( ! container )
+				return;
+
+			button = container.getElementsByTagName( 'button' )[0];
+			if ( 'undefined' === typeof button )
+				return;
+
+			menu = container.getElementsByTagName( 'ul' )[0];
+
+			// Hide menu toggle button if menu is empty and return early.
+			if ( 'undefined' === typeof menu ) {
+				button.style.display = 'none';
+				return;
+			}
+
+			if ( -1 === menu.className.indexOf( 'nav-menu' ) )
+				menu.className += ' nav-menu';
+		    button.setAttribute('aria-controls', 'menu');
+		    button.setAttribute('aria-expanded', 'false');
+		    menu.setAttribute('aria-expanded', 'false');
+
+			button.onclick = function() {
+				if ( -1 !== container.className.indexOf( 'toggled' ) ) {
+		    	button.setAttribute('aria-expanded', 'false');
+		      menu.setAttribute('aria-expanded', 'false');
+				  container.className = container.className.replace( ' toggled', '' );
+		    }
+
+				else {
+		      container.className += ' toggled';
+		      button.setAttribute('aria-expanded', 'true');
+		      menu.setAttribute('aria-expanded', 'true');
+		    }
+			};
+		} )();
+	</script>
+	<script src="js/code.js"></script>
+	<script src="js/google.js"></script>
+</body>
+</html>
