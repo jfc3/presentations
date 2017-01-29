@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Say-Instead Test page - John F Croston III</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+	<link rel="stylesheet" href="css/basic.css" />
+	<style>
+		.sayinstead_drkapp { say-instead: "doctor cop";}
+		.sayinstead_homepage { say-instead: "home page";}
+		.sayinstead_popejp2 { say-instead: "Pope John Paul the Second";}
+		.sayinstead_rocky2 { say-instead: "Rocky Two";}
+		.sayinstead_godfather2 { say-instead: "The Godfather Part Two";}
+	</style>
+</head>
+<body>
+	<div class="hide">
+		<a href="#maincontent">Skip to Main Content</a>
+	</div>
+	<div id="wrap">
+		<div id="header">
+			<!--#include file="inc/header.html"-->
+		</div>
+		<div id="main_content">
+			<div id="sidebar">
+				<!--#include file="inc/nav.html"-->
+			</div>
+			<div id="content" role="main">
+				<h3 id="maincontent" tabindex="-1">Testing of CSS3 Property &ldquo;Say-Instead&rdquo;</h3>
+				<p>This page was created to to be able to test that the proposed CSS3 property &ldquo;<a href="http://clc4tts.clcworld.net/css_say-instead.html" title="Say-Instead CSS3 property exmapleand further explaination by Charles L. Chen">Say-Instead</a>&rdquo; is working with Firefox extension &ldquo;<a href="" title="Fire Vox is a free Firefox extension that acts like a screen reader created by Charles L. Chen">Fire Vox</a>&rdquo;, which is a free screen reader and any other screen readers. The &ldquo;Fire Vox&rdquo; screen reader will allow you to listen to the difference between the quotes without and then with the "say-instead" CSS.</p>
+				<h3>Direct Comparison - Without and With Say-Instead</h3>
+				<p>Dr. Kapp versus <span class="sayinstead_drkapp">Dr. Kapp</span></p>
+				<p>Homepage versus <span class="sayinstead_homepage">Homepage</span></p>
+				<p>Pope John Paul II versus <span class="sayinstead_popejp2">Pope John Paul II</span></p>
+				<p>Rocky II versus <span class="sayinstead_rocky2">Rocky II</span></p>
+				<p>The Godfather II versus <span class="sayinstead_godfather2">The Godfather II</span></p>
+			</div>
+		</div>
+		<div id="footer">
+			<!--#include file="inc/footer.html"-->
+		</div>
+	</div>
+	<script src="js/google.js"></script>
+</body>
+</html>
