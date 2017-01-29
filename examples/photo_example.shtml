@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Accessible and Less Accessible Image and Photo Examples</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+	<link rel="stylesheet" href="css/basic.css" />
+	<style type="text/css">
+		#learn a { border: 1px solid #ccc; border-radius: 1em; -moz-border-radius: 1em; -webkit-border-radius: 1em; padding-left: .75em; margin-left: -.75em;}
+		img { margin: 2em 1em;}
+	</style>
+</head>
+<body>
+	<div class="hide">
+		<a href="#maincontent">Skip to Main Content</a>
+	</div>
+	<div id="wrap">
+		<div id="header">
+			<!--#include file="inc/header.html"-->
+		</div>
+		<div id="maincontent" tabindex="-1">
+			<div id="sidebar" role="navigation">
+				<!--#include file="inc/nav.html"-->
+			</div>
+			<div id="content" role="main">
+				<a name="maincontent"></a>
+				<h3>Non-Accessible and Accessible Photo/Images Example</h3>
+				<h4>Non-Accessible Examples</h4>
+				<img src="img/army_logo.jpg" />
+				<p>No ALT text</p>
+				<img src="img/army_logo.jpg" alt="" />
+				<p>Empty ALT text</p>
+				<img src="img/army_logo.jpg" alt="logo" />
+				<p>ALT text of &ldquo;logo&rdquo;</p>
+				<img src="img/army_logo.jpg" alt="U.S. Army logo" />
+				<p>ALT text of &ldquo;U.S. Army logo&rdquo;</p>
+				<h4>Accessible Examples</h4>
+				<a href=http://www.army.mil><img src="img/army_logo.jpg" alt="the United States Army" /></a>
+				<p>ALT text of &ldquo;the United States Army&rdquo;</p>
+			</div> 
+		</div>
+		<div id="footer">
+			<!--#include file="inc/footer.html"-->
+		</div>
+	</div>
+	<script src="js/google.js"></script>
+</body>
+</html>
