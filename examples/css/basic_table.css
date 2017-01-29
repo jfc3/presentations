@@ -1,0 +1,185 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, abbr, em, img, strong, ol, ul, li, fieldset, form, label, legend, input, select, textarea, table, caption, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline;}
+/* fix FORM issues */
+input, select, textarea { border: solid 1px #000;}
+input:hover, input:focus, input:active, select:hover, select:focus, select:active, textarea:hover, textarea:focus, textarea:active { outline: solid 2px #000;}
+input[type="checkbox"]:hover, input[type="checkbox"]:focus, input[type="checkbox"]:active, input[type="radio"]:hover, input[type="radio"]:focus, input[type="radio"]:active { outline: solid 3px #000;}
+
+body { color: #3d3d3d; background: #fff; font-family: Helvetica, Verdana, Arial, sans-serif; line-height: 1;} 
+h1, h2, h3, h4, h5, h6 { letter-spacing: 1.5px;}
+#hdr h1 { font-size: 1.5em;}
+#hdr h1 a { text-decoration: none;}
+#hdr h1 a:hover, #hdr h1 a:focus { text-decoration: underline;}
+#hdr h1, #hdr h2 { line-height: 2em; padding-left: .5em;}
+#hdr h2 { font-size: .90em; margin-bottom: .5em; border-top: 1px solid #3d3d3d; border-bottom: 1px solid #3d3d3d; background: #BEFF9E;}
+#header { background-color: #ACC7FF; border-bottom: 1px solid #3d3d3d;}
+
+p, ul, ol, h3, h4, h5, h6 { line-height: 1.5em; margin-bottom: 1em;}
+li { line-height: 1.5em; margin-bottom: .5em;}
+h3 { font-size: 1.25em;}
+h4 { margin: 1em 0 .5em;}
+h4.info { margin-bottom: 1em;}
+h4 em {font-weight: normal;}
+h4, h5, h6 { font-size: 1em;}
+h6 { margin-bottom: .25em;}
+h3, h4, h5, h6, .results, em { font-weight: bold;}
+.attendee h3 { margin-top: -1em;}
+
+a, a:visited { font-size: 1em;}
+a:focus, ul a:focus { text-decoration: none;}
+a:visited, ul a:visited, ul a, ol a { text-decoration: underline;}
+a, a:visited, ul a:visited, a:focus, ul a:focus { color: #3d3d3d;}
+ul ul, ol ol, ul ol, ol ul { margin-bottom: 0;}
+ul, ul li li { margin-left: 1em;}
+ol, ol li li { margin-left: 1.25em;}
+ul li, ul a, ol li, ol a { line-height: 1.25em; font-size: 1em;}
+
+#wrap, #main_content, #sidebar, #footer { width: 100%;}
+#main_content { margin: 0 auto;}
+#content { margin: 1em; width: 90%;}
+#footer { background: #BEFF9E; border-top: 1px solid #3d3d3d; clear: both;}
+
+/* form */
+form { width: 80%; margin: 1em 0;}
+fieldset { padding: .5em; margin: 1em;} 
+form li { list-style:none; margin-left: -2.75em;}
+label { margin-right: .25em; padding: .25em; position: relative; display: block; text-align: left; width: 100%; font-size: 1em; margin-left: -.2em;}
+legend { padding: .25em; margin: .25em; font-size: 1.25em; margin-left: -1.5em;} 
+input, textarea, select { padding: .25em;}
+input { width: 15em;}
+textarea { width: 15.25em;}
+span.req { color: #f00; font-weight: bold;}
+.form_choices label, .form_email label, .map label { width: 80%; clear: both; float:right;}
+.form_choices legend, .form_email legend, .map legend { font-size: 1em; margin-left:-2em;}
+.form_choices input, .form_email input, .map input { width: 1.5em; margin: .5em 0;}
+fieldset.form_choices, fieldset.form_email, fieldset.map { width: 80%; margin-left: -.5em; margin-bottom: -.5em;}
+fieldset.account_info { margin-left: 1.25em;}
+.account_info ul { margin-left: -2.75em;}
+.search input { width: 50%; margin-left: 1em;}
+.search form { width: 100%; margin: 0;}
+.search { border-bottom: 1px solid #3d3d3d;}
+input.submit, input.reset { width: 6em; margin: 1em;}
+.event_button { padding: 1.5em 0; margin-bottom: 1.5em;}
+.buttons { margin: 1.5em 0 1em -1.5em;}
+.location, .add_info { margin-left: -.5em; margin-bottom: 0;}
+.location legend, .add_info legend { margin-left: -1.65em;}
+
+/* skip nav */
+.skip a, .skip a:hover, .skip a:visited, label em, .search label, .events, .top { display: block; position: absolute; left: -10000px; top: auto; width: 100%; height: 3em; font-weight: bold; text-align: center; border-bottom: 1px solid #000;} 
+.skip a:active, .skip a:focus { background: #BEFF9E; position: static; width: auto; height: auto; padding: 1em; margin: auto;}
+
+/* table */
+table, th, td { border: 1px solid #3d3d3d; padding: .25em .5em; font-size: 1em; line-height: 1.5em; vertical-align: top;}
+table a:hover, table a:focus { text-decoration: none;}
+table { margin: 1em 0; border-collapse: collapse;}
+caption { font-size: 1.25em; margin: .5em 0; text-align: left;}
+th { font-weight: bold; text-align: left; width: 6.3em;}
+td { width: 11.7em;}
+td p { margin: .25em}
+
+/* misc */
+img { border: 1px #fff solid;}
+a:hover img, a:focus img { border: 1px #3d3d3d solid;}
+.download { font-size: 2em; padding: 2em 0 4em 0; line-height: 1.5em;}
+.float_left { float: left; margin: 0 1em 1em 0; clear: right;}
+.float_right, .pswd { float: right; clear: right;}
+.pswd { margin: 0 4.75em 0 1em;}
+.float_right { margin: 0 0 1em 1em;}
+input[type="submit"].submit_button, input[type="submit"].submit_info_button, input[type="submit"].password_button { -webkit-appearance: none;}
+.register a, input[type="submit"].submit_button, input[type="submit"].submit_info_button, input[type="submit"].password_button { margin-right:.5em; padding: .75em; background: #ACC7FF; line-height: 1.25em; border: 1px solid #3d3d3d; text-decoration: none; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+.register a:hover, .register a:focus { background: #BEFF9E;}
+input[type="submit"].submit_button, input[type="submit"].password_button, input[type="submit"].submit_info_button { margin-bottom: 1em;}
+input[type="submit"].submit_button { width: 57.5%;}
+input[type="submit"].password_button { width: 55%;}
+input[type="submit"].submit_info_button { width: 65%;}
+.hide_forgot { width: 15.75em;}
+.ltr1, .nbr1 { text-align: left;}
+.ltr2, .nbr2 { text-align: center;}
+.ltr3, .nbr3 { text-align: right;}
+.pswd { float: right;}
+.street-address { margin-left: .5em;}
+.event_info p { line-height: 1.25em; margin-bottom: .25em;}
+.event_info h4 { line-height: 1.5em; margin-top: 1.25em; margin-bottom: 1em;}
+.myevents, .search_results, .past_events, .events_attending, .dashboard { width: 100%; border: 1px solid #3d3d3d; margin-bottom: 1.25em; margin: 1em 1em 1em 0; float: left;}
+.myevents h4, .search_results h5, .past_events h4, .events_attending h4, .dashboard h4 { background: #BEFF9E; border-bottom: 1px solid #3d3d3d; margin-top: 0; margin-bottom: .5em; padding: .5em;}
+.event_details, .search_details, .dashboard_details { padding: .5em;}
+.event_details ul, .event_details li, .search_details li, .dashboard_details li { padding: .25em 0;}
+.required_fields { margin-left: -1.5em;}
+.attendee ul { margin-bottom: 2em;}
+.attendees legend { font-size: 1.125em; padding-left:.1em;}	
+
+/* vertical nav */
+#nav { margin: .5em 0; float: left; width: 100%; clear: both; border-bottom: solid 1px #3d3d3d;}
+#nav a { width: 90.25%; font-size: 1em; line-height: 2em; padding: .5em 1em; float: left;}
+#nav a:link, #nav a:visited { text-decoration: none;}
+#nav a:hover, #nav a:focus { text-decoration: underline;}
+#nav li { list-style: none; margin: 0;}
+
+/* footer nav */
+#navbar_b { margin: 0 auto; padding: .5em 0; text-align: center;}
+#nav_b li, #navbar_b p { display: inline; font-size: .9em; padding: 0 .1em;}
+#nav_b a:hover, #nav_b a:focus { text-decoration: none;}
+
+/* JavaScript CSS	*/
+#nav, #event_type, #details, #add_attendees, #running_events, #events_past, #attending_events, #email_attendees, #account_info { display: none;}
+#event_type { width: 90%;}
+.menu { padding:.5em 1.25em; border: 1px solid #3d3d3d; background: #fff; position: absolute; top: -.65em; right: -.5em; margin: 1em; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+span.menu a { text-decoration: none;}
+span.menu a:hover, span.menu a:focus, .details a, .details a:hover, .details a:focus { text-decoration: underline;}
+
+/*	search button moves down below input field	*/	
+/*
+@media screen and (max-width : 1024px)  {
+	#sidebar { width: 100%; float: left; border: 0;}
+	#nav { float: right;}
+	ul#nav { font-size: 1em; font-weight: bold; list-style-type: none; margin-bottom: 0;}
+	ul#nav li { width: 18%; float: left; background: #acc7ff; border-left: 1px solid #000;}
+	#nav a { float: left; display: block; color: #000; text-decoration: none; padding: .25em; border-top: 1px solid #000;}
+	#nav a:hover, #nav a:focus { background: #beff9e;}
+}
+*/
+
+/* tablet and larger */	
+@media screen and (min-width: 680px) { /* 640px */
+	#wrap { width: 90%; max-width: 960px; margin: 0 auto; border-left: 1px solid #3d3d3d; border-right: 1px solid #3d3d3d;  border-bottom: 1px solid #3d3d3d;}
+	#hdr h1, #hdr h2 { text-align: center; padding-left: 0;}
+	#content { width: 55%;}
+	#sidebar { width: 35%; float: right; clear: both; border: 1px solid #3d3d3d; margin: 1em; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+	.search { width: 100%; border-bottom: 1px solid #3d3d3d;}
+	.search input { width: 45%; margin-left: 1em;}
+	.search form { width: 100%; padding: .5em;}
+	input.submit, input.reset { width: 6em; margin: 1em;}
+	input { width: 20em;}
+	textarea { width: 20.25em;}
+	.form_choices label, .form_email label, .map label { width: 90%;}
+	.form_choices input, .form_email input, .map input { margin-left: -.25em; }
+	.event_details ul, .event_details li, .search_details li, .dashboard_details li { padding: 0;}
+	input[type="submit"].submit_button { width: 40%;}
+
+	/* table */
+	th { text-align: left; width: 12.1em;}
+	td { width: 19.9em;}
+
+	/* misc */
+	span.menu, .details { display: none;}
+	.dashboard { width: 45%;}
+	.myevents, .past_events, .events_attending { width: 95%;}
+	.myevents, .past_events, .events_attending, .dashboard { min-height: 23em;}
+					
+	/* vertical nav */
+	#nav { float: right; border-bottom: solid 0 #3d3d3d;}
+	#nav, #details, #nav li { display: block;}
+	#nav a { width: 15em; text-align: left; padding: .25em .5em 0 .25em; border-bottom: 0;}
+	#nav li { line-height: 1em; margin-left: .5em;}
+}
+
+/* print */
+@media print {
+	body { margin:0; padding: 0; text-align: left; color: #000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 100%;} 
+	#hdr, .hide, #sidebar, #footer { display: none !important; } 
+	#main, #wrap { border: 0;}
+	#content { float: left; list-style: none; margin: 0; padding: 5px; width: 85%;} 
+	#content a { color: #000;}
+	#content ul a { margin: 0; padding: 0; line-height: 20px; letter-spacing: 1.2px; text-decoration: underline;}
+	img { display: block;}
+	#nav, #event_type, #details, #add_attendees, #running_events, #events_past, #attending_events, #email_attendees, #account_info { display: block;}
+}
