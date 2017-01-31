@@ -30,7 +30,7 @@
 		<div id="maincontent">
 			<div class="content">
 				<div class="h2">Test Form</div>
-				<form name="RequestForm" method="post" onsubmit="return checkContactsForm(this);" action="add_attendee.asp">
+				<form name="RequestForm" method="post" onsubmit="return checkContactsForm(this);" action="#">
 					<div class="h3">Personal Information</div>
 					<p>Do you want your personal information visible to others, which would include address, phone numbers, e-mail address, and website information.</p>
 					<p>You can change this at a later time.</p>

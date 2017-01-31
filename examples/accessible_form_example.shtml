@@ -26,7 +26,7 @@
 		<div id="main_content">
 			<div class="content" role="main">
 				<h3 id="maincontent" tabindex="-1" class="title">Test Form</h3>
-				<form name="RequestForm" method="post" onsubmit="return checkContactsForm(this);" action="add_attendee.asp">
+				<form name="RequestForm" method="post" onsubmit="return checkContactsForm(this);" action="#">
 					<fieldset>
 						<legend>Personal Information</legend>
 						<p>Do you want your personal information visible to others, which would include address, phone numbers, e-mail address, and website information.</p>
