@@ -4,7 +4,7 @@ input, select, textarea { border: solid 1px #3d3d3d; }
 input:hover, input:focus, input:active, select:hover, select:focus, select:active, textarea:hover, textarea:focus, textarea:active { outline: solid 2px #000;}
 input[type="checkbox"]:hover, input[type="checkbox"]:focus, input[type="checkbox"]:active, input[type="radio"]:hover, input[type="radio"]:focus, input[type="radio"]:active { outline: solid 3px #000;}
 
-body { text-align: left; color: #000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 75%;} 
+body { text-align: left; color: #000; font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 75%;} 
 
 h3 { font-size: 1.75em; font-weight: bold;}
 h4 { font-size: 1.5em;}
@@ -25,7 +25,7 @@ ol li, ul a, ol li, ol a { line-height: 1.5em; letter-spacing: 1.2px; font-size:
 ul a, ol a { text-decoration: underline;}
 
 #wrap { max-width:100%;} 
-#main, #main_content, #navbar_b { width: 825px; min-width: 825px; /*	width: expression(document.body.clientWidth > 825? "825px" : "auto"); 	*/}
+#main, #main_content, #navbar_b { width: 825px; min-width: 825px;}
 #main, #main_content { background: #fff; margin: 0 auto;}
 #header { background-color: #ACC7FF; border-bottom: 1px solid #000;}
 #hdr h1 { color: #000; font-size: 3em; line-height: 2em; text-align: center;}
@@ -121,7 +121,7 @@ ul#nav_h li { float: left; background: #ACC7FF; border-left: 1px solid #000;}
 
 /* print	*/
 @media print {
-	body { margin:0; padding: 0; text-align: left; color: #000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 100%;} 
+	body { margin:0; padding: 0; text-align: left; color: #000; font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 100%;} 
 	#hdr, .hide, #sidebar, #footer { display: none !important; } 
 	#main, #wrap { border: 0;}
 	#content { float: left; list-style: none; margin: 0; padding: 5px; width: 85%;} 
