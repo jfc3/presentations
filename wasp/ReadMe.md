@@ -1,8 +1,8 @@
-# Is Your WEbiste Accessible Slides by John F Croston III
+# Is Your Webiste Accessible Slides by John F Croston III
 
 * John F Croston III
 * Release Number:  v.1.1.0
-* Release Date: 1-10-2017
+* Release Date: 5-7-2017
 
 ## Overview
 The following contains [John F Croston III's](http://jfciii.com) - ([@jfc3](https://twitter.com/jfc3)) slides for his "**Is Your WEbiste Accessible**" slide presentation. Which over the last few of years, I have been updating, so anyone going back to them will get the most up-to-date information.
