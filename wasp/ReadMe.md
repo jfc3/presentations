@@ -2,7 +2,7 @@
 
 * John F Croston III
 * Release Number:  v.1.1.0
-* Release Date: 5-7-2017
+* Release Date: 6-1-2017
 
 ## Overview
 The following contains [John F Croston III's](http://jfciii.com) - ([@jfc3](https://twitter.com/jfc3)) slides for his "**Is Your WEbiste Accessible**" slide presentation. Which over the last few of years, I have been updating, so anyone going back to them will get the most up-to-date information.
@@ -12,7 +12,7 @@ There are two sets of slides one with food photos (index.html) to break up secti
 ## New Features and Enhancements
 Features:
 
-* TBD
+* Added language slide to both presentations.
 
 Enhancements:
 
