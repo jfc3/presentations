@@ -1,0 +1,87 @@
+html, body, div, span, h1, h2, h3, h4, p, a, em, strong, ol, ul, li { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline;}
+body { line-height: 1; color: #000; background: #fff; text-align: left; color: #000; font-family: Helvetica, Verdana, Arial, sans-serif;}
+
+h3 { font-size: 1.5em; font-weight: bold;}
+h4 { font-size: 1.5em;}
+h1, h2, h3, h4 { letter-spacing: 1.5px;}
+h1, h2, h3, h4 { line-height: 1.5em;}
+ul, ol, li { line-height: 1em;}
+p, h3, h4 { margin-bottom: 1em;}
+ul, ol { margin-bottom: .25em;}
+ul ul, ol ol, ul ol, ol ul { font-size: .75em; margin-bottom: 0;}
+p { font-size: 1.25em; line-height: 1.25em;}
+a, a:visited { 
+color: #000;
+font-size: 1em;
+}
+li { font-size: 1.25em; padding: .5em 0;}
+strong {
+font-weight: bold; 
+color:#333;
+}
+#wrap { max-width:100%;} 
+#main, #main_content, #navbar_b { 
+width: 55em; 
+min-width: 45em; 
+}
+#main, #main_content { 
+background: #fff; 
+margin: 0 auto;
+min-height: 29em; 
+}
+#header {
+background-color: #ACC7FF;
+border-bottom: 1px solid #000;
+}
+#hdr h1 {
+color: #000;
+font-size: 2.25em;
+line-height: 2em;
+text-align: center;
+}
+#hdr h1 a { text-decoration: none;}
+#hdr h2 {
+border-top: 1px solid #000;
+border-bottom: 1px solid #000;
+text-align: center;
+background: #BEFF9E;
+font-size: 1.5em;
+line-height: 2em;
+ margin-bottom: .5em;
+}
+#content {
+width: 55em	;
+margin: 1em 0 .5em 1.25em;
+padding: 1.5em 3em; 
+float: left;
+vertical-align: top; 
+}
+ol, ul { list-style: disc; margin-left: 1.25em;}
+ol li li, ul li li { margin-left: 1em;}
+ol li, ul a, ol li, ol a { 
+line-height: 1em;
+letter-spacing: 1.2px;
+font-size: 1.125em;
+}
+ul a, ol a { text-decoration: underline;}
+a:visited, ul a:visited { 
+color: #000;
+text-decoration: underline;
+font-size: 1.25em;
+}
+a:focus, ul a:focus { color: #000; text-decoration: none;}
+#footer {
+padding: .5em 0;
+clear: both;
+background: #BEFF9E;
+border-top: 1px solid #000;
+}
+	
+/* bottom navigation bar */
+#navbar_b { margin: 0 auto; }
+#navbar_b p { text-align: center; font-size: 1.25em;}
+#navbar_b a:hover, #navbar_b a:focus { text-decoration: none;}
+#nextprev { clear: both;}
+#next, #previous { margin: .25em;}
+#next { float: right;}
+#previous { float: left;}

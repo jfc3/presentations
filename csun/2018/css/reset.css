@@ -1,0 +1,29 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, em, strong, ol, ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* added this style fix issues with FORM elements */
+input, select, textarea {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+/*	:focus { outline: 0;}	*/
+body {
+	line-height: 1;
+	color: #000;
+	background: #fff;
+}
