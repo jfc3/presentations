@@ -1,8 +1,8 @@
 # Accesibility Slides by John F Croston III
 
 * John F Croston III
-* Release Number:  v.1.3.0
-* Release Date: 12-25-2016
+* Release Number:  v.1.3.1
+* Release Date: 06-08-2018
 
 ## Overview
 The following four folders contain [John F Croston III's](http://jfciii.com) - ([@jfc3](https://twitter.com/jfc3)) slides for his presentations. Over the last bunch of years, I have been updating one set of slides, so anyone going back to them will get the most up-to-date information.
@@ -23,6 +23,7 @@ Features:
 
 Enhancements:
 
+* Updated slides color contrast ratio informatin and added both 2017 Inclusive Design 24 video links.
 * Changed the slides to use HTML5.
 * Make sure all the accessibility inforamtion in the slides is up-to-date and accessible.
 * Make sure all presentations/slides examples are accessible.
