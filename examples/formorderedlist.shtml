@@ -93,6 +93,5 @@
 			<!--#include file="inc/footer.html"-->
 		</div>
 	</div>
-	<script src="js/google.js"></script>
 </body>
 </html>
