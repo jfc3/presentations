@@ -113,6 +113,5 @@
 			<!--#include file="inc/footer_non.html"-->
 		</div>
 	</div>
-	<script src="js/google.js"></script>
 </body>
 </html>
