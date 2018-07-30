@@ -1,8 +1,8 @@
 # Performance Slides by John F Croston III
 
 * John F Croston III
-* Release Number:  v.1.1.0
-* Release Date: 12-26-2016
+* Release Number:  v.1.1.1
+* Release Date: 07-29-2018
 
 ## Overview
 The following contains [John F Croston III's](http://jfciii.com) - ([@jfc3](https://twitter.com/jfc3)) slides for his "**Performance**" slide presentation. Which over the last few of years, I have been updating, so anyone going back to them will get the most up-to-date information.
@@ -14,6 +14,7 @@ Features:
 
 Enhancements:
 
+* Removed Google Analytics from slides.
 * Changed the slides to use HTML5.
 * Make sure all the sldies are up-to-date and accessible.
 * Make my slides examples are accessible.
