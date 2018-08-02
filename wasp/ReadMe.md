@@ -1,8 +1,8 @@
 # Is Your Webiste Accessible Slides by John F Croston III
 
 * John F Croston III
-* Release Number:  v.1.1.0
-* Release Date: 6-1-2017
+* Release Number:  v.1.1.1
+* Release Date: 08-01-2018
 
 ## Overview
 The following contains [John F Croston III's](http://jfciii.com) - ([@jfc3](https://twitter.com/jfc3)) slides for his "**Is Your WEbiste Accessible**" slide presentation. Which over the last few of years, I have been updating, so anyone going back to them will get the most up-to-date information.
@@ -16,6 +16,7 @@ Features:
 
 Enhancements:
 
+* Removed Google Analytics from the slides.
 * Make sure all the slides are up-to-date and accessible.
 * Make my slides examples are accessible.
 * Spent a few hours corecting the resources section links from being URLs to using proper text describing them. Reworked how the content was presented and with person or organizationsname as a headingthen Twitter, website, and other links in an unordered list with off-screen text to help screen reader ysers understand which website or Twitter the link belonged. 
