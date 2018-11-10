@@ -1,8 +1,8 @@
 # Is Your Webiste Accessible Slides by John F Croston III
 
 * John F Croston III
-* Release Number:  v.1.1.1
-* Release Date: 08-01-2018
+* Release Number:  v.1.1.2
+* Release Date: 11-10-2018
 
 ## Overview
 The following contains [John F Croston III's](http://jfciii.com) - ([@jfc3](https://twitter.com/jfc3)) slides for his "**Is Your WEbiste Accessible**" slide presentation. Which over the last few of years, I have been updating, so anyone going back to them will get the most up-to-date information.
@@ -16,6 +16,7 @@ Features:
 
 Enhancements:
 
+* Removed Windows screen reader list and added TalkBack for Android.
 * Removed Google Analytics from the slides.
 * Make sure all the slides are up-to-date and accessible.
 * Make my slides examples are accessible.
