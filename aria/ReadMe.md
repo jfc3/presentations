@@ -1,8 +1,8 @@
 # ARIA Slides by John F Croston III
 
 * John F Croston III
-* Release Number:  v.1.1.0
-* Release Date: 12-26-2016
+* Release Number:  v.1.1.1
+* Release Date: 01-06-2019
 
 ## Overview
 The following contains [John F Croston III's](http://jfciii.com) - ([@jfc3](https://twitter.com/jfc3)) slides for his "**ARIA**" slide presentation. Which over the last few of years, I have been updating, so anyone going back to them will get the most up-to-date information.
@@ -16,6 +16,7 @@ Features:
 
 Enhancements:
 
+* Updated copyright to 2019 alogn with fixing a few broken/re-directed links.
 * Changed the slides to use HTML5.
 * Make sure all the slides are up-to-date and accessible.
 * Make my slides examples are accessible.
