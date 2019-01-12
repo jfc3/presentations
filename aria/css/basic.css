@@ -1,15 +1,15 @@
-@import url(reset.css);
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, font, img, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tr, th, td {margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline;}
+/* added this style fix issues with FORM elements */
+input, select, textarea {margin: 0; padding: .25em; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline;}
 
-body { text-align: left; color: #000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 75%;} 
+body { line-height: 1; background: #fff; text-align: left; color: #000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 75%;} 
 
 h3, h4, h5 { font-weight: bold;}
 h3 { font-size: 1.75em; font-weight: bold;}
 h4 { font-size: 1.5em; font-weight: bold;}
-h5 { font-size: 1.333em;}
-h6 { font-size: 1.25em;}
-h1, h2, h3, h4, h5, h6 { letter-spacing: 1.5px;}
-p, ul, ol, li, h1, h2, h3, h4, h5, h6 { line-height: 1.5em;}
-p, ul, ol, h3, h4, h5, h6 { margin-bottom: 1em;}
+h1, h2, h3, h4 { letter-spacing: 1.5px;}
+p, ul, ol, li, h1, h2, h3, h4 { line-height: 1.5em;}
+p, ul, ol, h3, h4 { margin-bottom: 1em;}
 ul ul, ol ol, ul ol, ol ul { margin-bottom: 0;}
 p { font-size: 1.25em;}
 a, a:visited { color: #000; font-size: 1em;}
@@ -35,56 +35,27 @@ img { display: block;}
 
 /*	form styles	*/
 form { margin-bottom: 1.5em;}
-#forms { float: left; vertical-align: top; margin: .83333em;} 
-#forms p { margin: .8333em 0; line-height: 1.5em}
 fieldset { padding: .4166em .8333em; margin: .8333em; border: 1px solid #ccc; border-radius: 1em; -moz-border-radius: 1em; -webkit-border-radius: 1em; width: 57.5em;}
 fieldset.inner { width: 54.1666em;} 
-#forms input, #forms select, #forms textarea { margin-bottom: .75em;} 
 form li { list-style:none;}
-label { float: left; width: 15em; margin-right: .25em; text-align: right; padding: .25em; position: relative;}
+label { float: left; font-size: 1em; width: 15em; margin-right: .25em; text-align: right; padding: .25em; position: relative;}
 legend { padding: .5em; margin: .25em; border: 0; font-size:1.25em;}
 .submit {  margin: 1em auto;}
 span.req { color: #f00; font-weight: bold;}
-
-/*	Used to display directions/explainations of fields to right of input field.	*/ 
-label strong.msg1, label strong.msg2 { color: #888; font-size: .8em; font-style: normal; line-height: 2.5; position: absolute; top: 0;}
-label strong.msg1 { right: -20em;}
-label strong.msg2 { right: -38.25em;}
+select, input { border: solid 1px #000;}
 
 /*	Used to create three columns for checkbox section	*/ 
 .content1, .content2, .content3 { list-style: none; width: 17.0833em; margin: .4166em;}
 .content1 label, .content2 label, .content3 label { float: left; width: 12em; margin-right: .25em; text-align: right; padding: .25em;}
 .content1, .content2, .content3 { float: left;}
 
-/*	skip navigation and other display content off screen items	*/
-.skip a, label em { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;} 
-.skip a:active, .skip a:focus { position: static; width: auto; height: auto; margin: 1em auto;}
-
 /*	misc	*/
-#multiple_images img { display: inline; margin: 3px;}
-.photo { padding: 5px;}
-.photo_text { font-weight: bold; font-style: italic; font-size: 75%;}
-.ltr1, .nbr1 { text-align: left;}
-.ltr2, .nbr2 { text-align: center;}
-.ltr3, .nbr3 { text-align: right;}
-.em1 { font-weight: bold;}
-.em2 { color: #F00;}
-.em3, .italic { font-weight: italic;}
 .alpha, .alpha a { padding: 0; font-size: 1.25em; line-height: 1.5em;}
 .alpha { margin: 0 5% .75em 5%;}
 .alpha a { margin: 0 .1667em .5em .1667em;}
 .alpha a:hover, .alpha a:focus { text-decoration: none;}
 .title { font-weight: bold;}
-
-/*	table layout	*/
-#content_t { width: 725px; margin: 12px;}
-.stripe { background: #ddd;}
-table, th, td { border: 1px solid #000; padding: .25em .5em; font-size: 1em; line-height: 1.5em;}
-table a:hover, table a:focus { text-decoration: none;}
-table { margin: 1em 0; border-collapse: collapse;}
-th { background: #BEFF9E; text-align: center;}
-.none a { text-decoration: none;}
-caption { font-size: 1.5em; margin: .5em 0;}
+label em { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;}
 	
 /* bottom navigation bar */
 #navbar_b { margin: 0 auto; }
