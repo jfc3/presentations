@@ -11,6 +11,9 @@
 		#learn a { color: #000; background: #BEFF9E; }
 		td { text-align: center;}
 		.fn { background: #fff;}
+		th { background: #fff; font-weight: normal;}
+		#tbl-th th { background: #BEFF9E; font-weight: bold;}
+		.stripe th { background: #ddd;}
 	</style>
 </head>
 <body>
@@ -24,13 +27,12 @@
 		<div id="main_content" role="main">
 			<div id="content_t">
 				<h3 id="maincontent" tabindex="-1">Washington, DC. Public Libraries</h3>
-				<p>The report below shows each of the libraries fiscal year, quarter, last updated date, and an indicator of whether the total of all the books, magizines, CDs, DVDs, etc. are greater than zero.</p>
-				<p>The reason this report was set up was to allow the main library staff to see which libraries have correctly put in their inventory information quarterly, compared to those that either did not put in a record or just created a zero filled record.</p>
-				<p>Each library has it&rsquo;s name and new fiscal year visually list once, but it is actually just being displayed of screen so screen readers can still read the information. If the total is greater than zero we do not display the word &ldquo;YES&rdquo; so not to visually clutter the report with to much data. We only display the &ldquo;Total &gt; Zero&rdquo; fields on the screen that are not greater than zero as &ldquo;No&rdquo; and highlight and bold them so they stand out.</p>
-				<p>If you click on the table heading they will be sorted in either ascending or descending order.</p>
+				<p>The report below shows each of the library's fiscal year, quarter, last updated date, and an indicator of whether the total of all the books, magazines, CDs, DVDs, etc. is greater than zero.</p>
+				<p>The reason this report was set up was to allow the main library staff to see which libraries have correctly put in their inventory information quarterly, compared to those that either did not put in a record or just created a zero-filled record.</p>
+				<p>Each library has its name and new fiscal year visually list once, but it is being displayed on the screen so screen readers can still read the information. If the total is greater than zero, we do not display the word &ldquo;<span class="bold">YES</span>&rdquo; to not visually clutter the report with too much data. We only display the &ldquo;<span class="bold">Total > Zero</span>&rdquo; fields on the screen that are not greater than zero as &ldquo;<span class="bold">No</span>&rdquo; and highlight and bold them, so they stand out.</p>
 				<table class="sortable" id="library_table" width="725px" summary="List of Washington, DC, libraries fiscal record information, which contains library name, fiscal year, an indicator of whether the total of all the books, magizines, CDs, DVDs, etc. are greater than zero, and last updated date.">
 					<caption>List of Libraries Fiscal Record Information</caption>
-					<tr>
+					<tr id="tbl-th">
 						<th id="library_name" width="300px">Library Name</th>
 						<th id="fiscal_year" width="100px">Fiscal Year</th>
 						<th id="quarter" width="75px">Quarter</th>
@@ -38,271 +40,271 @@
 						<th id="last_updated" width="125px">Last Updated</th>
 					</tr>
 					<tr>
-						<td headers="library_name" class="ltr1">Anacostia Interim Library</td>
-						<td headers="fiscal_year">2007</td>
-						<td headers="quarter">4</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">12/4/2007</td>
+						<th id="library" class="ltr1">Anacostia Interim Library</th>
+						<td headers="fiscal_year library_name library">2007</td>
+						<td headers="quarter fiscal_year library_name library">4</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">12/4/2007</td>
 					</tr>
 					<tr class="stripe">
-						<td headers="library_name" class="ltr1">Benning Interim Library</td>
-						<td headers="fiscal_year">2005</td>
-						<td headers="quarter">1</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">5/25/2004</td>
+						<th id="library" class="ltr1">Benning Interim Library</th>
+						<td headers="fiscal_year library_name library">2005</td>
+						<td headers="quarter fiscal_year library_name library">1</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">5/25/2004</td>
 					</tr>
 					<tr class="stripe">
-						<td headers="library_name" class="ltr1">Benning Interim Library</td>
-						<td headers="fiscal_year">2005</td>
-						<td headers="quarter">2</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">5/25/2004</td>
+						<th id="library" class="ltr1">Benning Interim Library</th>
+						<td headers="fiscal_year library_name library">2005</td>
+						<td headers="quarter fiscal_year library_name library">2</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">5/25/2004</td>
 					</tr>
 					<tr class="stripe">
-						<td headers="library_name" class="ltr1">Benning Interim Library</td>
-						<td headers="fiscal_year">2005</td>
-						<td headers="quarter">3</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">1/13/2005</td>
+						<th id="library" class="ltr1">Benning Interim Library</th>
+						<td headers="fiscal_year library_name library">2005</td>
+						<td headers="quarter fiscal_year library_name library">3</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">1/13/2005</td>
 					</tr>
 					<tr class="stripe">
-						<td headers="library_name" class="ltr1">Benning Interim Library</td>
-						<td headers="fiscal_year">2005</td>
-						<td headers="quarter">4</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">1/13/2005</td>
+						<th id="library" class="ltr1">Benning Interim Library</th>
+						<td headers="fiscal_year library_name library">2005</td>
+						<td headers="quarter fiscal_year library_name library">4</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">1/13/2005</td>
 					</tr>
 					<tr>
-						<td headers="library_name" class="ltr1">Benning Interim Library</td>
-						<td headers="fiscal_year">2006</td>
-						<td headers="quarter">1</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">1/22/2007</td>
+						<th id="library" class="ltr1">Benning Interim Library</th>
+						<td headers="fiscal_year library_name library">2006</td>
+						<td headers="quarter fiscal_year library_name library">1</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">1/22/2007</td>
 					</tr>
 					<tr>
-						<td headers="library_name" class="ltr1">Benning Interim Library</td>
-						<td headers="fiscal_year">2006</td>
-						<td headers="quarter">2</td>
-						<td headers="zero" class="bold">No</td>
-						<td headers="last_updated" class="ltr3">7/18/2006</td>
+						<th id="library" class="ltr1">Benning Interim Library</th>
+						<td headers="fiscal_year library_name library">2006</td>
+						<td headers="quarter fiscal_year library_name library">2</td>
+						<td headers="zero quarter fiscal_year library_name library" class="bold">No</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">7/18/2006</td>
 					</tr>
 					<tr>
-						<td headers="library_name" class="ltr1">Benning Interim Library</td>
-						<td headers="fiscal_year">2006</td>
-						<td headers="quarter">3</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">12/20/2006</td>
+						<th id="library" class="ltr1">Benning Interim Library</th>
+						<td headers="fiscal_year library_name library">2006</td>
+						<td headers="quarter fiscal_year library_name library">3</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">12/20/2006</td>
 					</tr>
 					<tr>
-						<td headers="library_name" class="ltr1">Benning Interim Library</td>
-						<td headers="fiscal_year">2006</td>
-						<td headers="quarter">4</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">12/20/2006</td>
+						<th id="library" class="ltr1">Benning Interim Library</th>
+						<td headers="fiscal_year library_name library">2006</td>
+						<td headers="quarter fiscal_year library_name library">4</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">12/20/2006</td>
 					</tr>
 					<tr class="stripe">
-						<td headers="library_name" class="ltr1">Chevy Chase</td>
-						<td headers="fiscal_year">2004</td>
-						<td headers="quarter">4</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">10/27/2004</td>
+						<th id="library" class="ltr1">Chevy Chase</th>
+						<td headers="fiscal_year library_name library">2004</td>
+						<td headers="quarter fiscal_year library_name library">4</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">10/27/2004</td>
 					</tr>
 					<tr>
-						<td headers="library_name" class="ltr1">Chevy Chase</td>
-						<td headers="fiscal_year">2007</td>
-						<td headers="quarter">1</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">9/26/2007</td>
+						<th id="library" class="ltr1">Chevy Chase</th>
+						<td headers="fiscal_year library_name library">2007</td>
+						<td headers="quarter fiscal_year library_name library">1</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">9/26/2007</td>
 					</tr>
 					<tr>
-						<td headers="library_name" class="ltr1">Chevy Chase</td>
-						<td headers="fiscal_year">2007</td>
-						<td headers="quarter">4</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">9/26/2007</td>
+						<th id="library" class="ltr1">Chevy Chase</th>
+						<td headers="fiscal_year library_name library">2007</td>
+						<td headers="quarter fiscal_year library_name library">4</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">9/26/2007</td>
 					</tr>
 					<tr class="stripe">
-						<td headers="library_name" class="ltr1">Cleveland Park</td>
-						<td headers="fiscal_year">2003</td>
-						<td headers="quarter">1</td>
-						<td headers="zero" class="stripe bold">No</td>
-						<td headers="last_updated" class="ltr3">5/12/2004</td>
+						<th id="library" class="ltr1">Cleveland Park</th>
+						<td headers="fiscal_year library_name library">2003</td>
+						<td headers="quarter fiscal_year library_name library">1</td>
+						<td headers="zero quarter fiscal_year library_name library" class="stripe bold">No</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">5/12/2004</td>
 					</tr>
 					<tr>
-						<td headers="library_name" class="ltr1">Cleveland Park</td>
-						<td headers="fiscal_year">2004</td>
-						<td headers="quarter">4</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">12/15/2004</td>
+						<th id="library" class="ltr1">Cleveland Park</th>
+						<td headers="fiscal_year library_name library">2004</td>
+						<td headers="quarter fiscal_year library_name library">4</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">12/15/2004</td>
 					</tr>
 					<tr class="stripe">
-						<td headers="library_name" class="ltr1">Cleveland Park</td>
-						<td headers="fiscal_year">2005</td>
-						<td headers="quarter">4</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">6/21/2006</td>
+						<th id="library" class="ltr1">Cleveland Park</th>
+						<td headers="fiscal_year library_name library">2005</td>
+						<td headers="quarter fiscal_year library_name library">4</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">6/21/2006</td>
 					</tr>
 					<tr>
-						<td headers="library_name" class="ltr1">Cleveland Park</td>
-						<td headers="fiscal_year">2006</td>
-						<td headers="quarter">4</td>
-						<td headers="zero" class="bold">No</td>
-						<td headers="last_updated" class="ltr3">6/21/2006</td>
+						<th id="library" class="ltr1">Cleveland Park</th>
+						<td headers="fiscal_year library_name library">2006</td>
+						<td headers="quarter fiscal_year library_name library">4</td>
+						<td headers="zero quarter fiscal_year library_name library" class="bold">No</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">6/21/2006</td>
 					</tr>
 					<tr class="stripe">
-						<td headers="library_name" class="ltr1">Cleveland Park</td>
-						<td headers="fiscal_year">2007</td>
-						<td headers="quarter">4</td>
-						<td headers="zero" class="stripe bold">No</td>
-						<td headers="last_updated" class="ltr3">9/28/2007</td>
+						<th id="library" class="ltr1">Cleveland Park</th>
+						<td headers="fiscal_year library_name library">2007</td>
+						<td headers="quarter fiscal_year library_name library">4</td>
+						<td headers="zero quarter fiscal_year library_name library" class="stripe bold">No</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">9/28/2007</td>
 					</tr>
 					<tr>
-						<td headers="library_name" class="ltr1">Georgetown Hi-Tech Bookmobile</td>
-						<td headers="fiscal_year">2007</td>
-						<td headers="quarter">1</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">12/26/2007</td>
+						<th id="library" class="ltr1">Georgetown Hi-Tech Bookmobile</th>
+						<td headers="fiscal_year library_name library">2007</td>
+						<td headers="quarter fiscal_year library_name library">1</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">12/26/2007</td>
 					</tr>
 					<tr>
-						<td headers="library_name" class="ltr1">Georgetown Hi-Tech Bookmobile</td>
-						<td headers="fiscal_year">2007</td>
-						<td headers="quarter">2</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">12/29/2005</td>
+						<th id="library" class="ltr1">Georgetown Hi-Tech Bookmobile</th>
+						<td headers="fiscal_year library_name library">2007</td>
+						<td headers="quarter fiscal_year library_name library">2</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">12/29/2005</td>
 					</tr>
 					<tr>
-						<td headers="library_name" class="ltr1">Georgetown Hi-Tech Bookmobile</td>
-						<td headers="fiscal_year">2007</td>
-						<td headers="quarter">3</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">12/29/2005</td>
+						<th id="library" class="ltr1">Georgetown Hi-Tech Bookmobile</th>
+						<td headers="fiscal_year library_name library">2007</td>
+						<td headers="quarter fiscal_year library_name library">3</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">12/29/2005</td>
 					</tr>
 					<tr>
-						<td headers="library_name" class="ltr1">Georgetown Hi-Tech Bookmobile</td>
-						<td headers="fiscal_year">2007</td>
-						<td headers="quarter">4</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">12/29/2005</td>
+						<th id="library" class="ltr1">Georgetown Hi-Tech Bookmobile</th>
+						<td headers="fiscal_year library_name library">2007</td>
+						<td headers="quarter fiscal_year library_name library">4</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">12/29/2005</td>
 					</tr>
 					<tr class="stripe">
-						<td headers="library_name" class="ltr1">Georgetown Hi-Tech Bookmobile</td>
-						<td headers="fiscal_year">2008</td>
-						<td headers="quarter">1</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">2/5/2008</td>
+						<th id="library" class="ltr1">Georgetown Hi-Tech Bookmobile</th>
+						<td headers="fiscal_year library_name library">2008</td>
+						<td headers="quarter fiscal_year library_name library">1</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">2/5/2008</td>
 					</tr>
 					<tr class="stripe">
-						<td headers="library_name" class="ltr1">Georgetown Hi-Tech Bookmobile</td>
-						<td headers="fiscal_year">2008</td>
-						<td headers="quarter">2</td>
-						<td headers="zero" class="stripe bold">No</td>
-						<td headers="last_updated" class="ltr3">2/15/2008</td>
+						<th id="library" class="ltr1">Georgetown Hi-Tech Bookmobile</th>
+						<td headers="fiscal_year library_name library">2008</td>
+						<td headers="quarter fiscal_year library_name library">2</td>
+						<td headers="zero quarter fiscal_year library_name library" class="stripe bold">No</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">2/15/2008</td>
 					</tr>
 					<tr class="stripe">
-						<td headers="library_name" class="ltr1">Georgetown Hi-Tech Bookmobile</td>
-						<td headers="fiscal_year">2008</td>
-						<td headers="quarter">3</td>
-						<td headers="zero" class="stripe bold">No</td>
-						<td headers="last_updated" class="ltr3">2/15/2008</td>
+						<th id="library" class="ltr1">Georgetown Hi-Tech Bookmobile</th>
+						<td headers="fiscal_year library_name library">2008</td>
+						<td headers="quarter fiscal_year library_name library">3</td>
+						<td headers="zero quarter fiscal_year library_name library" class="stripe bold">No</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">2/15/2008</td>
 					</tr>
 					<tr class="stripe">
-						<td headers="library_name" class="ltr1">Juanita E. Thornton/Shepherd Park</td>
-						<td headers="fiscal_year">2006</td>
-						<td headers="quarter">4</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">2/4/2008</td>
+						<th id="library" class="ltr1">Juanita E. Thornton/Shepherd Park</th>
+						<td headers="fiscal_year library_name library">2006</td>
+						<td headers="quarter fiscal_year library_name library">4</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">2/4/2008</td>
 					</tr>
 					<tr>
-						<td headers="library_name" class="ltr1">Juanita E. Thornton/Shepherd Park</td>
-						<td headers="fiscal_year">2007</td>
-						<td headers="quarter">1</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">4/17/2007</td>
+						<th id="library" class="ltr1">Juanita E. Thornton/Shepherd Park</th>
+						<td headers="fiscal_year library_name library">2007</td>
+						<td headers="quarter fiscal_year library_name library">1</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">4/17/2007</td>
 					</tr>
 					<tr>
-						<td headers="library_name" class="ltr1">Juanita E. Thornton/Shepherd Park</td>
-						<td headers="fiscal_year">2007</td>
-						<td headers="quarter">2</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">4/17/2007</td>
+						<th id="library" class="ltr1">Juanita E. Thornton/Shepherd Park</th>
+						<td headers="fiscal_year library_name library">2007</td>
+						<td headers="quarter fiscal_year library_name library">2</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">4/17/2007</td>
 					</tr>
 					<tr>
-						<td headers="library_name" class="ltr1">Juanita E. Thornton/Shepherd Park</td>
-						<td headers="fiscal_year">2007</td>
-						<td headers="quarter">4</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">1/5/2008</td>
+						<th id="library" class="ltr1">Juanita E. Thornton/Shepherd Park</th>
+						<td headers="fiscal_year library_name library">2007</td>
+						<td headers="quarter fiscal_year library_name library">4</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">1/5/2008</td>
 					</tr>
 					<tr>
-						<td headers="library_name" class="ltr1">Martin Luther King, Jr. Memorial Library</td>
-						<td headers="fiscal_year">2004</td>
-						<td headers="quarter">4</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">5/30/2007</td>
+						<th id="library" class="ltr1">Martin Luther King, Jr. Memorial Library</th>
+						<td headers="fiscal_year library_name library">2004</td>
+						<td headers="quarter fiscal_year library_name library">4</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">5/30/2007</td>
 					</tr>
 					<tr class="stripe">
-						<td headers="library_name" class="ltr1">Martin Luther King, Jr. Memorial Library</td>
-						<td headers="fiscal_year">2005</td>
-						<td headers="quarter">4</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">5/31/2007</td>
+						<th id="library" class="ltr1">Martin Luther King, Jr. Memorial Library</th>
+						<td headers="fiscal_year library_name library">2005</td>
+						<td headers="quarter fiscal_year library_name library">4</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">5/31/2007</td>
 					</tr>
 					<tr>
-						<td headers="library_name" class="ltr1">Martin Luther King, Jr. Memorial Library</td>
-						<td headers="fiscal_year">2006</td>
-						<td headers="quarter">4</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">1/23/2008</td>
+						<th id="library" class="ltr1">Martin Luther King, Jr. Memorial Library</th>
+						<td headers="fiscal_year library_name library">2006</td>
+						<td headers="quarter fiscal_year library_name library">4</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">1/23/2008</td>
 					</tr>
 					<tr class="stripe">
-						<td headers="library_name" class="ltr1">Martin Luther King, Jr. Memorial Library</td>
-						<td headers="fiscal_year">2007</td>
-						<td headers="quarter">4</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">1/23/2008</td>
+						<th id="library" class="ltr1">Martin Luther King, Jr. Memorial Library</th>
+						<td headers="fiscal_year library_name library">2007</td>
+						<td headers="quarter fiscal_year library_name library">4</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">1/23/2008</td>
 					</tr>
 					<tr>
-						<td headers="library_name" class="ltr1">Mt. Pleasant</td>
-						<td headers="fiscal_year">2004</td>
-						<td headers="quarter">4</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">6/14/2006</td>
+						<th id="library" class="ltr1">Mt. Pleasant</th>
+						<td headers="fiscal_year library_name library">2004</td>
+						<td headers="quarter fiscal_year library_name library">4</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">6/14/2006</td>
 					</tr>
 					<tr class="stripe">
-						<td headers="library_name" class="ltr1">Mt. Pleasant</td>
-						<td headers="fiscal_year">2005</td>
-						<td headers="quarter">4</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">5/19/2006</td>
+						<th id="library" class="ltr1">Mt. Pleasant</th>
+						<td headers="fiscal_year library_name library">2005</td>
+						<td headers="quarter fiscal_year library_name library">4</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">5/19/2006</td>
 					</tr>
 					<tr>
-						<td headers="library_name" class="ltr1">Mt. Pleasant</td>
-						<td headers="fiscal_year">2006</td>
-						<td headers="quarter">4</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">5/30/2007</td>
+						<th id="library" class="ltr1">Mt. Pleasant</th>
+						<td headers="fiscal_year library_name library">2006</td>
+						<td headers="quarter fiscal_year library_name library">4</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">5/30/2007</td>
 					</tr>
 					<tr class="stripe">
-						<td headers="library_name" class="ltr1">Mt. Pleasant</td>
-						<td headers="fiscal_year">2007</td>
-						<td headers="quarter">4</td>
-						<td headers="zero">Yes</td>
-						<td headers="last_updated" class="ltr3">12/21/2007</td>
+						<th id="library" class="ltr1">Mt. Pleasant</th>
+						<td headers="fiscal_year library_name library">2007</td>
+						<td headers="quarter fiscal_year library_name library">4</td>
+						<td headers="zero quarter fiscal_year library_name library">Yes</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">12/21/2007</td>
 					</tr>
 					<tr>
-						<td headers="library_name" class="ltr1">Tenley-Friendship Interim Library</td>
-						<td headers="fiscal_year">2004</td>
-						<td headers="quarter">1</td>
-						<td headers="zero" class="bold">No</td>
-						<td headers="last_updated" class="ltr3">9/20/2004</td>
+						<th id="library" class="ltr1">Tenley-Friendship Interim Library</th>
+						<td headers="fiscal_year library_name library">2004</td>
+						<td headers="quarter fiscal_year library_name library">1</td>
+						<td headers="zero quarter fiscal_year library_name library" class="bold">No</td>
+						<td headers="last_updated quarter fiscal_year library_name library" class="ltr3">9/20/2004</td>
 					</tr>
 				</table>	
 				<h3>Table with Microformats</h3>
-				<p>This is an example from my "<a href="presentations/wasp/accessibility.html">Is Your Website Accessible</a>" presentation. Shows how you should build a tabl and make it accessible along with having hCard Microformats in here too.</p>
-				<p>If you click on the table heading they will be sorted in either ascending or descending order.</p>
+				<p>Here's an example from my &ldquo;<a href="presentations/wasp/accessibility.html">Is Your Website Accessible</a>&rdquo; presentation. Shows how you should build a table and make it accessible along with having hCard Microformats in here too.</p>
+				<p>If you click on the table heading, they will be sorted in either ascending or descending order.</p>
 				<table class="sortable" id="user_table" width="725px" summary="The number of employees and the foundation year of some imaginary companies."> 
 					<caption>Table 1: Employee List</caption> 
-					<tr> 
+					<tr id="tbl-th"> 
 						<th scope="col">Employee Name</th> 
 						<th scope="col">E-mail</th> 
 						<th scope="col">Phone Number</th> 
