@@ -315,7 +315,7 @@
 						<td headers="url" class="ltr1 org url"><a class="org" href="http://jfciii.com">jfciii.com</a></td> 
 					</tr> 
 					<tr class="vcard"> 
-						<th scope="row" class="ltr1 fn n"><span class="given-name">Mickey</span> <span class="family-name">Mouse</span></tdh> 
+						<th scope="row" class="ltr1 fn n"><span class="given-name">Mickey</span> <span class="family-name">Mouse</span></th> 
 						<td class="ltr1 email">mickey@disney.com</td> 
 						<td class="tel"><span class="type"><em>work</em></span><span class="value">407-555-1212</span></td> 
 						<td class="ltr1 org url"><a class="org" href="http://disney.com">Walt Disney World</a></td> 
