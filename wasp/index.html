@@ -20,6 +20,7 @@
 		input { font-size: .5em;}
 		.twitter { color: #fff;}
 		.scrn-rdr { display: block; position: absolute; left: -10000px; top: auto; width: 100%; height: 3em; font-weight: bold; text-align: center;}
+		.col-cnt { column-count: 2;}
 	</style>
 </head>
 <body>
@@ -230,7 +231,7 @@
 		&lt;li&gt;First Link&lt;/li&gt; <br />
 		&hellip; <br />
 		&lt;/ul&gt; <br />
-		&lt;h2 <strong>ID="maincontent"</strong> <strong>tabindex="-1"</strong>&gt;Heading - H2&lt;/h2&gt; <br />
+		&lt;h2 <strong>id="maincontent"</strong> <strong>tabindex="-1"</strong>&gt;Heading - H2&lt;/h2&gt; <br />
 		&lt;p&gt;This is the first paragraph&lt;/p&gt;
 	</p>
 </div>
@@ -303,23 +304,21 @@
 
 <div class="slide">
 	<h1>Color - <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-contrast" target="_blank">1.4.3</a></h1>
-	<h4>Color Contrast</h4>
+	<h2>Color Contrast</h2>
 	<p><a href="https://www.w3.org/TR/WCAG10-TECHS/#tech-color-contrast" target="_blank">W3C Checkpoint 2.2</a> - Ensure that foreground and background color combinations provide sufficient contrast when viewed by someone having color deficits or when viewed on a black and white screen.</p>
 	<p>Two colors provide good color visibility if the brightness difference and the color difference between the two colors are greater than a set range. </p>
 	<p>The color contrast ratio needs to be 4.5:1 or higher to pass.</p>
-	<h4>Tools</h4>
+	<h2>Tools</h2>
 	<ul>
 		<li><a href="https://snook.ca/technical/colour_contrast/colour.html" target="_blank">Color Contrast Tool</a> - Jonathan Snook</li>
 		<li><a href="https://developer.paciellogroup.com/resources/contrastanalyser/" target="_blank">The Paciello Group Color Contrast Analyzer</a></li>
 		<li><a href="https://colororacle.org/" target="_blank">Color Oracle</a></li>
-		<li><a href="https://gmazzocato.altervista.org/colorwheel/wheel.php" target="_blank">Accessibility Color Wheel</a> - checks color contrast and the three different types of color blindness</li>		
-		<li><a href="https://www.456bereastreet.com/archive/200709/10_colour_contrast_checking_tools_to_improve_the_accessibility_of_your_design/" target="_blank">10 Color Checkers</a> - Roger Johansson</li>
 	</ul>
 </div>
 
 <div class="slide">
 	<h1>Color - cont.</h1>
-	<h4>Types of Color Blindness</h4>
+	<h2>Types of Color Blindness</h2>
 	<p>&nbsp;</p>
 	<p>Examples:</p>
 	<ul>
@@ -337,7 +336,7 @@
 <div class="slide">
 	<h1>a:hover, a:focus, and a:active (older IE) - <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-focus-visible" target="_blank">2.4.7</a></h1>
 	<p>Where ever you have &ldquo;<b>hover</b>&rdquo; (a:hover) you should also have &ldquo;<b>focus</b>&rdquo; (a:focus), along with &ldquo;<b>active</b>&rdquo; for older IE browsers.</p>
-	<h4>CSS Example</h4>
+	<h2>CSS Example</h2>
 	<p></p>
 	<p>
 		#nav a { <br />
@@ -361,13 +360,13 @@
 
 <div class="slide">
 	<h1>&ldquo;Click here&rdquo;, &ldquo;Read more&rdquo;, etc. - <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-refs" target="_blank">2.4.4</a> and <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-link" target="_blank">2.4.9</a></h1>
-	<h4>Don't do it!</h4>
+	<h2>Don't do it!</h2>
 	<p>Individuals using screen readers can look at a list of all the links on a page out of context. So if they keep hearing &ldquo;<b>click here</b>&rdquo; over and over again it makes no sense to them.</p>
 	<p>Another good reason is that your not getting added Google juice as they say by making the link text relevant to the link.</p>
-	<h4>Poor example</h4>
+	<h2>Poor example</h2>
 	<p>&nbsp;</p>
 	<p><a href="http://www.accessibilitydc.org/" target="_blank">Click here</a> to review the Acme TNT company's annual report.</p>
-	<h4>Good example</h4>
+	<h2>Good example</h2>
 	<p>&nbsp;</p>
 	<p>Please review the <a href="http://www.accessibilitycampdc.org/" target="_blank">Acme TNT companies annual report</a>.</p>
 </div>
@@ -774,7 +773,7 @@
 
 <div class="slide">
 	<h1>Assitive Technology Software</h1>
-	<h4>Screen Readers</h4>
+	<h2>Screen Readers</h2>
 	<ul>
 		<li><a href="https://www.nvaccess.org/" target="_blank">NVDA (NonVisual Desktop Access)</a> - FREE</li>
 		<li><a href="https://www.apple.com/accessibility/mac/vision/" target="_blank">Voice Over</a> - FREE on iPhones, iPads, Macbooks, etc.</li>
@@ -786,13 +785,13 @@
 
 <div class="slide">
 	<h1>Assitive Technology Software - cont.</h1>
-	<h4>Voice Recognition</h4>
+	<h2>Voice Recognition</h2>
 	<ul>
 		<li><a href="https://www.nuance.com/dragon.html" target="_blank">Dragon Naturally Speaking</a> - $99 or $199</li>
 	</ul>	
-	<h4><a href="http://firevox.clcworld.net/" target="_blank">Fire Vox</a></h4>
+	<h2><a href="http://firevox.clcworld.net/" target="_blank">Fire Vox</a></h2>
 	<p>Free reader extension for Firefox that acts like screen reader - created by <a href="http://www.clcworld.net/" target="_blank">Charles L. Chen</a>.</p>
-	<h4>Uses</h4>
+	<h2>Uses</h2>
 	<ul>
 		<li>Listen to your page to hear (SEE) how it sounds to someone with visual issues.</li>
 		<li>Close your eyes and listen to your website. Can you navigate and find information? You should be able to, since you created the website.</li>
@@ -936,7 +935,7 @@
 	</ul>
 	<h2>Inclusive Design 24 Videos</h2>
 	<p>24-Hour Online Community Event Celebrating Global Accessibility Awareness Day</p>
-	<ul>
+	<ul class="col-cnt">
 		<li><a href="https://www.youtube.com/playlist?list=PLn7dsvRdQEfFd5n_h8gltIoTfzUE_zywu" target="_blank">2019 <span class="scrn-rdr"> Inclusive Design 24 Videos</span></a></li>
 		<li><a href="https://www.youtube.com/playlist?list=PLn7dsvRdQEfEnBxpVztmJ8KCKNJ_P-hR6" target="_blank">2018 <span class="scrn-rdr"> Inclusive Design 24 Videos</span></a></li>
 		<li><a href="https://inclusivedesign24.org/2017-11/" target="_blank">2017 - November<span class="scrn-rdr"> Inclusive Design 24 Videos</span></a></li>
@@ -949,7 +948,7 @@
 
 <div class="slide">
 	<h1>Resources - cont.</h1>
-	<h4>Create Accessible Documents</h4>
+	<h2>Create Accessible Documents</h2>
 	<p>From - Accessible Electronic Documents Community of Practice (AED COP)</p>
 	<h5>Documents</h5>
 	<p>Learn how to create accessible Microsoft Word, Excel, PowerPoint, and PDF documents that conform to the Revised 508 Standards. You should to review AED COPs how-to create documents, videos, and checklists.</p>
@@ -963,7 +962,7 @@
 
 <div class="slide">
 	<h1>Resources - cont.</h1>
-	<h4>Create Accessible Documents</h4>
+	<h2>Create Accessible Documents</h2>
 	<p>From - Accessible Electronic Documents Community of Practice (AED COP)</p>
 	<h5>Videos</h5>
 	<p>Each video series is about 40 - 50 minutes long with about a dozen or so videos, there are only five videos PDF videos because they are longer in length.</p>
